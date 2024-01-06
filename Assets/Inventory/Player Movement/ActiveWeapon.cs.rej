@@ -1,0 +1,10 @@
+diff a/Assets/Inventory/Player Movement/ActiveWeapon.cs b/Assets/Inventory/Player Movement/ActiveWeapon.cs	(rejected hunks)
+@@ -19,7 +19,7 @@
+     }
+     private void Update() {
+         //Attack(); //Phuc comment
+-        Debug.Log(weaponName);
++        //Debug.Log(weaponName);
+     }
+     public void NewWeapon(MonoBehaviour newWeapon) // ham nay duoc goi ben ActiveInventory khi Instite vu khi va bo class weapon vao day
+     {

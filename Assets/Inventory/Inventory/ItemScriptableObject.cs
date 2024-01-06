@@ -9,7 +9,7 @@ public class ItemScriptableObject : ScriptableObject
     public Item.ItemType itemType;
     public string itemName;
     public Sprite itemSprite;
-    public GameObject pfSword;
+    public GameObject pfWeaponType;
     public AnimatorOverrideController animatorOverrideController;
     
 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   itemType: 6
-  itemName: Axe
+  itemName: Axe_01
   itemSprite: {fileID: 21300000, guid: cb49290a0e0fc68469ebc95fddf27a4f, type: 3}
-  pfSword: {fileID: 865213935175162613, guid: 5921220a76cc15e468087db715ffbaf1, type: 3}
+  pfWeaponType: {fileID: 865213935175162613, guid: 739bca1c8d1450343af609cd992dad43, type: 3}
   animatorOverrideController: {fileID: 22100000, guid: 9873028797d8a0047ac74088c21a4606, type: 2}

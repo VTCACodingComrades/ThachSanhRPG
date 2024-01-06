@@ -88,7 +88,7 @@ public class PlayerControllerNew : MonoBehaviour
             Debug.Log("co xoa");
         }
 
-        GameObject newWeapon = item.itemScriptableObject.pfSword;
+        GameObject newWeapon = item.itemScriptableObject.pfWeaponType;
         Instantiate(newWeapon, ActiveWeapon.Instance.transform);
         newWeapon.GetComponentInChildren<SpriteRenderer>().sprite = null;
 

@@ -19,7 +19,7 @@ public class ActiveWeapon : MonoBehaviour
     }
     private void Update() {
         //Attack(); //Phuc comment
-        Debug.Log(weaponName);
+        //Debug.Log(weaponName);
     }
     public void NewWeapon(MonoBehaviour newWeapon) // ham nay duoc goi ben ActiveInventory khi Instite vu khi va bo class weapon vao day
     {

@@ -7,5 +7,7 @@ public class TestCommit : MonoBehaviour
     private void Test() {
         Debug.Log("tam pull request 01");
         Debug.Log("phuc pull request 01");
+        Debug.Log("tam pull request ThachSanhRPG");
+
     }
 }

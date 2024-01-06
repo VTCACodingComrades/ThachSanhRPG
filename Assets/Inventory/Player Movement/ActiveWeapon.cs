@@ -19,11 +19,11 @@ public class ActiveWeapon : MonoBehaviour
     }
     private void Update() {
         //Attack(); //Phuc comment
-        Debug.Log(weaponName);
+        //Debug.Log(weaponName);
     }
     public void NewWeapon(MonoBehaviour newWeapon) // ham nay duoc goi ben ActiveInventory khi Instite vu khi va bo class weapon vao day
     {
-        Debug.Log("Co chay");
+        //Debug.Log("Co chay");
         CurrenActiveWeapon = newWeapon;
         // AttackCoolDown();
         // timeBetweenAttacks = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().weaponCooldown;
@@ -56,7 +56,7 @@ public class ActiveWeapon : MonoBehaviour
 
     }
     private void SetAnimation() {
-        Debug.Log("Co chay");
+        //Debug.Log("Co chay");
         playerAnimator.runtimeAnimatorController = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().animatorOverrideController;
     }
     

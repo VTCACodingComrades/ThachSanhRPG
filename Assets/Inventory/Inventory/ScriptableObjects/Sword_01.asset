@@ -16,4 +16,4 @@ MonoBehaviour:
   itemName: Sword_01
   itemSprite: {fileID: 21300000, guid: 0567c05197d0d374ca05f1aed297c2e4, type: 3}
   pfSword: {fileID: 865213935175162613, guid: 5921220a76cc15e468087db715ffbaf1, type: 3}
-  animatorOverrideController: {fileID: 22100000, guid: 9d83efd914d730f46b37b27b117427bb, type: 2}
+  animatorOverrideController: {fileID: 22100000, guid: d63a9cfbebdb61b4e96c3d6f6848d9e0, type: 2}

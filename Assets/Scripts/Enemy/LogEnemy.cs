@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LogEnemy : Enemy
@@ -28,19 +29,6 @@ public class LogEnemy : Enemy
 
     void CheckDistance()
     {
-        //if (Vector3.Distance(transform.position, target.position) <= detectRadius)
-        //{
-        //    enemyAnimator.SetBool("WakeUp", true);
-        //    transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-        //    Vector2 moveDirction = (target.position - transform.position).normalized;
-        //    enemyAnimator.SetFloat("MoveX", moveDirction.x);
-        //    enemyAnimator.SetFloat("MoveY", moveDirction.y);
-        //}
-        //else if (Vector3.Distance(transform.position, target.position) < attackRadius)
-        //{           
-        //    Debug.Log("Attack ne");
-        //}
-
         if (isSleeping)
         {
             enemyAnimator.SetBool("WakeUp", false);
@@ -51,13 +39,20 @@ public class LogEnemy : Enemy
             enemyAnimator.SetBool("WakeUp", true);
             if (Vector3.Distance(transform.position, target.position) > attackRadius)
             {
-                MoveTo(target.position);
+                //MoveTo(target.position);
+                Debug.Log("Di ne");
+                transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+                Vector2 moveDirction = (target.position - transform.position).normalized;
+                enemyAnimator.SetFloat("MoveX", moveDirction.x);
+                enemyAnimator.SetFloat("MoveY", moveDirction.y);
+                enemyAnimator.SetBool("Attack", false);
             }
             else
             {
                 Debug.Log("Attack ne");
+                enemyAnimator.SetBool("Attack", true);
             }
-        }      
+        }
         else if (Vector3.Distance(transform.position, target.position) > detectRadius && !isSleeping)
         {
             MoveTo(initialPosition);
@@ -76,3 +71,17 @@ public class LogEnemy : Enemy
         enemyAnimator.SetFloat("MoveY", moveDirction.y);
     }
 }
+
+//if (Vector3.Distance(transform.position, target.position) <= detectRadius)
+//{
+//    enemyAnimator.SetBool("WakeUp", true);
+//    transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+//    Vector2 moveDirction = (target.position - transform.position).normalized;
+//    enemyAnimator.SetFloat("MoveX", moveDirction.x);
+//    enemyAnimator.SetFloat("MoveY", moveDirction.y);
+//}
+//else if (Vector3.Distance(transform.position, target.position) < attackRadius)
+//{           
+//    Debug.Log("Attack ne");
+//}
+

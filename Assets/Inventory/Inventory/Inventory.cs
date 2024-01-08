@@ -44,7 +44,9 @@ public class Inventory : MonoBehaviour
         AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
             itemType = Item.ItemType.HealthPotion }, 
             amount = 10});
-
+        // AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
+        //     itemType = Item.ItemType.Hand }, 
+        //     amount = 1});
         PrinItemList();
     }
 

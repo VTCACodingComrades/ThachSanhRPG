@@ -177,6 +177,13 @@ public class PlayerController : MonoBehaviour
                     ChangeWeapon(item);
                     break;
                 }
+            case Item.ItemType.Hand:
+                {
+                    //? trang bi sword len nguoi player, kho cho trang bi nua
+                    Debug.Log("su dung Hand");
+                    ChangeWeapon(item);
+                    break;
+                }
 
         }
     }
@@ -194,7 +201,14 @@ public class PlayerController : MonoBehaviour
 
         GameObject newWeapon = item.itemScriptableObject.pfSword;
         Instantiate(newWeapon, ActiveWeapon.Instance.transform);
-        newWeapon.GetComponentInChildren<SpriteRenderer>().sprite = null;
+        //newWeapon.GetComponentInChildren<SpriteRenderer>().sprite = null;
+
+        //? tao image loai vu khi dang trang bi tren gnuoi player
+
+        newWeapon.transform.GetChild(0).transform.localPosition = new Vector3(0, 0.4f, 0);
+        newWeapon.transform.GetChild(0).transform.localEulerAngles = new Vector3(0,0,45f);
+        newWeapon.transform.GetChild(0).transform.localScale = new Vector3(.1f, .1f, .1f);
+
 
         ActiveWeapon.Instance.NewWeapon(newWeapon.GetComponent<MonoBehaviour>()); // bo script vao
     }

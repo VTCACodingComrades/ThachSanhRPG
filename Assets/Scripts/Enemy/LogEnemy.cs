@@ -45,12 +45,12 @@ public class LogEnemy : Enemy
                 Vector2 moveDirction = (target.position - transform.position).normalized;
                 enemyAnimator.SetFloat("MoveX", moveDirction.x);
                 enemyAnimator.SetFloat("MoveY", moveDirction.y);
-                enemyAnimator.SetBool("Attack", false);
+                //enemyAnimator.SetBool("Attack", false);
             }
             else
             {
                 Debug.Log("Attack ne");
-                enemyAnimator.SetBool("Attack", true);
+                enemyAnimator.SetTrigger("Attack");
             }
         }
         else if (Vector3.Distance(transform.position, target.position) > detectRadius && !isSleeping)

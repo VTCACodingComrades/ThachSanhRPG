@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 [Serializable]
@@ -17,7 +14,8 @@ public class Item
         ManaPotion,
         Coin,
         Medkit,
-        Axe
+        Axe,
+        Hand
     }
 
     //public ItemType itemType;
@@ -38,12 +36,14 @@ public class Item
     public Sprite GetSprite(ItemType itemType) {
         switch (itemType) {
         default:
-        case ItemType.Sword_01:        return ItemAssets.Instance.swordSprite;
+        case ItemType.Sword_01:     return ItemAssets.Instance.swordSprite;
         case ItemType.HealthPotion: return ItemAssets.Instance.healthPotionSprite;
         case ItemType.ManaPotion:   return ItemAssets.Instance.manaPotionSprite;
         case ItemType.Coin:         return ItemAssets.Instance.coinSprite;
         case ItemType.Medkit:       return ItemAssets.Instance.medkit;
         case ItemType.Axe:          return ItemAssets.Instance.axe;
+        case ItemType.Hand:          return ItemAssets.Instance.hand;
+
         }
     }
 
@@ -64,6 +64,8 @@ public class Item
         case ItemType.Sword_01:
         case ItemType.Medkit:
         case ItemType.Axe:
+        case ItemType.Hand:
+
             return false;
         }
     }

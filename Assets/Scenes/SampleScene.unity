@@ -2945,6 +2945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 0}
+  DefaultWeapon: {fileID: 11400000, guid: 9f62ed2b9422ff04db3835e1a441bc04, type: 2}
   overrideControllers: {fileID: 0}
 --- !u!1 &376836522
 GameObject:

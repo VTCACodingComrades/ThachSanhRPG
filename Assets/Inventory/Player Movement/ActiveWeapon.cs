@@ -8,6 +8,7 @@ public class ActiveWeapon : MonoBehaviour
     [SerializeField] public MonoBehaviour CurrenActiveWeapon {get; private set;}
     public AnimatorOverrideController overrideControllers;
     private string weaponName;
+    private int weaponDamage;
     //bool attackButton, isAttacking = false;
 
     private void Awake() {
@@ -28,8 +29,9 @@ public class ActiveWeapon : MonoBehaviour
         // AttackCoolDown();
         // timeBetweenAttacks = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().weaponCooldown;
         weaponName = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().itemName;
+        weaponDamage = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().damage; //Phuc them
         overrideControllers = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().animatorOverrideController;
-        Debug.Log(overrideControllers.name);
+        //Debug.Log(overrideControllers.name);
         playerAnimator.runtimeAnimatorController = overrideControllers; //-> Phuc them
 
     }
@@ -61,5 +63,9 @@ public class ActiveWeapon : MonoBehaviour
         playerAnimator.runtimeAnimatorController = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().animatorOverrideController;
     }
     
+    public int GetWeaponDamage()
+    {     
+        return weaponDamage;
+    }
     
 }

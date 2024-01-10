@@ -19,4 +19,6 @@ public class ItemAssets : MonoBehaviour
     public Sprite coinSprite;
     public Sprite medkit;
     public Sprite axe;
+    public Sprite hand;
+
 }

@@ -29,6 +29,7 @@ public class ActiveWeapon : MonoBehaviour
         // timeBetweenAttacks = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().weaponCooldown;
         weaponName = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().itemName;
         overrideControllers = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().animatorOverrideController;
+        Debug.Log(overrideControllers.name);
         playerAnimator.runtimeAnimatorController = overrideControllers; //-> Phuc them
 
     }

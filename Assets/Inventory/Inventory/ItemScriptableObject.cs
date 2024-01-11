@@ -11,6 +11,7 @@ public class ItemScriptableObject : ScriptableObject
     public Sprite itemSprite;
     public GameObject pfSword;
     public AnimatorOverrideController animatorOverrideController;
+    public int damage;
     
 
     // public CharacterEquipment.EquipSlot equipSlot;

@@ -10622,7 +10622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Edge: {fileID: 1550379904}
-  thurstForce: 3
+  thurstForce: 2
 --- !u!95 &1697754429
 Animator:
   serializedVersion: 5
@@ -10855,6 +10855,10 @@ PrefabInstance:
       propertyPath: health
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7598046940782778659, guid: 43927ce5b8e462e48ac20a39af0668b7, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 7264417325517988741, guid: c4ea62e665d2493448d6e5528667df3e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

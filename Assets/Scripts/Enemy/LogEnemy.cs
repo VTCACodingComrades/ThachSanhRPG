@@ -13,6 +13,8 @@ public class LogEnemy : Enemy
     private Animator enemyAnimator;
     private Vector3 initialPosition;
     private bool isSleeping = true;
+
+    [SerializeField] GameObject projectile;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +42,6 @@ public class LogEnemy : Enemy
             if (Vector3.Distance(transform.position, target.position) > attackRadius)
             {
                 //MoveTo(target.position);
-                Debug.Log("Di ne");
                 transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
                 Vector2 moveDirction = (target.position - transform.position).normalized;
                 enemyAnimator.SetFloat("MoveX", moveDirction.x);
@@ -49,7 +50,6 @@ public class LogEnemy : Enemy
             }
             else
             {
-                Debug.Log("Attack ne");
                 enemyAnimator.SetTrigger("Attack");
             }
         }

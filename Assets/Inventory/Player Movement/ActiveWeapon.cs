@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ActiveWeapon : MonoBehaviour
@@ -6,8 +7,10 @@ public class ActiveWeapon : MonoBehaviour
     [SerializeField] private Animator playerAnimator;
     public static ActiveWeapon Instance;
     [SerializeField] public MonoBehaviour CurrenActiveWeapon {get; private set;}
+    [SerializeField] ItemScriptableObject DefaultWeapon;
     public AnimatorOverrideController overrideControllers;
     private string weaponName;
+    private int weaponDamage;
     //bool attackButton, isAttacking = false;
 
     private void Awake() {
@@ -16,6 +19,9 @@ public class ActiveWeapon : MonoBehaviour
     private void Start() {
         Instance = this;
         playerAnimator = GetComponentInParent<Animator>();
+        CurrenActiveWeapon = DefaultWeapon.pfSword.GetComponent<MonoBehaviour>();
+        NewWeapon(CurrenActiveWeapon);
+        
     }
     private void Update() {
         //Attack(); //Phuc comment
@@ -28,8 +34,9 @@ public class ActiveWeapon : MonoBehaviour
         // AttackCoolDown();
         // timeBetweenAttacks = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().weaponCooldown;
         weaponName = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().itemName;
+        weaponDamage = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().damage; //Phuc them
         overrideControllers = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().animatorOverrideController;
-        Debug.Log(overrideControllers.name);
+        //Debug.Log(overrideControllers.name);
         playerAnimator.runtimeAnimatorController = overrideControllers; //-> Phuc them
 
     }
@@ -61,5 +68,9 @@ public class ActiveWeapon : MonoBehaviour
         playerAnimator.runtimeAnimatorController = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().animatorOverrideController;
     }
     
+    public int GetWeaponDamage()
+    {     
+        return weaponDamage;
+    }
     
 }

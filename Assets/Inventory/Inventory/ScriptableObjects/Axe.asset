@@ -17,3 +17,4 @@ MonoBehaviour:
   itemSprite: {fileID: 21300000, guid: cb49290a0e0fc68469ebc95fddf27a4f, type: 3}
   pfSword: {fileID: 865213935175162613, guid: ac2b11c4af1edce4fb471a9ae57c465d, type: 3}
   animatorOverrideController: {fileID: 22100000, guid: 9873028797d8a0047ac74088c21a4606, type: 2}
+  damage: 2

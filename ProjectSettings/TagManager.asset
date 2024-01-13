@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Smashable
   - Pushable
+  - CombatTarget
   layers:
   - Default
   - TransparentFX

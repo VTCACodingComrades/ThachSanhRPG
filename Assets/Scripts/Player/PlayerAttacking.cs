@@ -8,7 +8,8 @@ public class PlayerAttacking : MonoBehaviour
     //public AnimationEvents AnimationEvents;
     public event Action<string> OnCustomEvent = s => { };
     public Transform Edge;
-    //private int damage = 1;
+    public int thurstForce;
+    private int damage;
     //private int hitCount = 0;
     //[SerializeField] GameObject slashEffect;
     //[SerializeField] GameObject axeWeapon;
@@ -35,9 +36,18 @@ public class PlayerAttacking : MonoBehaviour
                 Collider2D[] hitColliders = Physics2D.OverlapBoxAll(Edge.position, Edge.localScale, 0);
                 foreach (Collider2D hitCollider in hitColliders)
                 {
-                    Pot combatTarget = hitCollider.GetComponent<Pot>();
-                    if (combatTarget == null) continue;
-                    combatTarget.GetComponent<Pot>().Smash();
+                    Pot combatTarget = hitCollider.gameObject.GetComponent<Pot>();
+                    if (combatTarget != null)
+                        combatTarget.GetComponent<Pot>().Smash();
+                    if (hitCollider.gameObject.CompareTag("CombatTarget"))
+                    {
+                        damage = ActiveWeapon.Instance.GetWeaponDamage();
+                        Debug.Log(damage);
+                        Rigidbody2D enemyRb = hitCollider.gameObject.GetComponent<Rigidbody2D>();
+                        Vector2 direction = (hitCollider.transform.position - transform.position).normalized * thurstForce;
+                        enemyRb.AddForce(direction, ForceMode2D.Impulse);
+                        hitCollider.GetComponent<Enemy>().TakeDamage(damage);
+                    }
                 }
                 break;
             //case "Throw":

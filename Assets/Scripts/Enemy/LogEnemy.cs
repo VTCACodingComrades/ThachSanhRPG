@@ -52,6 +52,7 @@ public class LogEnemy : Enemy
             }
             else
             {
+                FacingTo(target.position);
                 enemyAnimator.SetTrigger("Attack");
             }
         }
@@ -68,6 +69,14 @@ public class LogEnemy : Enemy
     private void MoveTo(Vector3 targetPosition)
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        Vector2 moveDirction = (targetPosition - transform.position).normalized;
+        enemyAnimator.SetFloat("MoveX", moveDirction.x);
+        enemyAnimator.SetFloat("MoveY", moveDirction.y);
+    }
+
+    private void FacingTo(Vector3 targetPosition)
+    {
+        //transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         Vector2 moveDirction = (targetPosition - transform.position).normalized;
         enemyAnimator.SetFloat("MoveX", moveDirction.x);
         enemyAnimator.SetFloat("MoveY", moveDirction.y);

@@ -13,6 +13,10 @@ public class LogEnemy : Enemy
     private Animator enemyAnimator;
     private Vector3 initialPosition;
     private bool isSleeping = true;
+
+    [SerializeField] Transform firePos;
+
+    [SerializeField] GameObject projectilePf;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +44,6 @@ public class LogEnemy : Enemy
             if (Vector3.Distance(transform.position, target.position) > attackRadius)
             {
                 //MoveTo(target.position);
-                Debug.Log("Di ne");
                 transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
                 Vector2 moveDirction = (target.position - transform.position).normalized;
                 enemyAnimator.SetFloat("MoveX", moveDirction.x);
@@ -49,7 +52,7 @@ public class LogEnemy : Enemy
             }
             else
             {
-                Debug.Log("Attack ne");
+                FacingTo(target.position);
                 enemyAnimator.SetTrigger("Attack");
             }
         }
@@ -69,6 +72,20 @@ public class LogEnemy : Enemy
         Vector2 moveDirction = (targetPosition - transform.position).normalized;
         enemyAnimator.SetFloat("MoveX", moveDirction.x);
         enemyAnimator.SetFloat("MoveY", moveDirction.y);
+    }
+
+    private void FacingTo(Vector3 targetPosition)
+    {
+        //transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        Vector2 moveDirction = (targetPosition - transform.position).normalized;
+        enemyAnimator.SetFloat("MoveX", moveDirction.x);
+        enemyAnimator.SetFloat("MoveY", moveDirction.y);
+    }
+
+    public void Fire()
+    {
+        GameObject projectile = Instantiate(projectilePf, firePos.transform.position, Quaternion.identity);
+        //projectile.GetComponent<Projectile>().LaunchProjectile();
     }
 }
 

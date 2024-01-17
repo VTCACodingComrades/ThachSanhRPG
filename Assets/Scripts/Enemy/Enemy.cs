@@ -6,25 +6,22 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     public string enemyName;
+    public GameObject deathEffect;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void TakeDamage(int damage)
     {
         health -= damage;
         if (health <= 0)
         {
+            DeathEffect();
             gameObject.SetActive(false);
         }
+    }
+
+    private void DeathEffect()
+    {
+        GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(effect, 1f);
     }
 }

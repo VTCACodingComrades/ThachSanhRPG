@@ -14,7 +14,9 @@ public class LogEnemy : Enemy
     private Vector3 initialPosition;
     private bool isSleeping = true;
 
-    [SerializeField] GameObject projectile;
+    [SerializeField] Transform firePos;
+
+    [SerializeField] GameObject projectilePf;
     // Start is called before the first frame update
     void Start()
     {
@@ -69,6 +71,12 @@ public class LogEnemy : Enemy
         Vector2 moveDirction = (targetPosition - transform.position).normalized;
         enemyAnimator.SetFloat("MoveX", moveDirction.x);
         enemyAnimator.SetFloat("MoveY", moveDirction.y);
+    }
+
+    public void Fire()
+    {
+        GameObject projectile = Instantiate(projectilePf, firePos.transform.position, Quaternion.identity);
+        //projectile.GetComponent<Projectile>().LaunchProjectile();
     }
 }
 

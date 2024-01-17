@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1442402767601894387}
   m_Layer: 0
   m_Name: Log
-  m_TagString: Untagged
+  m_TagString: CombatTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.18, y: 0.66, z: 0.04218608}
-  m_LocalScale: {x: 1.79, y: 1.79, z: 1.79}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2135ae7e10a442742802ee0081b15fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 3
   enemyName: 
   detectRadius: 4
   attackRadius: 2

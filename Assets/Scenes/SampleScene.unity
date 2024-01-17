@@ -10653,18 +10653,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1664019743}
     m_Modifications:
     - target: {fileID: 212758500354506663, guid: 43927ce5b8e462e48ac20a39af0668b7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212758500354506663, guid: 43927ce5b8e462e48ac20a39af0668b7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212758500354506663, guid: 43927ce5b8e462e48ac20a39af0668b7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212758500354506663, guid: 43927ce5b8e462e48ac20a39af0668b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.46
       objectReference: {fileID: 0}
@@ -10707,14 +10695,6 @@ PrefabInstance:
     - target: {fileID: 6945096628232061744, guid: 43927ce5b8e462e48ac20a39af0668b7, type: 3}
       propertyPath: m_Name
       value: Log
-      objectReference: {fileID: 0}
-    - target: {fileID: 6945096628232061744, guid: 43927ce5b8e462e48ac20a39af0668b7, type: 3}
-      propertyPath: m_TagString
-      value: CombatTarget
-      objectReference: {fileID: 0}
-    - target: {fileID: 7598046940782778659, guid: 43927ce5b8e462e48ac20a39af0668b7, type: 3}
-      propertyPath: health
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11700,7 +11680,7 @@ Transform:
   m_GameObject: {fileID: 6562006508835280485}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.161967, y: 6.47387, z: -10}
+  m_LocalPosition: {x: 7.0978174, y: 6.47358, z: -10}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []

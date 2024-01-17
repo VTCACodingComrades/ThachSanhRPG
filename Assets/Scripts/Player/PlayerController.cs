@@ -1,11 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.TextCore.Text;
 
 
 public enum PlayerState
@@ -16,30 +12,36 @@ public enum PlayerState
     push
 }
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
-    [SerializeField] Inventory inventory; // se duoc Awake() goi de khoi tao new inventory
+    private Inventory inventory; // se duoc Awake() goi de khoi tao new inventory
     [SerializeField] UI_Inventory ui_Inventory; // dung de goi ham SetInventoy()
     [SerializeField] private float moveSpeed;
+    [SerializeField] WeaponSO defaultWeapon;
+
     private Vector2 moveAmount;
     private Rigidbody2D playerRigidbody;
     private Animator playerAnimator;
     private PlayerState currentState;
+    private WeaponSO currentWeapon;
 
-    [SerializeField] WeaponSO defaultWeapon;
-    WeaponSO currentWeapon;
-    //GameObject equiptWeapon;
-
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+        
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponentInChildren<Animator>();
+        
         inventory = new Inventory(UseItem); // => khoi tao Inventory() => itemList
+        
+        //inventory = new Inventory();
+
         ui_Inventory.SetPlayerPos(this); // uiInventory lay vi tri player
     }
 
     private void Start()
     {
+        //inventory.useItemAction += UseItem;
         currentState = PlayerState.idle;
         if (currentWeapon == null)
         {
@@ -48,11 +50,16 @@ public class PlayerController : MonoBehaviour
         ui_Inventory.SetInventory(inventory); // bien inventory in doi tuong UI_Inventory duoi canvas da duoc gan gia tri
     }
 
-    public void EquipWeapon(WeaponSO weapon)
+    private void Update() {
+        Debug.Log("test: " + inventory.GetItemList().Count);
+        Debug.Log("in gia tri inventory "+inventory);
+    }
+
+    private void FixedUpdate()
     {
-        currentWeapon = weapon;
-        Animator animator = GetComponent<Animator>();
-        weapon.Spawn(animator);
+        if (currentState == PlayerState.idle)
+            Move();
+        UpdateAnimation();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -64,11 +71,20 @@ public class PlayerController : MonoBehaviour
     public void OnAttack(InputAction.CallbackContext value)
     {
         if (value.started && currentState != PlayerState.attack)
-        {
             Attack();
-        }
+    }
+    
+    private void Move()
+    {
+        playerRigidbody.MovePosition(playerRigidbody.position + moveAmount * moveSpeed * Time.deltaTime);
     }
 
+    public void EquipWeapon(WeaponSO weapon)
+    {
+        currentWeapon = weapon;
+        Animator animator = GetComponent<Animator>();
+        weapon.Spawn(animator);
+    }
     private void Attack()
     {
         currentState = PlayerState.attack;
@@ -80,18 +96,6 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         currentState = PlayerState.idle;
-    }
-
-    private void FixedUpdate()
-    {
-        if (currentState == PlayerState.idle)
-            Move();
-        UpdateAnimation();
-    }
-
-    private void Move()
-    {
-        playerRigidbody.MovePosition(playerRigidbody.position + moveAmount * moveSpeed * Time.deltaTime);
     }
 
     private void UpdateAnimation()
@@ -106,9 +110,9 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimator.SetBool("Walk", false);
         }    
-       
     }
 
+    //? Pushable
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Pushable"))
@@ -135,12 +139,13 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(ResetAttack());
     }
 
+
     public Vector3 GetPosition()
     {
         return transform.position;
     }
 
-    private void UseItem(Item item)
+    public void UseItem(Item item)
     {
         switch (item.itemScriptableObject.itemType) //? ~ item.itemType
         {
@@ -204,7 +209,6 @@ public class PlayerController : MonoBehaviour
         //newWeapon.GetComponentInChildren<SpriteRenderer>().sprite = null;
 
         //? tao image loai vu khi dang trang bi tren gnuoi player
-
         newWeapon.transform.GetChild(0).transform.localPosition = new Vector3(0, 0.4f, 0);
         newWeapon.transform.GetChild(0).transform.localEulerAngles = new Vector3(0,0,45f);
         newWeapon.transform.GetChild(0).transform.localScale = new Vector3(.1f, .1f, .1f);

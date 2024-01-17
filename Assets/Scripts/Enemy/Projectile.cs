@@ -46,4 +46,17 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }    
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Hit player");
+            Destroy(gameObject, 0.1f);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 }

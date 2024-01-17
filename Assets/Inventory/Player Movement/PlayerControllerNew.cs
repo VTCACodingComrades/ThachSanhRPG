@@ -29,6 +29,7 @@ public class PlayerControllerNew : MonoBehaviour
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         inventory = new Inventory(UseItem); // => khoi tao Inventory() => itemList
+        
         //ui_Inventory.SetPlayerPos(this); // uiInventory lay vi tri player
 
         activeWeaponTrans = GameObject.Find("ActiveWeapon").transform;

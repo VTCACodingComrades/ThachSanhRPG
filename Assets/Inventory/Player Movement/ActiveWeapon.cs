@@ -1,11 +1,11 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ActiveWeapon : MonoBehaviour
+public class ActiveWeapon : Singleton<ActiveWeapon>
 {
     //? gameobject = player
     [SerializeField] private Animator playerAnimator;
-    public static ActiveWeapon Instance;
+    //public static ActiveWeapon Instance;
     [SerializeField] public MonoBehaviour CurrenActiveWeapon {get; private set;}
     [SerializeField] ItemScriptableObject DefaultWeapon;
     public AnimatorOverrideController overrideControllers;
@@ -13,11 +13,11 @@ public class ActiveWeapon : MonoBehaviour
     private int weaponDamage;
     //bool attackButton, isAttacking = false;
 
-    private void Awake() {
-        
+    protected override void Awake() {
+        base.Awake();
     }
     private void Start() {
-        Instance = this;
+        //Instance = this;
         playerAnimator = GetComponentInParent<Animator>();
         CurrenActiveWeapon = DefaultWeapon.pfSword.GetComponent<MonoBehaviour>();
         NewWeapon(CurrenActiveWeapon);

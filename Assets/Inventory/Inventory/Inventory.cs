@@ -2,9 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Inventory : MonoBehaviour 
+public class Inventory
 {
-
     //? gameobject ko duoc gan vao Gameobject cu the
     //? duoc goi khi player Awake()
 
@@ -12,19 +11,13 @@ public class Inventory : MonoBehaviour
 
     private List<Item> itemList; //? chau cac phan tu kieu Item(itemType, amount)
     
-    private Action<Item> useItemAction; //? delegate void KIEU(item);
+    public Action<Item> useItemAction; //? delegate void KIEU(item);
     // public delegate void KIEU(Item item);
     // public KIEU kieu;
     // public event EventHandler<YourItem> OnAmountUsedItemChanged;
     // public class YourItem : EventArgs {
     //     public Item item1;
     // }
-
-
-#region ScriptableObject
-
-
-#endregion ScriptableObject
 
 
     //?player Awake() - khoi toa Inventoy() -> khoi toa itemList() kieu Item - KHI TEST 1
@@ -44,10 +37,26 @@ public class Inventory : MonoBehaviour
         AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
             itemType = Item.ItemType.HealthPotion }, 
             amount = 10});
+
         // AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
         //     itemType = Item.ItemType.Hand }, 
         //     amount = 1});
         PrinItemList();
+    }
+
+    public Inventory(){
+        Debug.Log("player -> khoi tao Inventory -> itemList -> add");
+
+        itemList = new List<Item>();
+
+        //? tao moi item kieu ScriptableObject va add vao itemList
+        AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
+            itemType = Item.ItemType.ManaPotion },
+            amount = 5});
+
+        AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
+            itemType = Item.ItemType.HealthPotion }, 
+            amount = 10});
     }
 
 

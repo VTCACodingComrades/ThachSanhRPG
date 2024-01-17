@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -7,7 +6,7 @@ using System;
 using CodeMonkey.Utils;
 
 
-public class UI_Inventory : MonoBehaviour
+public class UI_Inventory : Singleton<UI_Inventory>
 {
     
     //todo Gameobject = duoi tuong nam duoi Canvas Inventory
@@ -20,7 +19,9 @@ public class UI_Inventory : MonoBehaviour
     [SerializeField] private int ItemAmountOnRow = 5;
     [SerializeField] float itemSlotCellSize = 80f;
     
-    private void Awake() {
+    protected override void Awake() {
+        base.Awake();
+        
         itemSlotContainer = transform.Find("itemSlotContainer");
         itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
         

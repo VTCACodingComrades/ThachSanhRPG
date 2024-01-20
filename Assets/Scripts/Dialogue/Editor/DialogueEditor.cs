@@ -51,11 +51,20 @@ public class DialogueEditor : EditorWindow
         }
         else
         {
-            //EditorGUILayout.LabelField(selectedDialogue.name);
+            
             foreach(DialogueNode item in selectedDialogue.GetAllNodes())
             {
-                //EditorGUILayout.LabelField(item.text);
-                item.text = EditorGUILayout.TextField(item.text);
+                EditorGUI.BeginChangeCheck();
+                EditorGUILayout.LabelField("Node:");
+
+                string newText = EditorGUILayout.TextField(item.text);
+                string newIdText = EditorGUILayout.TextField(item.uniqueId);
+                if (EditorGUI.EndChangeCheck())
+                {                
+                    Undo.RecordObject(selectedDialogue, "Update Dialogue");
+                    item.text = newText;
+                    item.uniqueId = newIdText;
+                }
             }
         }
         Repaint();

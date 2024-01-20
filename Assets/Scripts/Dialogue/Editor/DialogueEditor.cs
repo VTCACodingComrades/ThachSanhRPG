@@ -8,6 +8,7 @@ using UnityEngine;
 public class DialogueEditor : EditorWindow
 {
     Dialogue selectedDialogue;
+    GUIStyle nodeStyle;
 
     [MenuItem("Window/Dialogue Editor")]
     public static void ShowEditorWindow()
@@ -31,6 +32,10 @@ public class DialogueEditor : EditorWindow
     private void OnEnable()
     {
         Selection.selectionChanged += OnSelectionChanged;
+        nodeStyle = new GUIStyle();
+        nodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
+        nodeStyle.padding = new RectOffset(20, 20, 20, 20);
+        nodeStyle.border = new RectOffset(20, 20, 20, 20);
     }
 
     private void OnSelectionChanged()
@@ -54,21 +59,26 @@ public class DialogueEditor : EditorWindow
             
             foreach(DialogueNode item in selectedDialogue.GetAllNodes())
             {
-                EditorGUI.BeginChangeCheck();
-                EditorGUILayout.LabelField("Node:");
-
-                string newText = EditorGUILayout.TextField(item.text);
-                string newIdText = EditorGUILayout.TextField(item.uniqueId);
-                if (EditorGUI.EndChangeCheck())
-                {                
-                    Undo.RecordObject(selectedDialogue, "Update Dialogue");
-                    item.text = newText;
-                    item.uniqueId = newIdText;
-                }
+                OnGUINode(item);
             }
         }
         Repaint();
     }
 
-    
+    private void OnGUINode(DialogueNode item)
+    {
+        GUILayout.BeginArea(item.position, nodeStyle);
+        EditorGUI.BeginChangeCheck();
+        EditorGUILayout.LabelField("Node:");
+        string newText = EditorGUILayout.TextField(item.text);
+        string newIdText = EditorGUILayout.TextField(item.uniqueId);
+        if (EditorGUI.EndChangeCheck())
+        {
+            Undo.RecordObject(selectedDialogue, "Update Dialogue");
+            item.text = newText;
+            item.uniqueId = newIdText;
+        }
+        GUILayout.EndArea();
+    }
+
 }

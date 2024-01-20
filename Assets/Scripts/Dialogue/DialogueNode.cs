@@ -8,4 +8,5 @@ public class DialogueNode
     public string uniqueId;
     public string text;
     public string[] childNode;
+    public Rect position;
 }

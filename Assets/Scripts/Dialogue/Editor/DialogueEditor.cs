@@ -9,6 +9,7 @@ public class DialogueEditor : EditorWindow
 {
     Dialogue selectedDialogue;
     GUIStyle nodeStyle;
+    private bool dragging = false;
 
     [MenuItem("Window/Dialogue Editor")]
     public static void ShowEditorWindow()
@@ -56,7 +57,7 @@ public class DialogueEditor : EditorWindow
         }
         else
         {
-            
+            ProcessEvent();
             foreach(DialogueNode item in selectedDialogue.GetAllNodes())
             {
                 OnGUINode(item);
@@ -65,9 +66,27 @@ public class DialogueEditor : EditorWindow
         Repaint();
     }
 
+    private void ProcessEvent()
+    {
+        if (Event.current.type == EventType.MouseDown && !dragging)
+        {
+            dragging = true;
+        }
+        else if (Event.current.type == EventType.MouseDrag && dragging)
+        {
+            Undo.RecordObject(selectedDialogue, "Move Dialogue Node");
+            selectedDialogue.GetRootNode().rect.position = Event.current.mousePosition;
+            GUI.changed = true;
+        }    
+        else if (Event.current.type == EventType.MouseUp && dragging)
+        { 
+            dragging = false;           
+        }
+    }
+
     private void OnGUINode(DialogueNode item)
     {
-        GUILayout.BeginArea(item.position, nodeStyle);
+        GUILayout.BeginArea(item.rect, nodeStyle);
         EditorGUI.BeginChangeCheck();
         EditorGUILayout.LabelField("Node:");
         string newText = EditorGUILayout.TextField(item.text);

@@ -9,7 +9,6 @@ public class DialogueEditor : EditorWindow
 {
     Dialogue selectedDialogue;
     GUIStyle nodeStyle;
-    private bool dragging = false;
     DialogueNode draggingNode = null;
     private Vector2 offsetPosition;
 
@@ -60,14 +59,20 @@ public class DialogueEditor : EditorWindow
         else
         {
             ProcessEvent();
-            foreach(DialogueNode item in selectedDialogue.GetAllNodes())
+            foreach(DialogueNode node in selectedDialogue.GetAllNodes())
             {
-                OnGUINode(item);
+                DrawNode(node);
             }
+            foreach (DialogueNode node in selectedDialogue.GetAllNodes())
+            {
+                DrawConnections(node);
+            }
+
         }
-        Repaint();
+        //Repaint();
     }
 
+    
     private void ProcessEvent()
     {
         if (Event.current.type == EventType.MouseDown && draggingNode == null)
@@ -99,7 +104,7 @@ public class DialogueEditor : EditorWindow
         return foundNode;
     }
 
-    private void OnGUINode(DialogueNode node)
+    private void DrawNode(DialogueNode node)
     {
         GUILayout.BeginArea(node.rect, nodeStyle);
         EditorGUI.BeginChangeCheck();
@@ -118,5 +123,24 @@ public class DialogueEditor : EditorWindow
         }     
         GUILayout.EndArea();
     }
+
+    private void DrawConnections(DialogueNode node)
+    {
+        Vector3 startPosition = new Vector2(node.rect.xMax, node.rect.center.y);
+        foreach (DialogueNode childNode in selectedDialogue.GetChildrenNode(node))
+        {        
+            Vector3 endPosition = new Vector2(childNode.rect.xMin, childNode.rect.center.y);
+            Vector3 offset =  endPosition - startPosition;
+            offset.y = 0;
+            offset.x *= 0.8f;
+            Handles.DrawBezier(
+                startPosition, endPosition,
+                startPosition + offset,
+                endPosition - offset, 
+                Color.white, null, 4f);
+        }    
+      
+    }
+
 
 }

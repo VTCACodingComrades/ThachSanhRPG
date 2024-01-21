@@ -43,13 +43,6 @@ public class Dialogue : ScriptableObject
         List<DialogueNode> result = new();
         foreach (string uniqueID in parentNode.childNode)
         {
-            //foreach (DialogueNode node in GetAllNodes())
-            //{
-            //    if (node.uniqueId == uniqueID)
-            //    {
-            //        result.Add(node);
-            //    }
-            //}
             result.Add(nodeLookup[uniqueID]);
         }
         return result;

@@ -99,19 +99,23 @@ public class DialogueEditor : EditorWindow
         return foundNode;
     }
 
-    private void OnGUINode(DialogueNode item)
+    private void OnGUINode(DialogueNode node)
     {
-        GUILayout.BeginArea(item.rect, nodeStyle);
+        GUILayout.BeginArea(node.rect, nodeStyle);
         EditorGUI.BeginChangeCheck();
         EditorGUILayout.LabelField("Node:");
-        string newText = EditorGUILayout.TextField(item.text);
-        string newIdText = EditorGUILayout.TextField(item.uniqueId);
+        string newText = EditorGUILayout.TextField(node.text);
+        string newIdText = EditorGUILayout.TextField(node.uniqueId);
+        foreach (DialogueNode childNode in selectedDialogue.GetChildrenNode(node))
+        {
+            EditorGUILayout.TextField(childNode.text);
+        }
         if (EditorGUI.EndChangeCheck())
         {
             Undo.RecordObject(selectedDialogue, "Update Dialogue");
-            item.text = newText;
-            item.uniqueId = newIdText;
-        }
+            node.text = newText;
+            node.uniqueId = newIdText;
+        }     
         GUILayout.EndArea();
     }
 

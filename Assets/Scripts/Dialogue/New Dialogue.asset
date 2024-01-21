@@ -17,6 +17,16 @@ MonoBehaviour:
     text: Hello
     childNode:
     - b
+    rect:
+      x: -1
+      y: 34
+      width: 200
+      height: 100
   - uniqueId: b
     text: Hello there
     childNode: []
+    rect:
+      x: 270
+      y: 41
+      width: 200
+      height: 100

@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e59fef1b16a8c4a9314566fe1ad42d, type: 3}
   m_Name: New Dialogue 1
   m_EditorClassIdentifier: 
-  nodes: []
+  nodes:
+  - uniqueId: 
+    text: 
+    childNode: []
+    rect:
+      x: 183
+      y: 45
+      width: 200
+      height: 100

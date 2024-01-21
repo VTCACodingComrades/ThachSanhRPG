@@ -10,6 +10,8 @@ public class DialogueEditor : EditorWindow
     Dialogue selectedDialogue;
     GUIStyle nodeStyle;
     private bool dragging = false;
+    DialogueNode draggingNode = null;
+    private Vector2 offsetPosition;
 
     [MenuItem("Window/Dialogue Editor")]
     public static void ShowEditorWindow()
@@ -68,20 +70,33 @@ public class DialogueEditor : EditorWindow
 
     private void ProcessEvent()
     {
-        if (Event.current.type == EventType.MouseDown && !dragging)
+        if (Event.current.type == EventType.MouseDown && draggingNode == null)
         {
-            dragging = true;
+            draggingNode = GetNodeAtPoint(Event.current.mousePosition);
+            if (draggingNode != null)
+                offsetPosition = draggingNode.rect.position - Event.current.mousePosition;
         }
-        else if (Event.current.type == EventType.MouseDrag && dragging)
+        else if (Event.current.type == EventType.MouseDrag && draggingNode != null)
         {
             Undo.RecordObject(selectedDialogue, "Move Dialogue Node");
-            selectedDialogue.GetRootNode().rect.position = Event.current.mousePosition;
+            draggingNode.rect.position = Event.current.mousePosition + offsetPosition;
             GUI.changed = true;
         }    
-        else if (Event.current.type == EventType.MouseUp && dragging)
-        { 
-            dragging = false;           
+        else if (Event.current.type == EventType.MouseUp && draggingNode != null)
+        {
+            draggingNode = null;
         }
+    }
+
+    private DialogueNode GetNodeAtPoint(Vector2 point)
+    {
+        DialogueNode foundNode = null;
+        foreach(DialogueNode node in selectedDialogue.GetAllNodes())
+        {
+            if (node.rect.Contains(point))
+                foundNode = node;
+        }
+        return foundNode;
     }
 
     private void OnGUINode(DialogueNode item)

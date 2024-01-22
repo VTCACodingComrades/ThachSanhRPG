@@ -14,6 +14,7 @@ public class DialogueEditor : EditorWindow
     [NonSerialized] DialogueNode creatingNode = null;
     [NonSerialized] DialogueNode deleteNode = null;
     [NonSerialized] DialogueNode linkingParentNode = null;
+    Vector2 scrollPosition;
 
     [MenuItem("Window/Dialogue Editor")]
     public static void ShowEditorWindow()
@@ -62,6 +63,8 @@ public class DialogueEditor : EditorWindow
         else
         {
             ProcessEvent();
+            scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
+            GUILayoutUtility.GetRect(4000, 4000);
             foreach(DialogueNode node in selectedDialogue.GetAllNodes())
             {
                 DrawNode(node);
@@ -70,6 +73,7 @@ public class DialogueEditor : EditorWindow
             {
                 DrawConnections(node);
             }
+            EditorGUILayout.EndScrollView();
             if(creatingNode != null)
             {
                 Undo.RecordObject(selectedDialogue, "Create Dialogue Node");
@@ -92,7 +96,7 @@ public class DialogueEditor : EditorWindow
     {
         if (Event.current.type == EventType.MouseDown && draggingNode == null)
         {
-            draggingNode = GetNodeAtPoint(Event.current.mousePosition);
+            draggingNode = GetNodeAtPoint(Event.current.mousePosition + scrollPosition);
             if (draggingNode != null)
                 offsetPosition = draggingNode.rect.position - Event.current.mousePosition;
         }

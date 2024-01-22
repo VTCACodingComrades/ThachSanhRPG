@@ -15,10 +15,20 @@ MonoBehaviour:
   nodes:
   - uniqueId: 
     text: Hi
+    childNode:
+    - 41b553ac-c9c4-4031-92a4-b3ff1c42edf1
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 48
+      width: 200
+      height: 100
+  - uniqueId: 41b553ac-c9c4-4031-92a4-b3ff1c42edf1
+    text: 
     childNode: []
     rect:
       serializedVersion: 2
-      x: 0
-      y: -1
+      x: 385
+      y: 81
       width: 200
       height: 100

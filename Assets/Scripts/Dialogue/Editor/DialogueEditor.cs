@@ -13,6 +13,7 @@ public class DialogueEditor : EditorWindow
     [NonSerialized] private Vector2 offsetPosition;
     [NonSerialized] DialogueNode creatingNode = null;
     [NonSerialized] DialogueNode deleteNode = null;
+    [NonSerialized] DialogueNode linkingParentNode = null;
 
     [MenuItem("Window/Dialogue Editor")]
     public static void ShowEditorWindow()
@@ -119,7 +120,7 @@ public class DialogueEditor : EditorWindow
     }
 
     private void DrawNode(DialogueNode node)
-    {         
+    {
         GUILayout.BeginArea(node.rect, nodeStyle);
         EditorGUI.BeginChangeCheck();
         //EditorGUILayout.LabelField("Node:");
@@ -141,6 +142,8 @@ public class DialogueEditor : EditorWindow
             Debug.Log("Delete node");
             deleteNode = node;
         }
+        DrawLinkingNode(node);
+
         if (GUILayout.Button("+"))
         {
             Debug.Log("Create new node");
@@ -148,6 +151,42 @@ public class DialogueEditor : EditorWindow
         }
         GUILayout.EndHorizontal();
         GUILayout.EndArea();
+    }
+
+    private void DrawLinkingNode(DialogueNode node)
+    {
+        if (linkingParentNode == null)
+        {
+            if (GUILayout.Button("link"))
+            {
+
+                linkingParentNode = node;
+            }
+        }
+        else if (node == linkingParentNode)
+        {
+            if (GUILayout.Button("cancel"))
+            {
+                linkingParentNode = null;
+            }
+        }
+        else if (linkingParentNode.childNode.Contains(node.uniqueId))
+        {
+            if (GUILayout.Button("unlink"))
+            {
+                linkingParentNode.childNode.Remove(node.uniqueId);
+                linkingParentNode = null;
+            }
+        }
+        else
+        {
+            if (GUILayout.Button("child"))
+            {
+                Undo.RecordObject(selectedDialogue, "Linking Dialogue");
+                linkingParentNode.childNode.Add(node.uniqueId);
+                linkingParentNode = null;
+            }
+        }
     }
 
     private void DrawConnections(DialogueNode node)

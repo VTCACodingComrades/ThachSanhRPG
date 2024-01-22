@@ -15,6 +15,8 @@ public class DialogueEditor : EditorWindow
     [NonSerialized] DialogueNode deleteNode = null;
     [NonSerialized] DialogueNode linkingParentNode = null;
     Vector2 scrollPosition;
+    [NonSerialized] bool draggingCavas = false;
+    [NonSerialized] private Vector2 dragOffsetPosition;
 
     [MenuItem("Window/Dialogue Editor")]
     public static void ShowEditorWindow()
@@ -99,16 +101,30 @@ public class DialogueEditor : EditorWindow
             draggingNode = GetNodeAtPoint(Event.current.mousePosition + scrollPosition);
             if (draggingNode != null)
                 offsetPosition = draggingNode.rect.position - Event.current.mousePosition;
+            else
+            {
+                draggingCavas = true;
+                dragOffsetPosition = Event.current.mousePosition + scrollPosition;
+            }    
         }
         else if (Event.current.type == EventType.MouseDrag && draggingNode != null)
         {
             Undo.RecordObject(selectedDialogue, "Move Dialogue Node");
             draggingNode.rect.position = Event.current.mousePosition + offsetPosition;
             GUI.changed = true;
-        }    
+        }
+        else if (Event.current.type == EventType.MouseDrag && draggingCavas == true)
+        {
+            scrollPosition = dragOffsetPosition - Event.current.mousePosition;
+            GUI.changed = true;
+        }
         else if (Event.current.type == EventType.MouseUp && draggingNode != null)
         {
             draggingNode = null;
+        }
+        else if (Event.current.type == EventType.MouseUp && draggingCavas)
+        {
+            draggingCavas = false;
         }
     }
 

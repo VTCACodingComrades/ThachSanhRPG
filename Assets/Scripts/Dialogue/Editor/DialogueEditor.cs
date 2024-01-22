@@ -8,9 +8,10 @@ using UnityEngine;
 public class DialogueEditor : EditorWindow
 {
     Dialogue selectedDialogue;
-    GUIStyle nodeStyle;
-    DialogueNode draggingNode = null;
-    private Vector2 offsetPosition;
+    [NonSerialized] GUIStyle nodeStyle;
+    [NonSerialized] DialogueNode draggingNode = null;
+    [NonSerialized] private Vector2 offsetPosition;
+    [NonSerialized] DialogueNode creatingNode = null;
 
     [MenuItem("Window/Dialogue Editor")]
     public static void ShowEditorWindow()
@@ -67,6 +68,12 @@ public class DialogueEditor : EditorWindow
             {
                 DrawConnections(node);
             }
+            if(creatingNode != null)
+            {
+                Undo.RecordObject(selectedDialogue, "Create Dialogue Node");
+                selectedDialogue.CreateNode(creatingNode);
+                creatingNode = null;
+            }
 
         }
         //Repaint();
@@ -105,22 +112,28 @@ public class DialogueEditor : EditorWindow
     }
 
     private void DrawNode(DialogueNode node)
-    {
+    {         
         GUILayout.BeginArea(node.rect, nodeStyle);
         EditorGUI.BeginChangeCheck();
-        EditorGUILayout.LabelField("Node:");
+        //EditorGUILayout.LabelField("Node:");
         string newText = EditorGUILayout.TextField(node.text);
-        string newIdText = EditorGUILayout.TextField(node.uniqueId);
-        foreach (DialogueNode childNode in selectedDialogue.GetChildrenNode(node))
-        {
-            EditorGUILayout.TextField(childNode.text);
-        }
+        //string newIdText = EditorGUILayout.TextField(node.uniqueId);
+        //foreach (DialogueNode childNode in selectedDialogue.GetChildrenNode(node))
+        //{
+        //    //EditorGUILayout.TextField(childNode.text);
+        //}
         if (EditorGUI.EndChangeCheck())
         {
             Undo.RecordObject(selectedDialogue, "Update Dialogue");
             node.text = newText;
-            node.uniqueId = newIdText;
-        }     
+            //node.uniqueId = newIdText;
+        }
+
+        if (GUILayout.Button("+"))
+        {
+            Debug.Log("Create new node");
+            creatingNode = node;
+        }
         GUILayout.EndArea();
     }
 

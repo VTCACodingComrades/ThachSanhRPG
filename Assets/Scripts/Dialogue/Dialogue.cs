@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Dialogue", menuName = "Dialogue", order = 0)]
 public class Dialogue : ScriptableObject
 {
-    [SerializeField] List<DialogueNode> nodes;
+    [SerializeField] List<DialogueNode> nodes = new();
     Dictionary<string, DialogueNode> nodeLookup = new();
 
 # if UNITY_EDITOR
@@ -14,6 +16,8 @@ public class Dialogue : ScriptableObject
     {
         if (nodes.Count == 0)
         {
+            DialogueNode rootNode = new();
+            rootNode.uniqueId = Guid.NewGuid().ToString();
             nodes.Add(new DialogueNode());
         }
     }
@@ -40,11 +44,22 @@ public class Dialogue : ScriptableObject
 
     public IEnumerable<DialogueNode> GetChildrenNode(DialogueNode parentNode)
     {
-        List<DialogueNode> result = new();
+        //List<DialogueNode> result = new();
         foreach (string uniqueID in parentNode.childNode)
         {
-            result.Add(nodeLookup[uniqueID]);
+            //result.Add(nodeLookup[uniqueID]);
+            if(nodeLookup.ContainsKey(uniqueID))
+                yield return nodeLookup[uniqueID];
         }
-        return result;
+        //return result;
+    }
+
+    public void CreateNode(DialogueNode parentNode)
+    {
+        DialogueNode newNode = new();
+        newNode.uniqueId = Guid.NewGuid().ToString();
+        nodes.Add(newNode);
+        parentNode.childNode.Add(newNode.uniqueId);
+        nodeLookup.Add(newNode.uniqueId, newNode);
     }
 }

@@ -12,6 +12,7 @@ public class DialogueEditor : EditorWindow
     [NonSerialized] DialogueNode draggingNode = null;
     [NonSerialized] private Vector2 offsetPosition;
     [NonSerialized] DialogueNode creatingNode = null;
+    [NonSerialized] DialogueNode deleteNode = null;
 
     [MenuItem("Window/Dialogue Editor")]
     public static void ShowEditorWindow()
@@ -74,6 +75,12 @@ public class DialogueEditor : EditorWindow
                 selectedDialogue.CreateNode(creatingNode);
                 creatingNode = null;
             }
+            if(deleteNode != null)
+            {
+                Undo.RecordObject(selectedDialogue, "Delete Dialogue Node");
+                selectedDialogue.DeleteNode(deleteNode);
+                deleteNode = null;
+            }
 
         }
         //Repaint();
@@ -128,12 +135,18 @@ public class DialogueEditor : EditorWindow
             node.text = newText;
             //node.uniqueId = newIdText;
         }
-
+        GUILayout.BeginHorizontal();
+        if (GUILayout.Button("x"))
+        {
+            Debug.Log("Delete node");
+            deleteNode = node;
+        }
         if (GUILayout.Button("+"))
         {
             Debug.Log("Create new node");
             creatingNode = node;
         }
+        GUILayout.EndHorizontal();
         GUILayout.EndArea();
     }
 

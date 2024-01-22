@@ -61,5 +61,17 @@ public class Dialogue : ScriptableObject
         nodes.Add(newNode);
         parentNode.childNode.Add(newNode.uniqueId);
         nodeLookup.Add(newNode.uniqueId, newNode);
+        OnValidate();
+    }
+
+    public void DeleteNode(DialogueNode deleteNode)
+    {
+        nodes.Remove(deleteNode);
+        nodeLookup.Remove(deleteNode.uniqueId);
+        OnValidate();
+        foreach(DialogueNode node in GetAllNodes())
+        {
+            node.childNode.Remove(deleteNode.uniqueId);
+        }
     }
 }

@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 374a8a28-fa9c-4d5c-a553-1376955e04a8
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 
+  text: Hi man
   children:
   - fe2f568e-81dd-40a4-bc15-89c95a57d184
   rect:

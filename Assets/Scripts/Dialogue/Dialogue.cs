@@ -13,6 +13,7 @@ namespace RPG.Dialogue
         List<DialogueNode> nodes = new List<DialogueNode>();
 
         Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
+        private  Vector2 offsetPosition = new(250, 0);
 
         private void OnValidate()
         {
@@ -62,13 +63,15 @@ namespace RPG.Dialogue
             Undo.DestroyObjectImmediate(nodeToDelete);
         }
 
-        private static DialogueNode MakeNode(DialogueNode parent)
+        private DialogueNode MakeNode(DialogueNode parent)
         {
             DialogueNode newNode = CreateInstance<DialogueNode>();
             newNode.name = Guid.NewGuid().ToString();
             if (parent != null)
             {
                 parent.AddChild(newNode.name);
+                newNode.MakeIsPlayerSpeaking(!parent.IsPlayerSpeaking());
+                newNode.SetPosition(parent.GetRect().position + offsetPosition);
             }
 
             return newNode;

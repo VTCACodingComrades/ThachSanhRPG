@@ -11102,6 +11102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAI: {fileID: 1700148069}
+  nextButton: {fileID: 1700148070}
 --- !u!114 &1700148069 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3039488577320835543, guid: a13f0ed6e43fadb47afdbaf2a8a7038e, type: 3}
@@ -11111,6 +11112,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1700148070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2336556915639062849, guid: a13f0ed6e43fadb47afdbaf2a8a7038e, type: 3}
+  m_PrefabInstance: {fileID: 1700148065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1720003043

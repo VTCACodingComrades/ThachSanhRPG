@@ -34,7 +34,7 @@ MonoBehaviour:
   m_Name: fe2f568e-81dd-40a4-bc15-89c95a57d184
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
+  text: Hi Thach Sanh
   children:
   - b56f74e8-7cbd-49cf-b384-440a9731f5a7
   - 61eceabf-3fba-4a8a-8b41-a7dcb64f8c99
@@ -42,6 +42,27 @@ MonoBehaviour:
     serializedVersion: 2
     x: 249
     y: 65
+    width: 200
+    height: 100
+--- !u!114 &-2954161740233435785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: b9942a27-3aa9-4baf-8bf8-13920d603fb1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hello Thach Sanh
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 255
+    y: 177
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -61,6 +82,7 @@ MonoBehaviour:
   - {fileID: -3825318472334099293}
   - {fileID: 6668545093607117809}
   - {fileID: -7756710075394828733}
+  - {fileID: -2954161740233435785}
 --- !u!114 &6668545093607117809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,6 +120,7 @@ MonoBehaviour:
   text: Hi man
   children:
   - fe2f568e-81dd-40a4-bc15-89c95a57d184
+  - b9942a27-3aa9-4baf-8bf8-13920d603fb1
   rect:
     serializedVersion: 2
     x: 14

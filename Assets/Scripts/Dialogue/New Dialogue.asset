@@ -36,14 +36,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Thach Sanh
   isPlayerSpeaking: 0
-  text: Hi there
+  text: I go to recuse princess
   children:
   - b56f74e8-7cbd-49cf-b384-440a9731f5a7
   - 61eceabf-3fba-4a8a-8b41-a7dcb64f8c99
   rect:
     serializedVersion: 2
-    x: 250
-    y: 64
+    x: 246
+    y: 60
     width: 200
     height: 100
 --- !u!114 &-2954161740233435785
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Thach Sanh
   isPlayerSpeaking: 0
-  text: Who are you
+  text: I walk for fun
   children: []
   rect:
     serializedVersion: 2
@@ -122,13 +122,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Old man
   isPlayerSpeaking: 1
-  text: Hi man
+  text: Where do you go
   children:
   - fe2f568e-81dd-40a4-bc15-89c95a57d184
   - b9942a27-3aa9-4baf-8bf8-13920d603fb1
   rect:
     serializedVersion: 2
-    x: 15
-    y: 54
+    x: 18
+    y: 56
     width: 200
     height: 100

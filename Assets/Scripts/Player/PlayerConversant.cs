@@ -58,4 +58,10 @@ public class PlayerConversant : MonoBehaviour
         else
             return "";
     }
+
+    public IEnumerable<string> GetChoice()
+    {
+        yield return "I go to recuse princess";
+        yield return "I walk for fun";
+    }
 }

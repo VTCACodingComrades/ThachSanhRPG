@@ -12,7 +12,8 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI textAI;
     [SerializeField] Button nextButton;
     [SerializeField] Button closeButton;
-   
+    [SerializeField] Transform choiceRoot;
+    [SerializeField] GameObject choicePrefab;
 
     private void Start()
     {
@@ -48,5 +49,11 @@ public class DialogueUI : MonoBehaviour
         speakerText.text = playerConversant.GetSpeakerText();
         textAI.text = playerConversant.GetText();
         nextButton.gameObject.SetActive(playerConversant.HasNext());
+        choiceRoot.DetachChildren();
+        foreach(var item in playerConversant.GetChoice())
+        {
+            Instantiate(choicePrefab, choiceRoot);
+            choicePrefab.GetComponentInChildren<TextMeshProUGUI>().text = item;
+        }
     }
 }

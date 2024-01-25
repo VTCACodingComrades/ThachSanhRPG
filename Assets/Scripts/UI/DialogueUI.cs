@@ -1,3 +1,4 @@
+using RPG.Dialogue;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,15 +13,18 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI textAI;
     [SerializeField] Button nextButton;
     [SerializeField] Button closeButton;
+    [SerializeField] GameObject reponseAI;
     [SerializeField] Transform choiceRoot;
     [SerializeField] GameObject choicePrefab;
+    [SerializeField] GameObject dialogueUI;
 
-    private void Start()
+    private void Awake()
     {
         playerConversant = GameObject.Find("Player").GetComponent<PlayerConversant>();
-        UpdateTextUI();
-        
+        //UpdateTextUI();
+        playerConversant.OnStartConversant.AddListener(UpdateTextUI);      
     }
+
     private void OnEnable()
     {
         nextButton.onClick.AddListener(NextButton);
@@ -35,25 +39,42 @@ public class DialogueUI : MonoBehaviour
 
     private void CloseButton()
     {
-        gameObject.SetActive(false);
+        dialogueUI.SetActive(false);
     }
 
     public void NextButton()
     {
+        //Debug.Log("Click ne");
         playerConversant.GetNextText();
         UpdateTextUI();
     }
 
     private void UpdateTextUI()
     {
-        speakerText.text = playerConversant.GetSpeakerText();
-        textAI.text = playerConversant.GetText();
-        nextButton.gameObject.SetActive(playerConversant.HasNext());
-        choiceRoot.DetachChildren();
-        foreach(var item in playerConversant.GetChoice())
+        dialogueUI.SetActive(true);
+        reponseAI.SetActive(!playerConversant.IsChoose());
+        choiceRoot.gameObject.SetActive(playerConversant.IsChoose());
+        speakerText.text = playerConversant.GetSpeakerText();      
+        
+        if (playerConversant.IsChoose())
         {
-            Instantiate(choicePrefab, choiceRoot);
-            choicePrefab.GetComponentInChildren<TextMeshProUGUI>().text = item;
+            choiceRoot.DetachChildren();
+            foreach (DialogueNode node in playerConversant.GetChoice())
+            {
+                speakerText.text = node.GetSpeakerText();
+                GameObject choice = Instantiate(choicePrefab, choiceRoot);
+                choice.GetComponentInChildren<TextMeshProUGUI>().text = node.GetText();
+                choice.GetComponent<Button>().onClick.AddListener(() =>
+                {
+                    playerConversant.SelectChoice(node);
+                    NextButton();
+                });
+            }
+        }
+        else
+        {
+            textAI.text = playerConversant.GetText();
+            nextButton.gameObject.SetActive(playerConversant.HasNext());
         }
     }
 }

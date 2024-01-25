@@ -12,14 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: 61eceabf-3fba-4a8a-8b41-a7dcb64f8c99
   m_EditorClassIdentifier: 
-  speakerName: 
-  isPlayerSpeaking: 1
-  text: 
+  speakerName: Old man
+  isPlayerSpeaking: 0
+  text: Let train a little
   children: []
   rect:
     serializedVersion: 2
-    x: 505
-    y: 210
+    x: 698
+    y: 159
+    width: 200
+    height: 100
+--- !u!114 &-6172107810008516711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 9ec33836-6ee9-4ab6-b0a0-6e54ebfa36a9
+  m_EditorClassIdentifier: 
+  speakerName: Old man
+  isPlayerSpeaking: 0
+  text: Where do you go
+  children:
+  - fe2f568e-81dd-40a4-bc15-89c95a57d184
+  - b9942a27-3aa9-4baf-8bf8-13920d603fb1
+  rect:
+    serializedVersion: 2
+    x: 218
+    y: 120
     width: 200
     height: 100
 --- !u!114 &-3825318472334099293
@@ -35,15 +59,15 @@ MonoBehaviour:
   m_Name: fe2f568e-81dd-40a4-bc15-89c95a57d184
   m_EditorClassIdentifier: 
   speakerName: Thach Sanh
-  isPlayerSpeaking: 0
+  isPlayerSpeaking: 1
   text: I go to recuse princess
   children:
   - b56f74e8-7cbd-49cf-b384-440a9731f5a7
   - 61eceabf-3fba-4a8a-8b41-a7dcb64f8c99
   rect:
     serializedVersion: 2
-    x: 246
-    y: 60
+    x: 439
+    y: 70
     width: 200
     height: 100
 --- !u!114 &-2954161740233435785
@@ -59,13 +83,14 @@ MonoBehaviour:
   m_Name: b9942a27-3aa9-4baf-8bf8-13920d603fb1
   m_EditorClassIdentifier: 
   speakerName: Thach Sanh
-  isPlayerSpeaking: 0
+  isPlayerSpeaking: 1
   text: I walk for fun
-  children: []
+  children:
+  - 5d7c7160-444f-4708-b1b0-52783daa9c16
   rect:
     serializedVersion: 2
-    x: 255
-    y: 182
+    x: 437
+    y: 226
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -86,6 +111,30 @@ MonoBehaviour:
   - {fileID: 6668545093607117809}
   - {fileID: -7756710075394828733}
   - {fileID: -2954161740233435785}
+  - {fileID: -6172107810008516711}
+  - {fileID: 2774110271309963358}
+--- !u!114 &2774110271309963358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 5d7c7160-444f-4708-b1b0-52783daa9c16
+  m_EditorClassIdentifier: 
+  speakerName: Old man
+  isPlayerSpeaking: 0
+  text: Let fight for better future
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 692
+    y: 266
+    width: 200
+    height: 100
 --- !u!114 &6668545093607117809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,14 +147,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: b56f74e8-7cbd-49cf-b384-440a9731f5a7
   m_EditorClassIdentifier: 
-  speakerName: 
-  isPlayerSpeaking: 1
-  text: 
+  speakerName: Old man
+  isPlayerSpeaking: 0
+  text: 'Good luck young man '
   children: []
   rect:
     serializedVersion: 2
-    x: 488
-    y: 37
+    x: 704
+    y: 30
     width: 200
     height: 100
 --- !u!114 &8955849145719824030
@@ -121,14 +170,13 @@ MonoBehaviour:
   m_Name: 374a8a28-fa9c-4d5c-a553-1376955e04a8
   m_EditorClassIdentifier: 
   speakerName: Old man
-  isPlayerSpeaking: 1
-  text: Where do you go
+  isPlayerSpeaking: 0
+  text: Hi young man
   children:
-  - fe2f568e-81dd-40a4-bc15-89c95a57d184
-  - b9942a27-3aa9-4baf-8bf8-13920d603fb1
+  - 9ec33836-6ee9-4ab6-b0a0-6e54ebfa36a9
   rect:
     serializedVersion: 2
-    x: 18
-    y: 56
+    x: -13
+    y: 105
     width: 200
     height: 100

@@ -3,21 +3,31 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerConversant : MonoBehaviour
 {
     [SerializeField] Dialogue currentDialogue;
     DialogueNode currentNode;
-    bool hasNext = true;
+    [SerializeField] bool isChoose = false;
+    public UnityEvent OnStartConversant;
+
     void Start()
     {
-        currentNode = currentDialogue.GetRootNode();
+        //currentNode = currentDialogue.GetRootNode();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void StartConversant(Dialogue dialogue)
+    {
+        currentDialogue = dialogue;
+        currentNode = currentDialogue.GetRootNode();
+        OnStartConversant.Invoke();
     }
 
     public string GetText()
@@ -32,21 +42,31 @@ public class PlayerConversant : MonoBehaviour
 
     public void GetNextText()
     {
-        DialogueNode[] nodes = currentDialogue.GetAllChildren(currentNode).ToArray();
+        int numPlayerReponse = currentDialogue.GetPlayerChildren(currentNode).Count();
+        if(numPlayerReponse > 0)
+        {
+            isChoose = true;
+            return;
+        }
+
+        DialogueNode[] nodes = currentDialogue.GetAIChildren(currentNode).ToArray();
         if(nodes.Length != 0)
         {
-            hasNext = true;
             int randomIndex = Random.Range(0, nodes.Length);
             currentNode = nodes[randomIndex];
         }
-        {
-            hasNext = false;
-        }
+    }
+
+    public void SelectChoice(DialogueNode node)
+    {
+        currentNode = node;
+        isChoose = false;
     }
 
     public bool HasNext()
     {
-        return hasNext;
+        //return hasNext;
+        return currentNode.GetChildren().Count() != 0;
     }
 
     internal string GetSpeakerText()
@@ -59,9 +79,13 @@ public class PlayerConversant : MonoBehaviour
             return "";
     }
 
-    public IEnumerable<string> GetChoice()
+    public IEnumerable<DialogueNode> GetChoice()
     {
-        yield return "I go to recuse princess";
-        yield return "I walk for fun";
+        return currentDialogue.GetPlayerChildren(currentNode);
+    }
+
+    public bool IsChoose()
+    {
+        return isChoose;
     }
 }

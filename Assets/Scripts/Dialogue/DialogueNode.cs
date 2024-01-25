@@ -9,6 +9,8 @@ namespace RPG.Dialogue
     public class DialogueNode : ScriptableObject
     {
         [SerializeField]
+        string speakerName;
+        [SerializeField]
         bool isPlayerSpeaking = false;
         [SerializeField]
         string text;
@@ -72,6 +74,21 @@ namespace RPG.Dialogue
         internal void MakeIsPlayerSpeaking(bool newIsPlayerSpeaking)
         {
             isPlayerSpeaking = newIsPlayerSpeaking;
+        }
+
+        public string GetSpeakerText()
+        {
+            return speakerName;
+        }
+
+        public void SetSpeakerText(string newText)
+        {
+            if (newText != text)
+            {
+                Undo.RecordObject(this, "Update Dialogue Text");
+                speakerName = newText;
+            }
+            EditorUtility.SetDirty(this);
         }
 #endif
     }

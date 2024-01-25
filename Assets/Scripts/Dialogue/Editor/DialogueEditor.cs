@@ -169,6 +169,7 @@ namespace RPG.Dialogue.Editor
             GUILayout.BeginArea(node.GetRect(), style);
             EditorGUI.BeginChangeCheck();
 
+            node.SetSpeakerText(EditorGUILayout.TextField(node.GetSpeakerText()));
             node.SetText(EditorGUILayout.TextField(node.GetText()));
 
             GUILayout.BeginHorizontal();

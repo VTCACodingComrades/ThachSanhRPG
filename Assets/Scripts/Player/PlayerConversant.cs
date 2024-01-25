@@ -48,4 +48,14 @@ public class PlayerConversant : MonoBehaviour
     {
         return hasNext;
     }
+
+    internal string GetSpeakerText()
+    {
+        if (currentDialogue != null)
+        {
+            return currentNode.GetSpeakerText();
+        }
+        else
+            return "";
+    }
 }

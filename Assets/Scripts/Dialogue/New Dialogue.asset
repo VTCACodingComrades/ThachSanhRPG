@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: 61eceabf-3fba-4a8a-8b41-a7dcb64f8c99
   m_EditorClassIdentifier: 
+  speakerName: 
   isPlayerSpeaking: 1
   text: 
   children: []
@@ -33,15 +34,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: fe2f568e-81dd-40a4-bc15-89c95a57d184
   m_EditorClassIdentifier: 
+  speakerName: Thach Sanh
   isPlayerSpeaking: 0
-  text: Hi Thach Sanh
+  text: Hi there
   children:
   - b56f74e8-7cbd-49cf-b384-440a9731f5a7
   - 61eceabf-3fba-4a8a-8b41-a7dcb64f8c99
   rect:
     serializedVersion: 2
-    x: 249
-    y: 65
+    x: 250
+    y: 64
     width: 200
     height: 100
 --- !u!114 &-2954161740233435785
@@ -56,13 +58,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: b9942a27-3aa9-4baf-8bf8-13920d603fb1
   m_EditorClassIdentifier: 
+  speakerName: Thach Sanh
   isPlayerSpeaking: 0
-  text: Hello Thach Sanh
+  text: Who are you
   children: []
   rect:
     serializedVersion: 2
     x: 255
-    y: 177
+    y: 182
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -95,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: b56f74e8-7cbd-49cf-b384-440a9731f5a7
   m_EditorClassIdentifier: 
+  speakerName: 
   isPlayerSpeaking: 1
   text: 
   children: []
@@ -116,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: 374a8a28-fa9c-4d5c-a553-1376955e04a8
   m_EditorClassIdentifier: 
+  speakerName: Old man
   isPlayerSpeaking: 1
   text: Hi man
   children:
@@ -123,7 +128,7 @@ MonoBehaviour:
   - b9942a27-3aa9-4baf-8bf8-13920d603fb1
   rect:
     serializedVersion: 2
-    x: 14
-    y: 55
+    x: 15
+    y: 54
     width: 200
     height: 100

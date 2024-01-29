@@ -37,6 +37,8 @@ public class PlayerController : Singleton<PlayerController>
         //inventory = new Inventory();
 
         ui_Inventory.SetPlayerPos(this); // uiInventory lay vi tri player
+
+        CameraController.Instance.SetPlayerCameraFollow();
     }
 
     private void Start()

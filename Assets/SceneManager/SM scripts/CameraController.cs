@@ -6,6 +6,8 @@ using UnityEngine;
 public class CameraController : Singleton<CameraController>
 {
     private CinemachineVirtualCamera cinemachineVirtualCamera;
+
+
     public void SetPlayerCameraFollow()
     {
         cinemachineVirtualCamera = FindObjectOfType<CinemachineVirtualCamera>();// tham chieu den camera cua scene hien tai

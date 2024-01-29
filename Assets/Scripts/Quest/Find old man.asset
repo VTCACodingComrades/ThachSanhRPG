@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Find old man
   m_EditorClassIdentifier: 
   objectives:
-  - 
+  - Meet old man
+  - Talk to him

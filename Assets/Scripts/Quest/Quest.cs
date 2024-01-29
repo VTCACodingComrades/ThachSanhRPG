@@ -16,5 +16,10 @@ public class Quest : ScriptableObject
     {
         return objectives.Length;
     }
+
+    public string GetObjective(int index)
+    {
+        return objectives[index];
+    }
 }
 

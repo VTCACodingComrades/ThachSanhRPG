@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Eliminate 3 log enemy
   m_EditorClassIdentifier: 
   objectives:
-  - 
-  - 
-  - 
+  - Eliminate log 1
+  - Eliminate log 2
+  - Eliminate log 3

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneManagement : Singleton<SceneManagement>
 {
@@ -13,5 +14,48 @@ public class SceneManagement : Singleton<SceneManagement>
     public void SetTransitionName(string sceneTransitionName) {
         this.SceneTransitionName = sceneTransitionName;
         Debug.Log("co gan vi tri cho player " + transform.position);
+    }
+
+    //todo change scene 18-11-2023
+    private Scene currentScene;
+    private int currentSceneIndex;
+    public enum Scenes
+    {
+        MainMenu, //0
+        SampleScene,//1
+        Scene_01, //2
+        Scene_02 //3
+    }
+    public void ExitGame() {
+        Application.Quit();
+    }
+
+    public void LoadScene(Scenes scene) //? Load den scene bat ki trong enum
+    {
+        SceneManager.LoadSceneAsync(scene.ToString());
+    }
+
+    public void LoadNewGame() //? khi nhan nut play se load den scene_01
+    {
+        SceneManager.LoadSceneAsync(Scenes.SampleScene.ToString()); // = "Scene_01"
+    }
+
+    public void ResumeGame() //? quay tro lai scene dang dung
+    {
+        SceneManager.LoadSceneAsync(currentSceneIndex);
+    }
+
+    public void LoadNextScene() //? Load den scene ke tiep KHONG LIEN QUAN den ontrigger ExitArea.cs
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+    }
+
+    public void BackToMainMenu() 
+    {
+        currentScene = SceneManager.GetActiveScene();
+        currentSceneIndex = currentScene.buildIndex;
+        Debug.Log("scene vua roi khoi = "+currentSceneIndex);
+        
+        SceneManager.LoadScene(Scenes.MainMenu.ToString());
     }
 }

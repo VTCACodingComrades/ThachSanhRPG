@@ -18,6 +18,8 @@ public class EntranceArea : MonoBehaviour
             CameraController.Instance.SetPlayerCameraFollow(); // lam cho camera cua scene hien tai follow theo player
 
             UIFadeChangeScene.Instance.FadeToClear();
+
+            SceneManagement.Instance.SetTransitionName(null); // reset lai gia tri SceneTransitionName = null
         }
     }
 }

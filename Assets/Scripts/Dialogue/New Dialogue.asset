@@ -19,9 +19,11 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 698
-    y: 159
+    y: 161
     width: 200
     height: 100
+  enterNodeAction: 
+  exitNodeAction: Give quest
 --- !u!114 &-6172107810008516711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,6 +48,8 @@ MonoBehaviour:
     y: 120
     width: 200
     height: 100
+  enterNodeAction: 
+  exitNodeAction: 
 --- !u!114 &-3825318472334099293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +74,8 @@ MonoBehaviour:
     y: 70
     width: 200
     height: 100
+  enterNodeAction: 
+  exitNodeAction: 
 --- !u!114 &-2954161740233435785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +99,8 @@ MonoBehaviour:
     y: 226
     width: 200
     height: 100
+  enterNodeAction: 
+  exitNodeAction: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +143,8 @@ MonoBehaviour:
     y: 266
     width: 200
     height: 100
+  enterNodeAction: 
+  exitNodeAction: Give quest
 --- !u!114 &6668545093607117809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,10 +163,12 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 704
+    x: 705
     y: 30
     width: 200
     height: 100
+  enterNodeAction: 
+  exitNodeAction: Give quest
 --- !u!114 &8955849145719824030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +192,5 @@ MonoBehaviour:
     y: 105
     width: 200
     height: 100
+  enterNodeAction: 
+  exitNodeAction: 

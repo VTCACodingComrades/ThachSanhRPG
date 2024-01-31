@@ -39,7 +39,8 @@ public class DialogueUI : MonoBehaviour
 
     private void CloseButton()
     {
-        dialogueUI.SetActive(false);
+        playerConversant.Quit();
+        dialogueUI.SetActive(false);      
     }
 
     public void NextButton()

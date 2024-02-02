@@ -10,8 +10,14 @@ public class QuestListUI : MonoBehaviour
     private void Start()
     {
         PlayerQuest playerQuest = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerQuest>();
+        playerQuest.OnQuestStatusUpdate.AddListener(() =>Setup(playerQuest));
+        Setup(playerQuest);
+    }
+
+    private void Setup(PlayerQuest playerQuest)
+    {
         transform.DetachChildren();
-        foreach(QuestStatus questStatus in playerQuest.GetQuest())
+        foreach (QuestStatus questStatus in playerQuest.GetQuest())
         {
             QuestItemUI questItemUI = Instantiate<QuestItemUI>(questItemUIPrefab, transform);
             questItemUI.SetUp(questStatus);

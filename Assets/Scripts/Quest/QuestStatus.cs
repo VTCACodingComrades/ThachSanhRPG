@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using UnityEngine;
 public class QuestStatus
 {
     [SerializeField] Quest quest;
-    [SerializeField] List<string> completedObjective = null;
+    [SerializeField] List<string> completedObjective = new List<string>();
 
     public QuestStatus(Quest quest)
     {
@@ -21,13 +22,27 @@ public class QuestStatus
 
     public bool IsObjectiveComplete(string objective)
     {
-        if (completedObjective == null) return false;
+        //if (completedObjective == null) return false;
         return completedObjective.Contains(objective);
+
     }
 
     public int GetCompletedObjectiveQuantity()
     {
         if (completedObjective == null) return 0;
         return completedObjective.Count();
+    }
+
+    public void CompleteObjective(string objective)
+    {
+       if (quest.HasObjective(objective))
+       {
+           completedObjective.Add(objective);
+       }
+    }
+
+    public List<string> GetObjectives()
+    {
+        return completedObjective;
     }
 }

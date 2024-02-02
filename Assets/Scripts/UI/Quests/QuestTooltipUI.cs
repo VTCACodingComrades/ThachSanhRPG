@@ -16,13 +16,15 @@ public class QuestTooltipUI : MonoBehaviour
         title.text = quest.GetTitle();
         for(int i = 0; i < quest.GetObjectiveNumber(); i++)
         {
-            GameObject prefab = objectiveImcompletePrefab; 
-            if (status.IsObjectiveComplete(quest.GetObjective(i)))
+            GameObject prefab = objectiveImcompletePrefab;
+            
+            if (status.IsObjectiveComplete(quest.GetObjective(i).reference))
             {
                 prefab = objectivePrefab;
             }
+            
             GameObject objectiveObject = Instantiate(prefab, objectivesContainer);
-            objectiveObject.GetComponentInChildren<TextMeshProUGUI>().text = quest.GetObjective(i);
+            objectiveObject.GetComponentInChildren<TextMeshProUGUI>().text = quest.GetObjective(i).description;
         }
     }
 }

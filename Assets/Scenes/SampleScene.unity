@@ -12125,6 +12125,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questsStatus: []
+  OnQuestStatusUpdate:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1700148065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12793,6 +12796,8 @@ GameObject:
   - component: {fileID: 1957357074}
   - component: {fileID: 1957357075}
   - component: {fileID: 1957357076}
+  - component: {fileID: 1957357078}
+  - component: {fileID: 1957357077}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -13013,7 +13018,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4548b3d3bc99eb40af9bf997f6dd00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: 6ebda4ed4c1ec084ca7a1f2a7c16693d, type: 2}
+  quest: {fileID: 11400000, guid: fa89144c2c98e0b49beae5dc03e2fd14, type: 2}
+--- !u!114 &1957357077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957357064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bea8434b9f15f45bcdf8bcd3e80c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: fa89144c2c98e0b49beae5dc03e2fd14, type: 2}
+  objective: 1
+--- !u!114 &1957357078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957357064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447bfab678128fd479a72a2b21e5f825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionTrigger: Complete
+  OnDialogueTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1957357077}
+        m_TargetAssemblyTypeName: QuestCompletion, Assembly-CSharp
+        m_MethodName: CompleteObjective
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2062420832
 GameObject:
   m_ObjectHideFlags: 0

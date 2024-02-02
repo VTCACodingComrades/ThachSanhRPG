@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,22 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Quest", menuName = "Quest", order = 0)]
 public class Quest : ScriptableObject
 {
-    [SerializeField] string[] objectives;
+    [SerializeField] List<Objective> objectives = new List<Objective>();
+    [SerializeField] List<Reward> rewards = new List<Reward>();
+
+    [System.Serializable]
+    class Reward
+    {
+        public int number;
+        public Item item;
+    }
+
+    [System.Serializable]
+    public class Objective
+    {
+        public string reference;
+        public string description;
+    }
 
     public string GetTitle()
     {
@@ -14,12 +30,25 @@ public class Quest : ScriptableObject
 
     public int GetObjectiveNumber()
     {
-        return objectives.Length;
+        return objectives.Count;
     }
 
-    public string GetObjective(int index)
+    public Objective GetObjective(int index)
     {
         return objectives[index];
+    }
+
+    public bool HasObjective(string objectiveRef)
+    {
+        foreach(var objective in objectives)
+        {
+            if (objectiveRef == objective.reference)
+            {
+                return true;
+            }
+        }
+        return false; 
+        //return objectives.Contains(objective);
     }
 }
 

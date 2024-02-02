@@ -102,10 +102,14 @@ public class PlayerConversant : MonoBehaviour
 
     private void OnExitAction()
     {
-        DialogueTrigger dialogueTrigger = currentConversant.GetComponent<DialogueTrigger>();
-        if (currentNode != null && currentNode.GetExitAction() != "")
+        //DialogueTrigger dialogueTrigger = currentConversant.GetComponent<DialogueTrigger>();
+        DialogueTrigger[] dialogueTriggers = currentConversant.GetComponents<DialogueTrigger>();
+        foreach(DialogueTrigger dialogueTrigger in dialogueTriggers)
         {
-            dialogueTrigger.Trigger(currentNode.GetExitAction());
+            if (currentNode != null && currentNode.GetExitAction() != "")
+            {
+                dialogueTrigger.Trigger(currentNode.GetExitAction());
+            }
         }
     }
 }

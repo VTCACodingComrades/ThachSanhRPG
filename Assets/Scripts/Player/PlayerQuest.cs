@@ -24,11 +24,29 @@ public class PlayerQuest : MonoBehaviour
 
     public void CompleteObjective(Quest quest, string objective)
     {
-        //Debug.Log("Player hoan thanh nhiem vu ne");
         QuestStatus questStatus = GetQuestStatus(quest);
-        //Debug.Log("Doc duoc quest status ne" + questStatus.GetQuest().name);
         questStatus.CompleteObjective(objective);
+        if (questStatus.IsComplete())
+        {
+            GiveRewards(quest);
+        }
         OnQuestStatusUpdate.Invoke();
+    }
+
+    private void GiveRewards(Quest quest)
+    {
+        Inventory playerInventory = GetComponent<PlayerController>().GetPlayerInventory();
+        foreach (var reward in quest.GetRewards())
+        {
+            if (reward.item.itemScriptableObject.itemType == Item.ItemType.Coin)
+            {
+                Debug.Log("Add coin for player");
+            }
+            else
+            {
+                playerInventory.AddItem(reward.item);
+            }         
+        }
     }
 
     QuestStatus GetQuestStatus(Quest quest)

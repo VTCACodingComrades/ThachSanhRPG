@@ -9,6 +9,9 @@ public class QuestTooltipUI : MonoBehaviour
     [SerializeField] Transform objectivesContainer;
     [SerializeField] GameObject objectivePrefab;
     [SerializeField] GameObject objectiveImcompletePrefab;
+
+    [SerializeField] Transform rewardContainer;
+    [SerializeField] GameObject rewardPrefab;
     public void Setup(QuestStatus status)
     {
         Quest quest = status.GetQuest();
@@ -25,6 +28,13 @@ public class QuestTooltipUI : MonoBehaviour
             
             GameObject objectiveObject = Instantiate(prefab, objectivesContainer);
             objectiveObject.GetComponentInChildren<TextMeshProUGUI>().text = quest.GetObjective(i).description;
+        }
+
+        rewardContainer.DetachChildren();
+        foreach (var reward in quest.GetRewards())
+        {
+            GameObject rewardObject = Instantiate(rewardPrefab, rewardContainer);
+            rewardObject.GetComponent<TextMeshProUGUI>().text = reward.item.amount + " " + reward.item.ToString();
         }
     }
 }

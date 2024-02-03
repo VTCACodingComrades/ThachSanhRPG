@@ -11,7 +11,6 @@ public class AIConversant : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Noi chuyen ne");
             collision.GetComponent<PlayerConversant>().StartConversant(dialogue, this);
         }
     }

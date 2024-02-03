@@ -9,16 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f06ddc36c74cfca4bbf12ddf611c2e03, type: 3}
-  m_Name: Find old man
+  m_Script: {fileID: 11500000, guid: 2cf9c38eb3c8f984b818913e046352d1, type: 3}
+  m_Name: Coin
   m_EditorClassIdentifier: 
-  objectives:
-  - reference: 
-    description: 
-  - reference: 
-    description: 
-  rewards:
-  - number: 0
-    item:
-      itemScriptableObject: {fileID: 0}
-      amount: 0
+  itemType: 4
+  itemName: 
+  itemSprite: {fileID: 0}
+  pfSword: {fileID: 0}
+  animatorOverrideController: {fileID: 0}
+  damage: 0

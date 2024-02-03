@@ -8,7 +8,6 @@ public class QuestGiver : MonoBehaviour
 
     public void GiveQuest()
     {
-        Debug.Log("Nhan nhiem vu ne player");
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerQuest>().SetQuest(quest);
     }
 }

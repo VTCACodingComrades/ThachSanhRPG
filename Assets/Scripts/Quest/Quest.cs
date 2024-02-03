@@ -10,9 +10,8 @@ public class Quest : ScriptableObject
     [SerializeField] List<Reward> rewards = new List<Reward>();
 
     [System.Serializable]
-    class Reward
+    public class Reward
     {
-        public int number;
         public Item item;
     }
 
@@ -33,9 +32,26 @@ public class Quest : ScriptableObject
         return objectives.Count;
     }
 
+   
+
     public Objective GetObjective(int index)
     {
         return objectives[index];
+    }
+
+    public IEnumerable<Reward> GetRewards()
+    {
+        return rewards;
+    }
+
+    public int GetRewardNumber()
+    {
+        return rewards.Count;
+    }
+
+    public Reward GetReward(int index)
+    {
+        return rewards[index];
     }
 
     public bool HasObjective(string objectiveRef)

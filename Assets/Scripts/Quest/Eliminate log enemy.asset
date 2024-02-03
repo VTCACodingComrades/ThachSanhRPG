@@ -16,7 +16,9 @@ MonoBehaviour:
   - reference: 1
     description: Eliminate 1 log enemy
   rewards:
-  - number: 0
-    item:
+  - item:
       itemScriptableObject: {fileID: 11400000, guid: 64c71beef4b00434b863810c2eb3b35f, type: 2}
-      amount: 0
+      amount: 1
+  - item:
+      itemScriptableObject: {fileID: 11400000, guid: eaeadf57eeea3d84695684106abef78a, type: 2}
+      amount: 300

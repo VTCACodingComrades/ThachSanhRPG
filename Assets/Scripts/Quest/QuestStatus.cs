@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [System.Serializable]
@@ -44,5 +45,10 @@ public class QuestStatus
     public List<string> GetObjectives()
     {
         return completedObjective;
+    }
+
+    internal bool IsComplete()
+    {
+        return quest.GetObjectiveNumber() == completedObjective.Count;
     }
 }

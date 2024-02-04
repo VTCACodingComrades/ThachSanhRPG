@@ -53,8 +53,8 @@ public class PlayerController : Singleton<PlayerController>
     }
 
     private void Update() {
-        Debug.Log("test: " + inventory.GetItemList().Count);
-        Debug.Log("in gia tri inventory "+inventory);
+        //Debug.Log("test: " + inventory.GetItemList().Count);
+        //Debug.Log("in gia tri inventory "+inventory);
     }
 
     private void FixedUpdate()
@@ -234,6 +234,11 @@ public class PlayerController : Singleton<PlayerController>
         //     inven.AddWeaponInfo(weaponInfoWorld.GetItem(), weaponInfoWorld.amount);
         //     weaponInfoWorld.DestroySelf();
         // }
+    }
+
+    public Inventory GetPlayerInventory()
+    {
+        return inventory;
     }
 
 }

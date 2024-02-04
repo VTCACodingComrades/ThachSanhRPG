@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f2ea557ca78f54290ec28b392f3775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
   itemSlotContainer: {fileID: 0}
   itemSlotTemplate: {fileID: 0}
   ItemAmountOnRow: 6
@@ -65,7 +64,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4242606753209249486, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
       propertyPath: m_Color.a
-      value: 0.627451
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242606753209249486, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.22352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242606753209249486, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.24705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242606753209249486, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.32156864
       objectReference: {fileID: 0}
     - target: {fileID: 4948445864653881495, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
       propertyPath: m_Name
@@ -162,6 +173,18 @@ PrefabInstance:
     - target: {fileID: 8366432423570361454, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
       propertyPath: m_Type
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366432423570361454, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
+      propertyPath: m_Color.b
+      value: 0.64705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366432423570361454, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366432423570361454, guid: 8f9baf75f3c1e194f9fdb619096e6f3b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8705883
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

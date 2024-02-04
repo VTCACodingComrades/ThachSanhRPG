@@ -24,6 +24,7 @@ public class PlayerController : Singleton<PlayerController>
     private Animator playerAnimator;
     private PlayerState currentState;
     private WeaponSO currentWeapon;
+    [SerializeField] private CameraController cameraController;
 
     protected override void Awake()
     {
@@ -38,7 +39,9 @@ public class PlayerController : Singleton<PlayerController>
 
         ui_Inventory.SetPlayerPos(this); // uiInventory lay vi tri player
 
-        CameraController.Instance.SetPlayerCameraFollow();
+        //CameraController.Instance.SetPlayerCameraFollow();
+        cameraController = FindObjectOfType<CameraController>();
+        cameraController.SetPlayerCameraFollow();
     }
 
     private void Start()

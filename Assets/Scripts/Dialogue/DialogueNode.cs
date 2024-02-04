@@ -18,6 +18,8 @@ namespace RPG.Dialogue
         List<string> children = new List<string>();
         [SerializeField]
         Rect rect = new Rect(0, 0, 200, 100);
+        [SerializeField] string enterNodeAction;
+        [SerializeField] string exitNodeAction;
 
         public Rect GetRect()
         {
@@ -32,6 +34,11 @@ namespace RPG.Dialogue
         public List<string> GetChildren()
         {
             return children;
+        }
+
+        public string GetExitAction()
+        {
+            return exitNodeAction;
         }
 
 #if UNITY_EDITOR

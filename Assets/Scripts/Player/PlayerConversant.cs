@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class PlayerConversant : MonoBehaviour
 {
     [SerializeField] Dialogue currentDialogue;
+    AIConversant currentConversant;
     DialogueNode currentNode;
     [SerializeField] bool isChoose = false;
     public UnityEvent OnStartConversant;
@@ -23,8 +24,9 @@ public class PlayerConversant : MonoBehaviour
         
     }
 
-    public void StartConversant(Dialogue dialogue)
+    public void StartConversant(Dialogue dialogue, AIConversant conversant)
     {
+        currentConversant = conversant;
         currentDialogue = dialogue;
         currentNode = currentDialogue.GetRootNode();
         OnStartConversant.Invoke();
@@ -87,5 +89,27 @@ public class PlayerConversant : MonoBehaviour
     public bool IsChoose()
     {
         return isChoose;
+    }
+
+    public void Quit()
+    {      
+        OnExitAction();
+        currentConversant = null;
+        currentDialogue = null;
+        currentNode = null;
+        isChoose = false;
+    }
+
+    private void OnExitAction()
+    {
+        //DialogueTrigger dialogueTrigger = currentConversant.GetComponent<DialogueTrigger>();
+        DialogueTrigger[] dialogueTriggers = currentConversant.GetComponents<DialogueTrigger>();
+        foreach(DialogueTrigger dialogueTrigger in dialogueTriggers)
+        {
+            if (currentNode != null && currentNode.GetExitAction() != "")
+            {
+                dialogueTrigger.Trigger(currentNode.GetExitAction());
+            }
+        }
     }
 }

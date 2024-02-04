@@ -8,10 +8,17 @@ using UnityEngine.UI;
 public class UIGameButton : MonoBehaviour
 {
     //? Gameobject = panel nut nhan ben trong scene moi level
-
+    private GameObject inventoryPanel;
     private float delayTimeUIButtonPressed = 0.2f;
+    private void Awake() {
+        inventoryPanel = GameObject.Find("UI_Inventory_Go");
+    }
     private void Start() {
-
+        inventoryPanel.SetActive(false);
+    }
+    public void InventoryButton() //? hien thi inventory khi dang choi
+    {
+        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
     }
     public void BackToMainMenuButton() //? quay lai mainmenu khi dang choi
     {

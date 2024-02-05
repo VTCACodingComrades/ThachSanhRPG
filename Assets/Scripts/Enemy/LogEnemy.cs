@@ -85,7 +85,6 @@ public class LogEnemy : Enemy
     public void Fire()
     {
         GameObject projectile = Instantiate(projectilePf, firePos.transform.position, Quaternion.identity);
-        //projectile.GetComponent<Projectile>().LaunchProjectile();
     }
 }
 

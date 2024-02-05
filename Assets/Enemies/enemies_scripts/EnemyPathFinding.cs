@@ -41,7 +41,7 @@ public class EnemyPathFinding : MonoBehaviour
 		}
 		else if(moveDir.magnitude >= 0.1f) {
 			speed = walkSpeed; // toc do di chuyen
-			enemyAnimation.SetState(EnemyState.Walk); // xet trang thai animation trong animator
+			enemyAnimation.SetState(EnemyState.Walk);
 		}
 
 		rb.MovePosition(rb.position + moveDir * (speed * Time.deltaTime));
@@ -51,8 +51,8 @@ public class EnemyPathFinding : MonoBehaviour
 		float diff = PlayerController.Instance.transform.position.x - gameObject.transform.position.x;
 
 		if(diff <0) {
-			moveDir = Vector3.zero; // cho dung lai
-			transform.localScale = new Vector3(1,1,1); //cho quay dung chieu
+			moveDir = Vector3.zero;
+			transform.localScale = new Vector3(1,1,1);
 		}
 		else if(diff>0) {
 			moveDir = Vector3.right * 0.01f;

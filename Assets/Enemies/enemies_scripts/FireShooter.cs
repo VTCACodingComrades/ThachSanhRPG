@@ -1,4 +1,3 @@
-using System.Reflection.Emit;
 using UnityEngine;
 
 public class FireShooter : MonoBehaviour, IEnemy
@@ -24,4 +23,5 @@ public class FireShooter : MonoBehaviour, IEnemy
         newBullet.transform.right = targetDirectionPlayer;
 
     }
+
 }

@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerAttacking : MonoBehaviour
 {
+    [SerializeField] private MonoBehaviour enemyType; // scrip loai enemy
     //public AnimationEvents AnimationEvents;
     public event Action<string> OnCustomEvent = s => { };
     public Transform Edge;
@@ -34,11 +36,13 @@ public class PlayerAttacking : MonoBehaviour
         {
             case "Hit":
                 Collider2D[] hitColliders = Physics2D.OverlapBoxAll(Edge.position, Edge.localScale, 0);
+                
                 foreach (Collider2D hitCollider in hitColliders)
                 {
                     Pot combatTarget = hitCollider.gameObject.GetComponent<Pot>();
                     if (combatTarget != null)
                         combatTarget.GetComponent<Pot>().Smash();
+
                     if (hitCollider.gameObject.CompareTag("CombatTarget"))
                     {
                         damage = ActiveWeapon.Instance.GetWeaponDamage();
@@ -48,6 +52,13 @@ public class PlayerAttacking : MonoBehaviour
                         enemyRb.AddForce(direction, ForceMode2D.Impulse);
                         hitCollider.GetComponent<Enemy>().TakeDamage(damage);
                     }
+
+                    if(hitCollider.gameObject.GetComponent<EnemyAI>() != null) {
+                        damage = ActiveWeapon.Instance.GetWeaponDamage();
+                        Debug.Log("player hit enemyHealth");
+                        hitCollider.GetComponent<EnemyHealth>().TakeDamage(damage);
+                    }
+
                 }
                 break;
             //case "Throw":

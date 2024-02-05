@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    [SerializeField] float moveSpeed = 25f;
+    [SerializeField] private GameObject particleOnHitPrefabs;
+    [SerializeField] private bool isEnemyProjectile = false; //? bullet cua enemy
     public float movingSpeed;
     public float lifeTime;
     public float initialLifeTime;
     Rigidbody2D rb;
-    // Start is called before the first frame update
+
     void Start()
     {
         lifeTime = initialLifeTime;
@@ -18,7 +21,6 @@ public class Projectile : MonoBehaviour
         LaunchProjectile(movingDirection);
     }
 
-    // Update is called once per frame
     void Update()
     {
         lifeTime -= Time.deltaTime;
@@ -33,9 +35,9 @@ public class Projectile : MonoBehaviour
         rb.velocity = direction * movingSpeed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /* private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Hit player");
@@ -58,5 +60,23 @@ public class Projectile : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    } */
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+
+        //neu other cham gameobject ko phai trigger (player dang !isTrigger)
+        //co the dung vien dan nay de so sanh voi nhung game object khac de tao hieu ung khac nhau
+        if(!other.isTrigger && playerHealth)
+        {
+            if(playerHealth && isEnemyProjectile && !playerHealth.isDead) {
+
+                Debug.Log("Player take damage");
+                playerHealth?.TakeDamage(1, transform);
+                Instantiate(particleOnHitPrefabs, transform.position, transform.rotation);
+                Destroy(this.gameObject);
+            }
+        }
+
     }
 }

@@ -158,6 +158,7 @@ public class PlayerController : Singleton<PlayerController>
                 {
                     Debug.Log("su dung HealthPotion");
                     inventory.RemoveItem(new Item { itemScriptableObject = item.itemScriptableObject, amount = 1 });
+                    PlayerHealth.Instance.AddHealthPlayer();
                     break;
                 }
             case Item.ItemType.ManaPotion:

@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.146, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3047447611793089259}
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923da15c3104f4b459d3e4472dca425d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: {fileID: 0}
   Edge: {fileID: 281641275235567974}
   thurstForce: 0
 --- !u!1 &5876651621767028861
@@ -208,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923da15c3104f4b459d3e4472dca425d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: {fileID: 0}
   Edge: {fileID: 281641275235567974}
   thurstForce: 3
 --- !u!114 &1862553448819276184
@@ -536,6 +538,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f25ba2e0de935d949889665222298125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
+  damageRecoveryTime: 1
 --- !u!1 &7179657304919220922
 GameObject:
   m_ObjectHideFlags: 0

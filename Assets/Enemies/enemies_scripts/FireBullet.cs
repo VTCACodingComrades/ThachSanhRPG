@@ -1,8 +1,3 @@
-// using System.Collections;
-// using System.Collections.Generic;
-// using System.ComponentModel.Design.Serialization;
-// using Unity.VisualScripting;
-// using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 public class FireBullet : MonoBehaviour
@@ -69,6 +64,8 @@ public class FireBullet : MonoBehaviour
     private void DetecFireRange(){
         if(Vector3.Distance(transform.position, startPos) > projectileRange) //weaponInfo.weaponRange
         {
+            //tao hieu ung o day truoc khi destroy
+            
             Destroy(gameObject);
         }
     }

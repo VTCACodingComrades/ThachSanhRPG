@@ -9,17 +9,29 @@ public class UIGameButton : MonoBehaviour
 {
     //? Gameobject = panel nut nhan ben trong scene moi level
     private GameObject inventoryPanel;
+    [SerializeField] private GameObject backQuitPanel;
+
     private float delayTimeUIButtonPressed = 0.2f;
     private void Awake() {
         inventoryPanel = GameObject.Find("UI_Inventory_Go");
+        //backQuitPanel = GameObject.Find("BackQuit_Panel");
+
     }
     private void Start() {
         inventoryPanel.SetActive(false);
+        backQuitPanel.SetActive(false);
+
     }
-    public void InventoryButton() //? hien thi inventory khi dang choi
+    public void ShowingInventory_Button() //? hien thi inventory khi dang choi
     {
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
     }
+
+    public void Showing_BackQuitButton() //? nut nhan quay lai mainmenu khi dang choi
+    {
+        backQuitPanel.SetActive(!backQuitPanel.activeSelf);
+    }
+
     public void BackToMainMenuButton() //? quay lai mainmenu khi dang choi
     {
         // PlayfabManager.Instance.SendLeaderBoard(CoinMananger.Instance.CurrentCoin); // Gold Leaderboard

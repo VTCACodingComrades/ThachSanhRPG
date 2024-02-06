@@ -22,8 +22,8 @@ public class UI_Inventory : Singleton<UI_Inventory>
     protected override void Awake() {
         base.Awake();
         
-        itemSlotContainer = transform.Find("itemSlotContainer");
-        itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
+        // itemSlotContainer = transform.Find("itemSlotContainer");
+        // itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
         
     }
 

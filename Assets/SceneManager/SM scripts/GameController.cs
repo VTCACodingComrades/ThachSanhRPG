@@ -44,7 +44,7 @@ public class GameController : Singleton<GameController>
         Application.Quit();
     }
 
-    public void ContinueGameAtGameOver() //? choi lai khi dang o sceneTown
+    public void ContinueGameAtGameOver() //? choi lai scene vua chet
     {
         gameOverPanel.SetActive(false);
         Time.timeScale = 1; // Unfreeze at collum 91 PlayerHealth.cs

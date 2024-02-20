@@ -9,5 +9,6 @@ public class TestCommit : MonoBehaviour
         Debug.Log("phuc test conflict 7-Jan");
         Debug.Log("tam pull request Weapon axe and sword");
         Debug.Log("Feb -20");
+        Debug.Log("Feb-20 1.0");
     }
 }

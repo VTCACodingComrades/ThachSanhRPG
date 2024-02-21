@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 25f;
+    //[SerializeField] float moveSpeed = 25f;
     [SerializeField] private GameObject particleOnHitPrefabs;
     [SerializeField] private bool isEnemyProjectile = false; //? bullet cua enemy
     public float movingSpeed;

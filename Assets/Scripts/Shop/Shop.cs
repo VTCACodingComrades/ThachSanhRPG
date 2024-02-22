@@ -5,18 +5,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shop : MonoBehaviour
-{
-    public class ShopItem
-    {
-        Item item;
-        int availability;
-        float price;
-        int quantityInTransaction;
-    }
+{ 
 
     public event Action onChange;
 
-    public IEnumerable<ShopItem> GetFilteredItems() { return null; }
+    public IEnumerable<ShopItem> GetFilteredItems() {
+
+        yield return new ShopItem(ItemScriptableObject.GetFromID("c19667a1-5ae5-4cac-930a-0ee293c758ad"),
+        10, 10.0f, 0);
+        
+    }
     public void SelectFilter(ItemCategory category) { }
     public ItemCategory GetFilter() { return ItemCategory.None; }
     public void SelectMode(bool isBuying) { }

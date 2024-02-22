@@ -1,18 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Shopper : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    Shop activeShop = null;
+
+    public event Action activeShopChange;
+
+    public void SetActiveShop(Shop shop)
     {
-        
+        activeShop = shop;
+        if (activeShopChange != null)
+        {
+            activeShopChange();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public Shop GetActiveShop()
     {
-        
+        return activeShop;
     }
 }

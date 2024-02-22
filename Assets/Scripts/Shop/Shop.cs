@@ -25,4 +25,9 @@ public class Shop : MonoBehaviour
     public void ConfirmTransaction() { }
     public float TransactionTotal() { return 0; }
     public void AddToTransaction(InventoryItem item, int quantity) { }
+
+    public void SetShop()
+    {
+        GameObject.Find("Player").GetComponent<Shopper>().SetActiveShop(this);
+    }
 }

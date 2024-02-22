@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class ShopUI : MonoBehaviour
 {
+    Shopper shopper = null;
+    Shop currentShop = null;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        shopper = GameObject.FindGameObjectWithTag("Player").GetComponent<Shopper>();
+        if (shopper == null) return;
+
+        shopper.activeShopChange += ShopChanged;
+
+        ShopChanged();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ShopChanged()
     {
-        
+        currentShop = shopper.GetActiveShop();
+        //gameObject.SetActive(currentShop != null);
     }
 }

@@ -14,6 +14,8 @@ public class RowUI : MonoBehaviour
     TextMeshProUGUI availabilityField;
     [SerializeField]
     TextMeshProUGUI priceField;
+    [SerializeField]
+    TextMeshProUGUI quantityField;
 
     Shop currentShop = null;
     ShopItem item = null;
@@ -26,6 +28,7 @@ public class RowUI : MonoBehaviour
         nameField.text = item.GetName();
         availabilityField.text = $"{item.GetAvailability()}";
         priceField.text = $"${item.GetPrice():N2}";
+        quantityField.text = $"{item.GetQuantityInTransaction()}";
     }
 
     public void Add()

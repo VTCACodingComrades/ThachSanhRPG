@@ -43,4 +43,9 @@ public class ShopItem
     {
         return item;
     }
+
+    public int GetQuantityInTransaction()
+    {
+        return quantityInTransaction;
+    }
 }

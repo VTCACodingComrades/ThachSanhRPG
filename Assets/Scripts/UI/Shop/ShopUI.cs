@@ -18,14 +18,17 @@ public class ShopUI : MonoBehaviour
         if (shopper == null) return;
 
         shopper.activeShopChange += ShopChanged;
-
         ShopChanged();
     }
 
     private void ShopChanged()
     {
+        if (currentShop != null)
+        {
+            currentShop.onChange -= RefreshUI;
+        }
         currentShop = shopper.GetActiveShop();
-        //gameObject.SetActive(currentShop != null);
+        currentShop.onChange += RefreshUI;
         RefreshUI();
     }
 

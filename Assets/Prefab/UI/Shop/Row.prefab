@@ -615,6 +615,18 @@ MonoBehaviour:
   nameField: {fileID: 5998751620536991249}
   availabilityField: {fileID: 7036123166183053009}
   priceField: {fileID: 7414533154677928601}
+  quantityField: {fileID: 6316656528721343075}
+--- !u!114 &6316656528721343075 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3922774544697338372, guid: 574bac83987645a42b56a3da77d34a5d, type: 3}
+  m_PrefabInstance: {fileID: 7050731629185554535}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7036123166183053009 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 35025711300054710, guid: 574bac83987645a42b56a3da77d34a5d, type: 3}

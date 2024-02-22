@@ -7,15 +7,32 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 { 
 
-    public event Action onChange;
-    public List<ItemScriptableObject> items;
+    //public event Action onChange;
+    //public List<ItemScriptableObject> items;
 
+    // Stock Config
+    // Item: 
+    // InventoryItem
+    // Initial Stock
+    // buyingDiscount
+    [SerializeField]
+    StockItemConfig[] stockConfig;
+
+    [System.Serializable]
+    class StockItemConfig
+    {
+        public ItemScriptableObject item;
+        public int initialStock;
+        [Range(0, 100)]
+        public float buyingDiscountPercentage;
+    }
     public IEnumerable<ShopItem> GetFilteredItems() {
 
-        foreach (var item in items)
+        foreach (StockItemConfig config in stockConfig)
         {
-            yield return new ShopItem(item, 10, 10.0f, 0);
-        }      
+            float price = config.item.GetPrice() * (1 - config.buyingDiscountPercentage / 100);
+            yield return new ShopItem(config.item, config.initialStock, price, 0);
+        }
     }
     public void SelectFilter(ItemCategory category) { }
     public ItemCategory GetFilter() { return ItemCategory.None; }

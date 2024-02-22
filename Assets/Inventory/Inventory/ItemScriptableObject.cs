@@ -1,4 +1,5 @@
 using PlayFab.EconomyModels;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class ItemScriptableObject : ScriptableObject, ISerializationCallbackRece
     public GameObject pfSword;
     public AnimatorOverrideController animatorOverrideController;
     public int damage;
+    public float price;
+
 
     // STATE
     static Dictionary<string, ItemScriptableObject> itemLookupCache;
@@ -60,5 +63,10 @@ public class ItemScriptableObject : ScriptableObject, ISerializationCallbackRece
     public void OnAfterDeserialize()
     {
         //throw new System.NotImplementedException();
+    }
+
+    public float GetPrice()
+    {
+        return price;
     }
 }

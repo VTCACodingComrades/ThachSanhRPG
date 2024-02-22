@@ -12558,10 +12558,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f2d8b57f9c4834689f89dac3db2099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: f53b39cc8b116c7408787030fe866147, type: 2}
-  - {fileID: 11400000, guid: 771bf92427e817143a01b0f0f7363c68, type: 2}
-  - {fileID: 11400000, guid: c0fa9c2de49a08843ad414d146fc099d, type: 2}
+  stockConfig:
+  - item: {fileID: 11400000, guid: 771bf92427e817143a01b0f0f7363c68, type: 2}
+    initialStock: 1
+    buyingDiscountPercentage: 0
+  - item: {fileID: 11400000, guid: f53b39cc8b116c7408787030fe866147, type: 2}
+    initialStock: 2
+    buyingDiscountPercentage: 0
+  - item: {fileID: 11400000, guid: c0fa9c2de49a08843ad414d146fc099d, type: 2}
+    initialStock: 3
+    buyingDiscountPercentage: 50
 --- !u!1001 &1901044063
 PrefabInstance:
   m_ObjectHideFlags: 0

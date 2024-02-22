@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cf9c38eb3c8f984b818913e046352d1, type: 3}
   m_Name: Sword_01
   m_EditorClassIdentifier: 
+  itemID: fc9eee95-6659-424e-bc44-23cbaa8c65ff
   itemType: 0
   itemName: Sword_01
   itemSprite: {fileID: 21300000, guid: 0567c05197d0d374ca05f1aed297c2e4, type: 3}
   pfSword: {fileID: 865213935175162613, guid: 5921220a76cc15e468087db715ffbaf1, type: 3}
   animatorOverrideController: {fileID: 22100000, guid: d63a9cfbebdb61b4e96c3d6f6848d9e0, type: 2}
   damage: 3
+  price: 10

@@ -1,4 +1,5 @@
 using PlayFab.EconomyModels;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,5 +37,10 @@ public class ShopItem
     public float GetPrice()
     {
         return price;
+    }
+
+    public ItemScriptableObject GetItem()
+    {
+        return item;
     }
 }

@@ -15,11 +15,26 @@ public class RowUI : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI priceField;
 
-    public void Setup(ShopItem item)
+    Shop currentShop = null;
+    ShopItem item = null;
+
+    public void Setup(Shop currentShop, ShopItem item)
     {
+        this.currentShop = currentShop;
+        this.item = item;
         iconField.sprite = item.GetIcon();
         nameField.text = item.GetName();
         availabilityField.text = $"{item.GetAvailability()}";
         priceField.text = $"${item.GetPrice():N2}";
+    }
+
+    public void Add()
+    {
+        currentShop.AddToTransaction(item.GetItem(), 1);
+    }
+
+    public void Remove()
+    {
+        currentShop.AddToTransaction(item.GetItem(), -1);
     }
 }

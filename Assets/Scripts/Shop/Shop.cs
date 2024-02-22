@@ -34,6 +34,9 @@ public class Shop : MonoBehaviour
             yield return new ShopItem(config.item, config.initialStock, price, 0);
         }
     }
+    public void AddToTransaction(ItemScriptableObject item, int quantity) {
+        print($"Added To Transaction: {item.GetDisplayName()} x {quantity}");
+    }
     public void SelectFilter(ItemCategory category) { }
     public ItemCategory GetFilter() { return ItemCategory.None; }
     public void SelectMode(bool isBuying) { }
@@ -41,7 +44,7 @@ public class Shop : MonoBehaviour
     public bool CanTransact() { return true; }
     public void ConfirmTransaction() { }
     public float TransactionTotal() { return 0; }
-    public void AddToTransaction(InventoryItem item, int quantity) { }
+    
 
     public void SetShop()
     {

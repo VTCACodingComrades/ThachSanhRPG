@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ShopUI : MonoBehaviour
 {
+    [SerializeField] Transform listRoot;
+    [SerializeField] RowUI rowPrefab;
+
     Shopper shopper = null;
     Shop currentShop = null;
 
@@ -22,5 +26,20 @@ public class ShopUI : MonoBehaviour
     {
         currentShop = shopper.GetActiveShop();
         //gameObject.SetActive(currentShop != null);
+        RefreshUI();
+    }
+
+    private void RefreshUI()
+    {
+        foreach (Transform child in listRoot)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (ShopItem item in currentShop.GetFilteredItems())
+        {
+            RowUI row = Instantiate<RowUI>(rowPrefab, listRoot);
+            row.Setup(item);
+        }
     }
 }

@@ -19,6 +19,12 @@ public class ItemScriptableObject : ScriptableObject, ISerializationCallbackRece
     // STATE
     static Dictionary<string, ItemScriptableObject> itemLookupCache;
 
+
+    public string GetDisplayName()
+    {
+        return itemName;
+    }
+
     // public CharacterEquipment.EquipSlot equipSlot;
     public static ItemScriptableObject GetFromID(string itemID)
     {

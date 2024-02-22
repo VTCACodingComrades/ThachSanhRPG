@@ -8,12 +8,14 @@ public class Shop : MonoBehaviour
 { 
 
     public event Action onChange;
+    public List<ItemScriptableObject> items;
 
     public IEnumerable<ShopItem> GetFilteredItems() {
 
-        yield return new ShopItem(ItemScriptableObject.GetFromID("c19667a1-5ae5-4cac-930a-0ee293c758ad"),
-        10, 10.0f, 0);
-        
+        foreach (var item in items)
+        {
+            yield return new ShopItem(item, 10, 10.0f, 0);
+        }      
     }
     public void SelectFilter(ItemCategory category) { }
     public ItemCategory GetFilter() { return ItemCategory.None; }

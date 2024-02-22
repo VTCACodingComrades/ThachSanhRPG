@@ -1653,6 +1653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a594302a357e4984bb874d5bf75a84f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listRoot: {fileID: 0}
+  rowPrefab: {fileID: 6543615968483488589, guid: 16f28eebfe49a8f41bf4e7ae71d6c7a6, type: 3}
 --- !u!224 &3051117963862213507 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4994362364144456074, guid: 4b97433a75729f14e9065fe7d6128238, type: 3}

@@ -17,4 +17,24 @@ public class ShopItem
         this.price = price;
         this.quantityInTransaction = quantityInTransaction;
     }
+
+    public Sprite GetIcon()
+    {
+        return item.itemSprite;
+    }
+
+    public int GetAvailability()
+    {
+        return availability;
+    }
+
+    public string GetName()
+    {
+        return item.GetDisplayName();
+    }
+
+    public float GetPrice()
+    {
+        return price;
+    }
 }

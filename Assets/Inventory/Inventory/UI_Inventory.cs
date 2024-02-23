@@ -60,7 +60,7 @@ public class UI_Inventory : Singleton<UI_Inventory>
         foreach (Transform child in itemSlotContainer) {
             if (child == itemSlotTemplate) continue;
             Destroy(child.gameObject);
-            Debug.Log("co xoa");
+            //Debug.Log("co xoa");
         }
         
         //? toa do itemSlot ben trong bang vat pham

@@ -25,18 +25,17 @@ public class Inventory
     public Inventory(Action<Item> useItemAction) //todo tham so la void_(item);
     {
         this.useItemAction = useItemAction;
-        Debug.Log("player -> khoi tao Inventory -> itemList -> add");
+        //Debug.Log("player -> khoi tao Inventory -> itemList -> add");
 
         itemList = new List<Item>();
 
         //? tao moi item kieu ScriptableObject va add vao itemList
-        AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
-            itemType = Item.ItemType.ManaPotion },
-            amount = 5});
+        //AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {itemType = Item.ItemType.ManaPotion }
+        //                 ,amount = 5});
 
-        AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
-            itemType = Item.ItemType.HealthPotion }, 
-            amount = 10});
+        //AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
+        //    itemType = Item.ItemType.HealthPotion }, 
+        //    amount = 10});
 
         // AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
         //     itemType = Item.ItemType.Hand }, 
@@ -45,20 +44,20 @@ public class Inventory
     }
 
     public Inventory(){
-        Debug.Log("player -> khoi tao Inventory -> itemList -> add");
+        //Debug.Log("player -> khoi tao Inventory -> itemList -> add");
 
         itemList = new List<Item>();
 
         //? tao moi item kieu ScriptableObject va add vao itemList
-        AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
-            itemType = Item.ItemType.ManaPotion },
-            amount = 5});
+        //AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
+        //    itemType = Item.ItemType.ManaPotion },
+        //    amount = 5});
+        
 
-        AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
-            itemType = Item.ItemType.HealthPotion }, 
-            amount = 10});
+        //AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
+        //    itemType = Item.ItemType.HealthPotion }, 
+        //    amount = 10});
     }
-
 
     //todo ham tra ve gia tri itemlist | RefreshIventoryItems() UI_Inventory.cs call
     public List<Item> GetItemList() {
@@ -66,7 +65,7 @@ public class Inventory
     }
 
     private void PrinItemList() {
-        Debug.Log("itemListCount = "+ itemList.Count);
+        //Debug.Log("itemListCount = "+ itemList.Count);
         foreach (var item in itemList)
         {
             Debug.Log($"name: {item.itemScriptableObject.itemType}_{item.IsStackable()} _ add vao ItemList");
@@ -82,13 +81,13 @@ public class Inventory
             foreach (Item inventoryItem in itemList)
             {
                 if(inventoryItem.itemScriptableObject.itemType == item.itemScriptableObject.itemType) {
-                    Debug.Log("add o day do  cung loai");
+                    //Debug.Log("add o day do  cung loai");
                     inventoryItem.amount += item.amount;
                     itemAlreadyInInventory = true;
                 }
             }
             if(!itemAlreadyInInventory) {
-                Debug.Log("add o day do KO cung loai");
+                //Debug.Log("add o day do KO cung loai");
                 itemList.Add(item);
             }
         }else {
@@ -123,6 +122,4 @@ public class Inventory
         //kieu?.Invoke(item); //? use delegae instead of Action<>
         useItemAction?.Invoke(item);
     }
-
-
 }

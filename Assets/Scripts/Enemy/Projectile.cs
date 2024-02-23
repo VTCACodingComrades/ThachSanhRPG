@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -7,7 +5,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float moveSpeed = 25f;
     [SerializeField] private GameObject particleOnHitPrefabs;
     [SerializeField] private bool isEnemyProjectile = false; //? bullet cua enemy
-    public float movingSpeed;
+    [SerializeField] private float movingSpeed;
     public float lifeTime;
     public float initialLifeTime;
     Rigidbody2D rb;

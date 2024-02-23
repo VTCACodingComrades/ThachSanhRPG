@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -19,17 +18,26 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private float moveSpeed;
     [SerializeField] WeaponSO defaultWeapon;
 
-    private Vector2 moveAmount;
+    [SerializeField] private Vector2 moveAmount;
+    [SerializeField] private Vector2 move; // su dung tai day, de co the vua di chuyen vua tan cong
+    [SerializeField] private Vector2 moveDir;
+
+    [SerializeField] private CameraController cameraController;
+
     private Rigidbody2D playerRigidbody;
     private Animator playerAnimator;
     private PlayerState currentState;
     private WeaponSO currentWeapon;
-    [SerializeField] private CameraController cameraController;
+    private ThachSanh thachSanh;
+
+    public Vector2 GetMoveDir { get { return moveDir; } }
+
 
     protected override void Awake()
     {
         base.Awake();
         
+        thachSanh = new ThachSanh();
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponentInChildren<Animator>();
         
@@ -54,17 +62,25 @@ public class PlayerController : Singleton<PlayerController>
         }
         ui_Inventory.SetInventory(inventory); // bien inventory in doi tuong UI_Inventory duoi canvas da duoc gan gia tri
     }
+    private void OnEnable() {
+        thachSanh.Enable();
+    }
 
     private void Update() {
         //Debug.Log("test: " + inventory.GetItemList().Count);
         //Debug.Log("in gia tri inventory "+inventory);
+        move = thachSanh.Player.Move.ReadValue<Vector2>();
+        UpdateAnimation();
     }
 
     private void FixedUpdate()
     {
-        if (currentState == PlayerState.idle)
+        //Tam_ comment
+        Move();
+
+        /* if (currentState == PlayerState.idle)
             Move();
-        UpdateAnimation();
+        UpdateAnimation(); */
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -81,7 +97,7 @@ public class PlayerController : Singleton<PlayerController>
     
     private void Move()
     {
-        playerRigidbody.MovePosition(playerRigidbody.position + moveAmount * moveSpeed * Time.deltaTime);
+        playerRigidbody.MovePosition(playerRigidbody.position + move * moveSpeed * Time.deltaTime);
     }
 
     public void EquipWeapon(WeaponSO weapon)
@@ -93,28 +109,46 @@ public class PlayerController : Singleton<PlayerController>
     private void Attack()
     {
         currentState = PlayerState.attack;
-        playerAnimator.SetTrigger("Attack");
+
+        // todo Tam_ chuyen sang trigger "Attack" animation qua ActiveWeapon.cs coll 89.
+        // todo Tam_ ActiveWeapon.cs co ham control toc do danh cho tung loai vu khi
+        // todo tan suat thuc hien hanh dong tan cong cho tung vu khi se khac nhau
+        //playerAnimator.SetTrigger("Attack");
         StartCoroutine(ResetAttack());
     }
 
     private IEnumerator ResetAttack()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
         currentState = PlayerState.idle;
     }
 
     private void UpdateAnimation()
     {
-        if (moveAmount != Vector2.zero && currentState == PlayerState.idle)
+        if (move != Vector2.zero)
         {
+            moveDir = move;
             playerAnimator.SetBool("Walk", true);
-            playerAnimator.SetFloat("MoveX", moveAmount.x);
-            playerAnimator.SetFloat("MoveY", moveAmount.y);
+            playerAnimator.SetFloat("MoveX", move.x);
+            playerAnimator.SetFloat("MoveY", move.y);
         }   
         else
         {
             playerAnimator.SetBool("Walk", false);
-        }    
+        }
+
+        //Tam_ comment
+        /* if (moveAmount != Vector2.zero && currentState == PlayerState.idle)
+        {
+            playerAnimator.SetBool("Walk", true);
+            playerAnimator.SetFloat("MoveX", moveAmount.x);
+            playerAnimator.SetFloat("MoveY", moveAmount.y);
+
+        }   
+        else
+        {
+            playerAnimator.SetBool("Walk", false);
+        } */
     }
 
     //? Pushable
@@ -195,6 +229,13 @@ public class PlayerController : Singleton<PlayerController>
                     ChangeWeapon(item);
                     break;
                 }
+            case Item.ItemType.SlingShot: 
+                {
+                    //? trang bi slingShot len nguoi player, kho cho trang bi nua
+                    Debug.Log("su dung SlingShot");
+                    ChangeWeapon(item);
+                    break;
+                }
 
         }
     }
@@ -216,8 +257,8 @@ public class PlayerController : Singleton<PlayerController>
 
         //? tao image loai vu khi dang trang bi tren gnuoi player
         newWeapon.transform.GetChild(0).transform.localPosition = new Vector3(0, 0.4f, 0);
-        newWeapon.transform.GetChild(0).transform.localEulerAngles = new Vector3(0,0,45f);
-        newWeapon.transform.GetChild(0).transform.localScale = new Vector3(.1f, .1f, .1f);
+        newWeapon.transform.GetChild(0).transform.localEulerAngles = new Vector3(0,0,0f);
+        newWeapon.transform.GetChild(0).transform.localScale = new Vector3(.07f, .07f, .07f);
 
 
         ActiveWeapon.Instance.NewWeapon(newWeapon.GetComponent<MonoBehaviour>()); // bo script vao

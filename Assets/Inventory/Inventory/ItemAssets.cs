@@ -20,5 +20,6 @@ public class ItemAssets : MonoBehaviour
     public Sprite medkit;
     public Sprite axe;
     public Sprite hand;
+    public Sprite slingShot;
 
 }

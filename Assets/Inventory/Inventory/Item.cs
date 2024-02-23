@@ -15,7 +15,8 @@ public class Item
         Coin,
         Medkit,
         Axe,
-        Hand
+        Hand,
+        SlingShot
     }
 
     //public ItemType itemType;
@@ -48,6 +49,7 @@ public class Item
         case ItemType.Medkit:       return ItemAssets.Instance.medkit;
         case ItemType.Axe:          return ItemAssets.Instance.axe;
         case ItemType.Hand:          return ItemAssets.Instance.hand;
+        case ItemType.SlingShot:    return ItemAssets.Instance.slingShot;
 
         }
     }
@@ -70,6 +72,7 @@ public class Item
         case ItemType.Medkit:
         case ItemType.Axe:
         case ItemType.Hand:
+        case ItemType.SlingShot:
 
             return false;
         }

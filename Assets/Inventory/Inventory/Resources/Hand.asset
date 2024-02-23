@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 7
   itemName: Hand
-  itemSprite: {fileID: 21300000, guid: 1e16ff523130e0c4fb61e265550040ae, type: 3}
+  itemSprite: {fileID: 21300000, guid: d956cdcdd4c99b643bd3ecad6910a572, type: 3}
   pfSword: {fileID: 865213935175162613, guid: 0f277e5df6ae6274fbf230c6a2d5ae23, type: 3}
   animatorOverrideController: {fileID: 22100000, guid: 8752bd273940a7646aaf71c22229e634, type: 2}
   damage: 1

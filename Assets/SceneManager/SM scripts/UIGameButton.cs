@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class UIGameButton : MonoBehaviour
 {
     //? Gameobject = panel nut nhan ben trong scene moi level
-    private GameObject inventoryPanel;
-    [SerializeField] private GameObject backQuitPanel;
+    private GameObject inventoryPanel; //panel chua item
+    [SerializeField] private GameObject backQuitPanel; // panel hien len khi muon quit or back mainMenu
 
     private float delayTimeUIButtonPressed = 0.2f;
     private void Awake() {
@@ -18,10 +18,11 @@ public class UIGameButton : MonoBehaviour
 
     }
     private void Start() {
-        inventoryPanel.SetActive(false);
+        //inventoryPanel.SetActive(false);
         backQuitPanel.SetActive(false);
 
     }
+
     public void ShowingInventory_Button() //? hien thi inventory khi dang choi
     {
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);

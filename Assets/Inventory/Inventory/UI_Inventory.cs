@@ -8,30 +8,32 @@ using CodeMonkey.Utils;
 
 public class UI_Inventory : Singleton<UI_Inventory>
 {
-    
     //todo Gameobject = duoi tuong nam duoi Canvas Inventory
     [SerializeField] private Inventory inventory; // se duoc gan vao khi SetInventory is called
     
     //? 2 transform container and templet
     [SerializeField] private Transform itemSlotContainer; // parent folder
     [SerializeField] private Transform itemSlotTemplate; // vi tri cua item se hien len (o vat pham) nam torng bang vat pham
-    private PlayerController playerController;
     [SerializeField] private int ItemAmountOnRow = 5;
     [SerializeField] float itemSlotCellSize = 80f;
+    private PlayerController playerController;
+    private GameObject inventoryPanel; //panel chua item
     
     protected override void Awake() {
         base.Awake();
         
         // itemSlotContainer = transform.Find("itemSlotContainer");
         // itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
+        inventoryPanel = GameObject.Find("UI_Inventory_Go");
+    }
+    private void Start() {
         
     }
-
-
-    void Update()
+    public void ExitInventoryPanel_Button() //? tat inventory panel exitButton
     {
-
+        inventoryPanel.SetActive(false);
     }
+
     public void SetPlayerPos(PlayerController playerController) {
         this.playerController = playerController;
     }

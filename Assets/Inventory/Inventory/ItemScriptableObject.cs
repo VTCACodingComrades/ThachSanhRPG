@@ -73,4 +73,8 @@ public class ItemScriptableObject : ScriptableObject, ISerializationCallbackRece
     {
         return price;
     }
+    public float weaponRange;
+    
+    // public CharacterEquipment.EquipSlot equipSlot;
+
 }

@@ -405,7 +405,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: -118266360, guid: 6cce8c48df1655f41bdd4da87a65e194, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -525,6 +525,9 @@ MonoBehaviour:
   ui_Inventory: {fileID: 0}
   moveSpeed: 7
   defaultWeapon: {fileID: 11400000, guid: 399a667fc6377cc48b2d0bc8f4a8904a, type: 2}
+  moveAmount: {x: 0, y: 0}
+  move: {x: 0, y: 0}
+  moveDir: {x: 0, y: 0}
   cameraController: {fileID: 0}
 --- !u!114 &2108777799323714961
 MonoBehaviour:
@@ -588,3 +591,4 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   DefaultWeapon: {fileID: 11400000, guid: 9f62ed2b9422ff04db3835e1a441bc04, type: 2}
   overrideControllers: {fileID: 0}
+  timeBetweenAttacks: 0.5

@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -11,20 +13,45 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public AnimatorOverrideController overrideControllers;
     private string weaponName;
     private int weaponDamage;
-    //bool attackButton, isAttacking = false;
 
+    bool attackButton, isAttacking = false;
+    public bool AttackButtonPress { get; private set; }
+
+    private ThachSanh thachSanh;
+    [SerializeField] private float timeBetweenAttacks = .5f;
+    
     protected override void Awake() {
         base.Awake();
+
+        thachSanh = new ThachSanh();
+
     }
+    private void OnEnable() {
+		thachSanh.Enable();
+	}
+
     private void Start() {
-        //Instance = this;
+        thachSanh.Player.Attack.started += _ => StartAttacking();
+        thachSanh.Player.Attack.canceled += _ => StopAttacking();
+
+
         playerAnimator = GetComponentInParent<Animator>();
         CurrenActiveWeapon = DefaultWeapon.pfSword.GetComponent<MonoBehaviour>();
         NewWeapon(CurrenActiveWeapon);
-        
     }
+
+    private void StopAttacking()
+    {
+        attackButton = false;
+    }
+
+    private void StartAttacking()
+    {
+        attackButton = true;
+    }
+
     private void Update() {
-        //Attack(); //Phuc comment
+        AttackCurrentWeapon(); //?Phuc comment || su dung tai day de khi acctack se goi ham Attack() SlingShot.cs coll 16
         //Debug.Log(weaponName);
     }
     public void NewWeapon(MonoBehaviour newWeapon) // ham nay duoc goi ben ActiveInventory khi Instite vu khi va bo class weapon vao day
@@ -44,24 +71,23 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         CurrenActiveWeapon = null;
     }
 
-    private void Attack()
+    private void AttackCurrentWeapon()
     {
         // if (attackButton && !isAttacking && CurrenActiveWeapon)
         // {
         //     isAttacking = true;
-            
         //     AttackCoolDown();
-
         //     (CurrenActiveWeapon as IWeapon).Attack(); //? vu khi dang equip se Attack() as IWeapon
 
-        // }
-        if(Input.GetKeyDown(KeyCode.Mouse0) && CurrenActiveWeapon) {
+        // }Input.GetKeyDown(KeyCode.Mouse0)
+        if(attackButton && !isAttacking && CurrenActiveWeapon) {
+            isAttacking = true;
+            StopAllCoroutines();
+            AttackCoolDown();
             (CurrenActiveWeapon as IWeapon).Attack();
-            playerAnimator.runtimeAnimatorController = overrideControllers;
+            //playerAnimator.runtimeAnimatorController = overrideControllers;
             playerAnimator.SetTrigger("Attack");
         }
-            
-
     }
     private void SetAnimation() {
         //Debug.Log("Co chay");
@@ -71,6 +97,17 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public int GetWeaponDamage()
     {     
         return weaponDamage;
+    }
+    IEnumerator TimeBetweenAttackRoutine()
+    {
+        yield return new WaitForSeconds(timeBetweenAttacks);
+        isAttacking = false;
+    }
+    private void AttackCoolDown() //? gia tri float coolDown quyet dinh khoang cach thuc hien hanh dong attack moi loai vu khi
+    {
+        isAttacking = true;
+        StopAllCoroutines();
+        StartCoroutine(TimeBetweenAttackRoutine()); //isAttacking = false;
     }
     
 }

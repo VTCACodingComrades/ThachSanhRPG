@@ -45,4 +45,9 @@ public class ShopUI : MonoBehaviour
             row.Setup(currentShop, item);
         }
     }
+
+    public void ConfirmTransaction()
+    {
+        currentShop.ConfirmTransaction();
+    }
 }

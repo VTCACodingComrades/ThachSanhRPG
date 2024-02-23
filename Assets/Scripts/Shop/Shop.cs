@@ -5,16 +5,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shop : MonoBehaviour
-{ 
+{
+    Shopper currentShopper = null;
 
     public event Action onChange;
-    //public List<ItemScriptableObject> items;
 
-    // Stock Config
-    // Item: 
-    // InventoryItem
-    // Initial Stock
-    // buyingDiscount
+    public void SetShopper(Shopper shopper)
+    {
+        currentShopper = shopper;
+    }
+
     [SerializeField]
     StockItemConfig[] stockConfig;
 
@@ -40,7 +40,7 @@ public class Shop : MonoBehaviour
         }
     }
     public void AddToTransaction(ItemScriptableObject item, int quantity) {
-        print($"Added To Transaction: {item.GetDisplayName()} x {quantity}");
+        //print($"Added To Transaction: {item.GetDisplayName()} x {quantity}");
         if (!transaction.ContainsKey(item))
         {
             transaction[item] = 0;
@@ -63,7 +63,24 @@ public class Shop : MonoBehaviour
     public void SelectMode(bool isBuying) { }
     public bool IsBuyingMode() { return true; }
     public bool CanTransact() { return true; }
-    public void ConfirmTransaction() { }
+    public void ConfirmTransaction() {
+        Inventory shopperInventory = currentShopper.GetComponent<PlayerController>().GetPlayerInventory();
+        if (shopperInventory == null) return;
+
+        // Transfer to or from the inventory
+        var transactionSnapshot = new Dictionary<ItemScriptableObject, int>(transaction);
+        foreach (ItemScriptableObject item in transactionSnapshot.Keys)
+        {
+            int quantity = transactionSnapshot[item];
+            for (int i = 0; i < quantity; i++)
+            {
+                shopperInventory.AddItem(new Item { itemScriptableObject = item, amount = 1 });
+                AddToTransaction(item, -1);
+            }
+        }
+        // Removal from transaction
+        // Debting or Crediting of funds
+    }
     public float TransactionTotal() { return 0; }
     
 

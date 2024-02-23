@@ -22,6 +22,10 @@ public class ItemScriptableObject : ScriptableObject, ISerializationCallbackRece
     // STATE
     static Dictionary<string, ItemScriptableObject> itemLookupCache;
 
+    //public ItemScriptableObject(Item.ItemType itemType)
+    //{ 
+    //    this.itemType = itemType;
+    //}
 
     public string GetDisplayName()
     {

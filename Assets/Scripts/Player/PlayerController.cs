@@ -190,42 +190,49 @@ public class PlayerController : Singleton<PlayerController>
         {
             case Item.ItemType.HealthPotion: // itemType ben ngoai Item de kiem tra itemtype ben trong SOb
                 {
-                    Debug.Log("su dung HealthPotion");
+                    //Debug.Log("su dung HealthPotion");
                     inventory.RemoveItem(new Item { itemScriptableObject = item.itemScriptableObject, amount = 1 });
                     PlayerHealth.Instance.AddHealthPlayer();
                     break;
                 }
             case Item.ItemType.ManaPotion:
                 {
-                    Debug.Log("su dung ManaPotion");
+                    //Debug.Log("su dung ManaPotion");
                     inventory.RemoveItem(new Item { itemScriptableObject = item.itemScriptableObject, amount = 1 });
                     break;
                 }
             case Item.ItemType.Sword_01:
                 {
                     //? trang bi sword len nguoi player, kho cho trang bi nua
-                    Debug.Log("su dung Sword_01");
+                    //Debug.Log("su dung Sword_01");
                     ChangeWeapon(item);
                     break;
                 }
             case Item.ItemType.Sword_02:
                 {
                     //? trang bi sword len nguoi player, kho cho trang bi nua
-                    Debug.Log("su dung Sword_02");
+                    //Debug.Log("su dung Sword_02");
                     ChangeWeapon(item);
                     break;
                 }
             case Item.ItemType.Axe:
                 {
                     //? trang bi sword len nguoi player, kho cho trang bi nua
-                    Debug.Log("su dung Axe");
+                    //Debug.Log("su dung Axe");
                     ChangeWeapon(item);
                     break;
                 }
             case Item.ItemType.Hand:
                 {
                     //? trang bi sword len nguoi player, kho cho trang bi nua
-                    Debug.Log("su dung Hand");
+                    //Debug.Log("su dung Hand");
+                    ChangeWeapon(item);
+                    break;
+                }
+            case Item.ItemType.SlingShot: 
+                {
+                    //? trang bi slingShot len nguoi player, kho cho trang bi nua
+                    Debug.Log("su dung SlingShot");
                     ChangeWeapon(item);
                     break;
                 }
@@ -248,7 +255,7 @@ public class PlayerController : Singleton<PlayerController>
         foreach (Transform child in ActiveWeapon.Instance.transform)
         {
             Destroy(child.gameObject);
-            Debug.Log("co xoa");
+            //Debug.Log("co xoa");
         }
 
         GameObject newWeapon = item.itemScriptableObject.pfSword;

@@ -22,7 +22,12 @@ public class Item
     //public ItemType itemType;
     public ItemScriptableObject itemScriptableObject; // se chau cac thuoc tinh rieng
     public int amount = 1;
-    
+
+    //public Item(ItemScriptableObject itemScriptableObject, int amount)
+    //{
+    //    this.itemScriptableObject = itemScriptableObject;
+    //    this.amount = amount;
+    //}
 
     public override string ToString()
     {

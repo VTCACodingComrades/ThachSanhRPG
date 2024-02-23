@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 
@@ -12,8 +11,6 @@ public class ItemScriptableObject : ScriptableObject
     public GameObject pfSword;
     public AnimatorOverrideController animatorOverrideController;
     public int damage;
+    public float weaponRange;
     
-
-    // public CharacterEquipment.EquipSlot equipSlot;
-
 }

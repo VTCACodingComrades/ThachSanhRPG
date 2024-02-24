@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ShopUI : MonoBehaviour
 {
     [SerializeField] Transform listRoot;
     [SerializeField] RowUI rowPrefab;
+    [SerializeField] TextMeshProUGUI totalField;
 
     Shopper shopper = null;
     Shop currentShop = null;
@@ -44,6 +46,8 @@ public class ShopUI : MonoBehaviour
             RowUI row = Instantiate<RowUI>(rowPrefab, listRoot);
             row.Setup(currentShop, item);
         }
+
+        totalField.text = $"Total: ${currentShop.TransactionTotal():N2} Gold";
     }
 
     public void ConfirmTransaction()

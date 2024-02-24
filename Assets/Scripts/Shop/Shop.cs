@@ -71,17 +71,22 @@ public class Shop : MonoBehaviour
     public bool CanTransact() { return true; }
     public void ConfirmTransaction() {
         Inventory shopperInventory = currentShopper.GetComponent<PlayerController>().GetPlayerInventory();
-        if (shopperInventory == null) return;
+        Purse shopperPurse = currentShopper.GetComponent<Purse>();
+        if (shopperInventory == null || shopperPurse == null) return;
 
         // Transfer to or from the inventory
-        var transactionSnapshot = new Dictionary<ItemScriptableObject, int>(transaction);
-        foreach (ItemScriptableObject item in transactionSnapshot.Keys)
+        //var transactionSnapshot = new Dictionary<ItemScriptableObject, int>(transaction);
+        foreach (ShopItem shopItem in GetAllItems())
         {
-            int quantity = transactionSnapshot[item];
+            ItemScriptableObject item = shopItem.GetItem();
+            int quantity = shopItem.GetQuantityInTransaction();
+            float price = shopItem.GetPrice();
             for (int i = 0; i < quantity; i++)
             {
+                if (shopperPurse.GetBalance() < price) break;
                 shopperInventory.AddItem(new Item { itemScriptableObject = item, amount = 1 });
                 AddToTransaction(item, -1);
+                shopperPurse.UpdateBalance(-price);
             }
         }
         // Removal from transaction

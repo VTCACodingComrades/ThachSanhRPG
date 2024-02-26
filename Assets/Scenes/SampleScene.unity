@@ -15139,6 +15139,7 @@ GameObject:
   - component: {fileID: 8366138513607641954}
   - component: {fileID: 1452115747324410025}
   - component: {fileID: 8346090194858690079}
+  - component: {fileID: 8366138513607641955}
   m_Layer: 5
   m_Name: Purse UI
   m_TagString: Untagged
@@ -15764,6 +15765,19 @@ RectTransform:
   m_AnchoredPosition: {x: -193.02747, y: -47.200012}
   m_SizeDelta: {x: 322.0381, y: 75.6515}
   m_Pivot: {x: 0.4999999, y: 1}
+--- !u!114 &8366138513607641955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210995519209958979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4531ddcbe522a9446a37991067c6c140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  banlance: {fileID: 6827998329340215674}
 --- !u!114 &8386850726985738337
 MonoBehaviour:
   m_ObjectHideFlags: 0

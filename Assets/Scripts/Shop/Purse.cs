@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,10 +9,12 @@ public class Purse : MonoBehaviour
 
     float balance = 0;
 
+    public Action onChange;
+
     private void Awake()
     {
         balance = startingBalance;
-        print($"Balance: {balance}");
+        //print($"Balance: {balance}");
     }
 
     public float GetBalance()
@@ -22,6 +25,7 @@ public class Purse : MonoBehaviour
     public void UpdateBalance(float amount)
     {
         balance += amount;
-        print($"Balance: {balance}");
+        //print($"Balance: {balance}");
+        onChange();
     }
 }

@@ -1,18 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PurseUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] TextMeshProUGUI banlance;
+    Purse shopperPurse;
+
+    private void Start()
     {
-        
+        shopperPurse = GameObject.FindGameObjectWithTag("Player").GetComponent<Purse>();
+        shopperPurse.onChange += RefeshUI;
+        RefeshUI();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RefeshUI()
     {
-        
+        //banlance.text = shopperPurse.GetBalance().ToString();
+        banlance.text = $"${shopperPurse.GetBalance()}";
     }
 }

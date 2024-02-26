@@ -35,6 +35,11 @@ public class Shop : MonoBehaviour
         }
     }
 
+    public void SetShop()
+    {
+        GameObject.Find("Player").GetComponent<Shopper>().SetActiveShop(this);
+    }
+
     public void SetShopper(Shopper shopper)
     {
         currentShopper = shopper;
@@ -87,7 +92,15 @@ public class Shop : MonoBehaviour
     public ItemCategory GetFilter() { return ItemCategory.None; }
     public void SelectMode(bool isBuying) { }
     public bool IsBuyingMode() { return true; }
-    public bool CanTransact() { return true; }
+    public bool CanTransact() 
+    {
+        if (HasEmtyTransaction()) return false;
+        if (!HasSufficientFund()) return false;
+        return true; 
+    }
+
+   
+
     public void ConfirmTransaction() {
         Inventory shopperInventory = currentShopper.GetComponent<PlayerController>().GetPlayerInventory();
         Purse shopperPurse = currentShopper.GetComponent<Purse>();
@@ -127,8 +140,14 @@ public class Shop : MonoBehaviour
     }
     
 
-    public void SetShop()
+    public bool HasSufficientFund()
     {
-        GameObject.Find("Player").GetComponent<Shopper>().SetActiveShop(this);
+        Purse shopperPurse = currentShopper.GetComponent<Purse>();
+        return shopperPurse.GetBalance() >= TransactionTotal();
+    }
+
+    private bool HasEmtyTransaction()
+    {
+        return transaction.Count == 0;
     }
 }

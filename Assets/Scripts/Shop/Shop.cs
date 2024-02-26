@@ -8,15 +8,7 @@ public class Shop : MonoBehaviour
 {
     Shopper currentShopper = null;
 
-    public event Action onChange;
-
-    public void SetShopper(Shopper shopper)
-    {
-        currentShopper = shopper;
-    }
-
-    [SerializeField]
-    StockItemConfig[] stockConfig;
+    public event Action onChange; 
 
     [System.Serializable]
     class StockItemConfig
@@ -27,11 +19,29 @@ public class Shop : MonoBehaviour
         public float buyingDiscountPercentage;
     }
 
+    [SerializeField]
+    StockItemConfig[] stockConfig;
+
     Dictionary<ItemScriptableObject, int> transaction = new Dictionary<ItemScriptableObject, int>();
+
+    Dictionary<ItemScriptableObject, int> stock = new Dictionary<ItemScriptableObject, int>();
+
+
+    private void Awake()
+    {
+        foreach (var stockItem in stockConfig)
+        {
+            stock[stockItem.item] = stockItem.initialStock;
+        }
+    }
+
+    public void SetShopper(Shopper shopper)
+    {
+        currentShopper = shopper;
+    }
 
     public IEnumerable<ShopItem> GetFilteredItems() 
     {
-
         return GetAllItems();
     }
 
@@ -40,9 +50,10 @@ public class Shop : MonoBehaviour
         foreach (StockItemConfig config in stockConfig)
         {
             float price = config.item.GetPrice() * (1 - config.buyingDiscountPercentage / 100);
-            int quantityInTransaction = 0;
+            int quantityInTransaction = 0;         
             transaction.TryGetValue(config.item, out quantityInTransaction);
-            yield return new ShopItem(config.item, config.initialStock, price, quantityInTransaction);
+            int quantityInStock = stock[config.item];          
+            yield return new ShopItem(config.item, quantityInStock, price, quantityInTransaction);
         }
     }
     public void AddToTransaction(ItemScriptableObject item, int quantity) {
@@ -52,7 +63,15 @@ public class Shop : MonoBehaviour
             transaction[item] = 0;
         }
 
-        transaction[item] += quantity;
+        if (transaction[item] + quantity > stock[item])
+        {
+            transaction[item] = stock[item];
+        }
+        else
+        {
+            transaction[item] += quantity;
+        }    
+        
 
         if (transaction[item] <= 0)
         {
@@ -86,11 +105,16 @@ public class Shop : MonoBehaviour
                 if (shopperPurse.GetBalance() < price) break;
                 shopperInventory.AddItem(new Item { itemScriptableObject = item, amount = 1 });
                 AddToTransaction(item, -1);
+                stock[item]--;
                 shopperPurse.UpdateBalance(-price);
             }
         }
         // Removal from transaction
         // Debting or Crediting of funds
+        if (onChange != null)
+        {
+            onChange();
+        }
     }
     public float TransactionTotal() 
     {

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,7 +7,7 @@ public class ExitArea : MonoBehaviour
     // se chay moi khi co va cham
     [SerializeField] private string sceneToLoad; // scene 2
     [SerializeField] private string sceneTransitionName; // west_En
-    private float waitToLoad = 1f;
+    private float waitToLoad = 1.5f;
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.GetComponent<PlayerController>())

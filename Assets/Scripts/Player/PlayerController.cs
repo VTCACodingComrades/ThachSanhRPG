@@ -14,6 +14,7 @@ public enum PlayerState
 public class PlayerController : Singleton<PlayerController>
 {
     private Inventory inventory; // se duoc Awake() goi de khoi tao new inventory
+    public Inventory GetInventory() => this.inventory;
     [SerializeField] UI_Inventory ui_Inventory; // dung de goi ham SetInventoy()
     [SerializeField] private float moveSpeed;
     [SerializeField] WeaponSO defaultWeapon;
@@ -236,14 +237,6 @@ public class PlayerController : Singleton<PlayerController>
                     ChangeWeapon(item);
                     break;
                 }
-            case Item.ItemType.SlingShot: 
-                {
-                    //? trang bi slingShot len nguoi player, kho cho trang bi nua
-                    Debug.Log("su dung SlingShot");
-                    ChangeWeapon(item);
-                    break;
-                }
-
         }
     }
     private void ChangeWeapon(Item item)

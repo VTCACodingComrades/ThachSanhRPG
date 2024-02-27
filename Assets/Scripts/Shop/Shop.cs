@@ -110,15 +110,12 @@ public class Shop : MonoBehaviour
         return true; 
     }
 
-   
-
     public void ConfirmTransaction() {
         Inventory shopperInventory = currentShopper.GetComponent<PlayerController>().GetPlayerInventory();
         Purse shopperPurse = currentShopper.GetComponent<Purse>();
         if (shopperInventory == null || shopperPurse == null) return;
 
         // Transfer to or from the inventory
-        //var transactionSnapshot = new Dictionary<ItemScriptableObject, int>(transaction);
         foreach (ShopItem shopItem in GetAllItems())
         {
             ItemScriptableObject item = shopItem.GetItem();
@@ -126,12 +123,16 @@ public class Shop : MonoBehaviour
             float price = shopItem.GetPrice();
             for (int i = 0; i < quantity; i++)
             {
-                if (shopperPurse.GetBalance() < price) break;
-                shopperInventory.AddItem(new Item { itemScriptableObject = item, amount = 1 });
-                AddToTransaction(item, -1);
-                stock[item]--;
-                shopperPurse.UpdateBalance(-price);
-            }
+                if (isBuyingMode)
+                {
+                    BuyItem(shopperInventory, shopperPurse, item, price);
+                }
+                else
+                {
+                    SellItem(shopperInventory, shopperPurse, item, price);
+                }
+            }    
+                
         }
         // Removal from transaction
         // Debting or Crediting of funds
@@ -140,6 +141,24 @@ public class Shop : MonoBehaviour
             onChange();
         }
     }
+
+    private void SellItem(Inventory shopperInventory, Purse shopperPurse, ItemScriptableObject item, float price)
+    {
+        AddToTransaction(item, -1);
+        shopperInventory.RemoveItem(new Item { itemScriptableObject = item, amount = 1 });
+        stock[item]++;
+        shopperPurse.UpdateBalance(price);
+    }
+
+    private void BuyItem(Inventory shopperInventory, Purse shopperPurse, ItemScriptableObject item, float price)
+    {
+        if (shopperPurse.GetBalance() < price) return;
+        shopperInventory.AddItem(new Item { itemScriptableObject = item, amount = 1 });
+        AddToTransaction(item, -1);
+        stock[item]--;
+        shopperPurse.UpdateBalance(-price);
+    }
+
     public float TransactionTotal() 
     {
         float total = 0;
@@ -153,6 +172,7 @@ public class Shop : MonoBehaviour
 
     public bool HasSufficientFund()
     {
+        if (!isBuyingMode) return true;
         Purse shopperPurse = currentShopper.GetComponent<Purse>();
         return shopperPurse.GetBalance() >= TransactionTotal();
     }
@@ -160,10 +180,16 @@ public class Shop : MonoBehaviour
     public void SelectMode(bool isBuying)
     {
         isBuyingMode = isBuying;
+        ResetTransaction();
         if (onChange != null)
         {
             onChange();
         }
+    }
+
+    private void ResetTransaction()
+    {
+        transaction.Clear();
     }
 
     public bool IsBuyingMode()

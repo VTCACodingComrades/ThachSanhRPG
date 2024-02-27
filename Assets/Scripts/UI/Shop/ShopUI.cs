@@ -11,6 +11,7 @@ public class ShopUI : MonoBehaviour
     [SerializeField] RowUI rowPrefab;
     [SerializeField] TextMeshProUGUI totalField;
     [SerializeField] Button confirmButton;
+    [SerializeField] Button switchButton;
 
     Shopper shopper = null;
     Shop currentShop = null;
@@ -23,7 +24,13 @@ public class ShopUI : MonoBehaviour
         if (shopper == null) return;
         shopper.activeShopChange += ShopChanged;
         confirmButton.onClick.AddListener(ConfirmTransaction);
+        switchButton.onClick.AddListener(SwitchMode);
         ShopChanged();
+    }
+
+    private void SwitchMode()
+    {
+        currentShop.SelectMode(!currentShop.IsBuyingMode());
     }
 
     private void ShopChanged()
@@ -52,6 +59,18 @@ public class ShopUI : MonoBehaviour
         confirmButton.interactable = currentShop.CanTransact();
         totalField.text = $"Total: ${currentShop.TransactionTotal():N2} Gold";
         totalField.color = currentShop.CanTransact() ? originalTotalTextColor : Color.red;
+        TextMeshProUGUI switchText = switchButton.GetComponentInChildren<TextMeshProUGUI>();
+        TextMeshProUGUI confirmText = confirmButton.GetComponentInChildren<TextMeshProUGUI>();
+        if (currentShop.IsBuyingMode())
+        {
+            switchText.text = "Switch To Selling";
+            confirmText.text = "Buy";
+        }
+        else
+        {
+            switchText.text = "Switch To Buying";
+            confirmText.text = "Sell";
+        }
     }
 
     public void ConfirmTransaction()

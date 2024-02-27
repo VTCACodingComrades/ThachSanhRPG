@@ -6,10 +6,6 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    Shopper currentShopper = null;
-
-    public event Action onChange; 
-
     [System.Serializable]
     class StockItemConfig
     {
@@ -22,10 +18,18 @@ public class Shop : MonoBehaviour
     [SerializeField]
     StockItemConfig[] stockConfig;
 
+    [Range(0, 100)]
+    [SerializeField] float sellingPercentage = 80f;
+
     Dictionary<ItemScriptableObject, int> transaction = new Dictionary<ItemScriptableObject, int>();
 
     Dictionary<ItemScriptableObject, int> stock = new Dictionary<ItemScriptableObject, int>();
 
+    bool isBuyingMode = true;
+
+    Shopper currentShopper = null;
+
+    public event Action onChange;
 
     private void Awake()
     {
@@ -54,13 +58,24 @@ public class Shop : MonoBehaviour
     {
         foreach (StockItemConfig config in stockConfig)
         {
-            float price = config.item.GetPrice() * (1 - config.buyingDiscountPercentage / 100);
-            int quantityInTransaction = 0;         
+            float price = GetPrice(config);
+            int quantityInTransaction = 0;
             transaction.TryGetValue(config.item, out quantityInTransaction);
-            int quantityInStock = stock[config.item];          
+            int quantityInStock = stock[config.item];
             yield return new ShopItem(config.item, quantityInStock, price, quantityInTransaction);
         }
     }
+
+    private float GetPrice(StockItemConfig config)
+    {
+        if (isBuyingMode)
+        {
+            return config.item.GetPrice() * (1 - config.buyingDiscountPercentage / 100);
+        }
+
+        return config.item.GetPrice() * (sellingPercentage / 100);
+    }
+
     public void AddToTransaction(ItemScriptableObject item, int quantity) {
         //print($"Added To Transaction: {item.GetDisplayName()} x {quantity}");
         if (!transaction.ContainsKey(item))
@@ -90,8 +105,7 @@ public class Shop : MonoBehaviour
     }
     public void SelectFilter(ItemCategory category) { }
     public ItemCategory GetFilter() { return ItemCategory.None; }
-    public void SelectMode(bool isBuying) { }
-    public bool IsBuyingMode() { return true; }
+    
     public bool CanTransact() 
     {
         if (HasEmtyTransaction()) return false;
@@ -144,6 +158,20 @@ public class Shop : MonoBehaviour
     {
         Purse shopperPurse = currentShopper.GetComponent<Purse>();
         return shopperPurse.GetBalance() >= TransactionTotal();
+    }
+
+    public void SelectMode(bool isBuying)
+    {
+        isBuyingMode = isBuying;
+        if (onChange != null)
+        {
+            onChange();
+        }
+    }
+
+    public bool IsBuyingMode()
+    {
+        return isBuyingMode;
     }
 
     private bool HasEmtyTransaction()

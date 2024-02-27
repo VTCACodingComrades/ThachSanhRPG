@@ -2803,14 +2803,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stockConfig:
   - item: {fileID: 11400000, guid: 771bf92427e817143a01b0f0f7363c68, type: 2}
-    initialStock: 1
+    initialStock: 10
     buyingDiscountPercentage: 0
   - item: {fileID: 11400000, guid: f53b39cc8b116c7408787030fe866147, type: 2}
-    initialStock: 2
+    initialStock: 11
     buyingDiscountPercentage: 0
   - item: {fileID: 11400000, guid: c0fa9c2de49a08843ad414d146fc099d, type: 2}
-    initialStock: 3
+    initialStock: 12
     buyingDiscountPercentage: 0
+  sellingPercentage: 80
 --- !u!1001 &264000931
 PrefabInstance:
   m_ObjectHideFlags: 0

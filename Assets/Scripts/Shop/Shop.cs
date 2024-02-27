@@ -61,8 +61,8 @@ public class Shop : MonoBehaviour
             float price = GetPrice(config);
             int quantityInTransaction = 0;
             transaction.TryGetValue(config.item, out quantityInTransaction);
-            int quantityInStock = stock[config.item];
-            yield return new ShopItem(config.item, quantityInStock, price, quantityInTransaction);
+            int availability = GetAvailability(config.item);
+            yield return new ShopItem(config.item, availability, price, quantityInTransaction);
         }
     }
 
@@ -76,26 +76,22 @@ public class Shop : MonoBehaviour
         return config.item.GetPrice() * (sellingPercentage / 100);
     }
 
-    public void AddToTransaction(ItemScriptableObject item, int quantity) {
-        //print($"Added To Transaction: {item.GetDisplayName()} x {quantity}");
+    public void AddToTransaction(ItemScriptableObject item, int quantity)
+    {
         if (!transaction.ContainsKey(item))
         {
             transaction[item] = 0;
         }
 
-        if (transaction[item] + quantity > stock[item])
+        int availbility = GetAvailability(item);
+
+        if (transaction[item] + quantity > availbility)
         {
-            transaction[item] = stock[item];
+            transaction[item] = availbility;
         }
         else
         {
             transaction[item] += quantity;
-        }    
-        
-
-        if (transaction[item] <= 0)
-        {
-            transaction.Remove(item);
         }
 
         if (onChange != null)
@@ -103,6 +99,7 @@ public class Shop : MonoBehaviour
             onChange();
         }
     }
+
     public void SelectFilter(ItemCategory category) { }
     public ItemCategory GetFilter() { return ItemCategory.None; }
     
@@ -177,5 +174,32 @@ public class Shop : MonoBehaviour
     private bool HasEmtyTransaction()
     {
         return transaction.Count == 0;
+    }
+
+    private int GetAvailability(ItemScriptableObject item)
+    {
+        if (isBuyingMode)
+        {
+            return stock[item];
+        }
+        else
+        {
+            return CountItemsInInventory(item);
+        }
+
+    }
+
+    private int CountItemsInInventory(ItemScriptableObject item)
+    {
+        Inventory shopperInventory = currentShopper.GetComponent<PlayerController>().GetPlayerInventory();
+        int itemAmount = 0;
+        foreach(Item inventoryItem in shopperInventory.GetItemList())
+        {
+            if (inventoryItem.itemScriptableObject == item)
+            {
+                itemAmount = inventoryItem.amount;
+            }
+        }
+        return itemAmount;
     }
 }

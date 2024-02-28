@@ -14,6 +14,7 @@ public enum PlayerState
 public class PlayerController : Singleton<PlayerController>
 {
     private Inventory inventory; // se duoc Awake() goi de khoi tao new inventory
+    public Inventory GetInventory() => this.inventory;
     [SerializeField] UI_Inventory ui_Inventory; // dung de goi ham SetInventoy()
     [SerializeField] private float moveSpeed;
     [SerializeField] WeaponSO defaultWeapon;
@@ -236,7 +237,6 @@ public class PlayerController : Singleton<PlayerController>
                     ChangeWeapon(item);
                     break;
                 }
-
         }
     }
     private void ChangeWeapon(Item item)
@@ -267,7 +267,7 @@ public class PlayerController : Singleton<PlayerController>
     private void OnTriggerEnter2D(Collider2D other)
     {
         ItemWorld itemWorld = other.GetComponent<ItemWorld>();
-        if (itemWorld != null)
+        if (itemWorld != null && itemWorld.GetItem().itemScriptableObject.itemType != Item.ItemType.Coin)
         {
             // lay ve doi tuong item Item.cs ( game object = vat pham pfItemWord vua louch)
             inventory.AddItem(itemWorld.GetItem()); //todo add item vat pham vao trong itemsList => tang them 1 vat pham

@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
@@ -27,16 +26,16 @@ public class PlayFabManager : Singleton<PlayFabManager>
     }
     void OnLoginSuccess(LoginResult result)
     {
-        Debug.Log("Successful login custom id/account create!");
+        name = result.PlayFabId.ToString();
+        Debug.Log("Login with ID Customer" + name);
 
-        //GetTitleData(); // gui loi chao khi dang nhap thanh cong
     }
     void OnError(PlayFabError error)
     {
         Debug.Log("Error while loggin in/creating account");
         Debug.Log(error.GenerateErrorReport());
     }
-    #endregion Login
 
+    #endregion Login
 
 }

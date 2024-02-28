@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cf9c38eb3c8f984b818913e046352d1, type: 3}
   m_Name: Sword_01
   m_EditorClassIdentifier: 
+  itemID: a8f8f6d2-8d85-4d99-a42f-1894c7b3ce25
   itemID: cf27fc68-caf3-430d-82fa-6ab244a0379b
   itemType: 0
   itemName: Sword_01
@@ -19,5 +20,6 @@ MonoBehaviour:
   pfSword: {fileID: 865213935175162613, guid: 5921220a76cc15e468087db715ffbaf1, type: 3}
   animatorOverrideController: {fileID: 22100000, guid: d63a9cfbebdb61b4e96c3d6f6848d9e0, type: 2}
   damage: 3
+  price: 1000
   price: 50
   weaponRange: 0

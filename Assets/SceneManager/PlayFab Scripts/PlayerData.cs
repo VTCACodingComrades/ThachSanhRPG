@@ -115,11 +115,11 @@ public class PlayerData : Singleton<PlayerData>
                     break;
                 case "playerCoin":
                     PlayerCoin.Instance.SetCurrentCoin(int.Parse(result.Data[eachData.Key].Value));
-                    if(int.Parse(result.Data[eachData.Key].Value) > 0) {
-                        PlayerController.Instance.GetInventory().AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
-                                                            itemType = Item.ItemType.Coin }, 
-                                                            amount = int.Parse(result.Data[eachData.Key].Value)});
-                    }
+                    // if(int.Parse(result.Data[eachData.Key].Value) > 0) {
+                    //     PlayerController.Instance.GetInventory().AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
+                    //                                         itemType = Item.ItemType.Coin }, 
+                    //                                         amount = int.Parse(result.Data[eachData.Key].Value)});
+                    //}
                     break;
             }
         }

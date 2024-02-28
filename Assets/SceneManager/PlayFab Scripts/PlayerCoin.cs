@@ -59,6 +59,7 @@ public class PlayerCoin : Singleton<PlayerCoin>
                 currentCoin = item.amount;
             }
         }
+        
 
         if(coinText == null) {
             coinText = GameObject.Find(COIN_TEXT).GetComponent<TMP_Text>(); // this.gameObject se tim gaemobject co ten cointext va getcomponent

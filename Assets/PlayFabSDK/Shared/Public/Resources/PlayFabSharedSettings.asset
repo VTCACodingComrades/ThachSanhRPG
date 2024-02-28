@@ -15,7 +15,7 @@ MonoBehaviour:
   TitleId: 3419C
   DeveloperSecretKey: BBDBIR7QSI9KIB1YNO19C3KFB96Z8DE9CMFUSNINEYDPCZQZMW
   ProductionEnvironmentUrl: 
-  RequestType: 0
+  RequestType: 2
   DisableDeviceInfo: 0
   DisableFocusTimeCollection: 0
   RequestTimeout: 2000

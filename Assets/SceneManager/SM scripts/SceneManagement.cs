@@ -19,12 +19,15 @@ public class SceneManagement : Singleton<SceneManagement>
     //todo change scene 18-11-2023
     private Scene currentScene;
     private int currentSceneIndex;
+    public int CurrentSceneIndex {get{return currentSceneIndex;}}
     public enum Scenes
     {
         MainMenu, //0
-        SampleScene,//1
+        Scene_00,//1
         Scene_01, //2
-        Scene_02 //3
+        Scene_02, //3
+        Scene_03, //4
+        Scene_04 //5
     }
     public void ExitGame() {
         Application.Quit();
@@ -35,9 +38,9 @@ public class SceneManagement : Singleton<SceneManagement>
         SceneManager.LoadSceneAsync(scene.ToString());
     }
 
-    public void LoadNewGame() //? khi nhan nut play se load den scene_01
+    public void LoadNewGame() //? khi nhan nut playNow se load den scene_01
     {
-        SceneManager.LoadSceneAsync(Scenes.SampleScene.ToString()); // = "Scene_01"
+        SceneManager.LoadSceneAsync(Scenes.Scene_00.ToString()); // = "Scene_01"
     }
 
     public void ResumeGame() //? quay tro lai scene dang dung
@@ -54,8 +57,10 @@ public class SceneManagement : Singleton<SceneManagement>
     {
         currentScene = SceneManager.GetActiveScene();
         currentSceneIndex = currentScene.buildIndex;
-        Debug.Log("scene vua roi khoi = "+currentSceneIndex);
+        Debug.Log("scene vua roi khoi = "+ currentSceneIndex);
         
         SceneManager.LoadScene(Scenes.MainMenu.ToString());
     }
+
+    //todo
 }

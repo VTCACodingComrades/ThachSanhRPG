@@ -148,7 +148,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1135887366788914322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed72a62284c62c449dca0d1078281a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 25
   particleOnHitPrefabs: {fileID: 5705619862396726126, guid: 85aedc08ec393774fbe41620bb9cb624, type: 3}
   isEnemyProjectile: 1
   movingSpeed: 5

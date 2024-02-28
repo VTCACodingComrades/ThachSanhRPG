@@ -10,7 +10,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private Slider healthSlider;
     
     public bool isDead {get; private set;}
-    [SerializeField] private int maxHealth = 3;
+    [SerializeField] private int maxHealth = 10;
     [SerializeField] private int currentHealth;
     [SerializeField] private float damageRecoveryTime = 1f;
     private Animator animator;

@@ -1,19 +1,28 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIMainMenuButton : MonoBehaviour
 {
     //! gameobject = la panel mainmenu
     //! nhung nut nhan o day se link voi SceneManagement.cs de lay phuon gthuc chuyen scene
 
+    [SerializeField] private GameObject player;
+    [SerializeField] PlayerData_Loggin playerData_Loggin;
+    [SerializeField] Button levelsButton;
     private float delayTimeUIButtonPressed = 0.1f;
-    private GameObject player;
+
 
     private void Awake() {
         //player = GameObject.Find("Player"); //todo find folder Player de khi can playnewGame se xoa this.gameobject
+        levelsButton.enabled = false;
     }
+
     private void Update() {
         player = GameObject.Find("Player");
+
+        if(playerData_Loggin.GetIsRegisteredID_Data) levelsButton.enabled = true;
+        else levelsButton .enabled = false;
     }
 
     public void PlayNewGameButton() 
@@ -45,4 +54,7 @@ public class UIMainMenuButton : MonoBehaviour
     IEnumerator SwitchUIButtonRoutine() {
         yield return new WaitForSeconds(delayTimeUIButtonPressed);
     }
+
+
+    //todo 
 }

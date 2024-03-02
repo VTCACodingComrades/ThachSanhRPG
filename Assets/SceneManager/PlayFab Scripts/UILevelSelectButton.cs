@@ -19,8 +19,10 @@ public class UILevelSelectButton : MonoBehaviour
 
     public static UILevelSelectButton Instance;
     [SerializeField] private int unLockLevelInt;
+    [SerializeField] private int maxLevel = 3;
 
     public int UnlockLevelInt {get{return unLockLevelInt;} set{unLockLevelInt = value;}}
+    public int MaxLevelInt{get{return maxLevel;}}
 
     private void Awake() {
 
@@ -55,6 +57,7 @@ public class UILevelSelectButton : MonoBehaviour
             buttons[i].interactable = true;
         }
         SaveLevelInt("playerLevel", unLockLevelInt);
+        ChangeButtonLevelsStatusResettingCountine();
     }
 
 //? chuyen sence level khi nhan nut level
@@ -111,9 +114,9 @@ public class UILevelSelectButton : MonoBehaviour
 //? thay doi trang thai enable or disable levelSelect button dua theo bien unLockLevelInt
     public void ChangeButtonLevelsStatus()
     {
-        StartCoroutine(ChangeStatusLevelSelectRountine());
+        StartCoroutine(ChangeStatusLevelSelectCountine());
     }
-    IEnumerator ChangeStatusLevelSelectRountine()
+    IEnumerator ChangeStatusLevelSelectCountine()
     {
         yield return new WaitForSeconds(0);
 
@@ -123,4 +126,14 @@ public class UILevelSelectButton : MonoBehaviour
         for (int i = 0; i < unLockLevelInt; i++) // hien sang level hien tai
             buttons[i].interactable = true;
     }
+
+    IEnumerator DelayTimeLoadResetting() {
+        yield return new WaitForSeconds(2);
+        LoadLevelInt("playerLevel");
+    }
+    public void ChangeButtonLevelsStatusResettingCountine() {
+        StartCoroutine(DelayTimeLoadResetting());
+    }
+
+
 }

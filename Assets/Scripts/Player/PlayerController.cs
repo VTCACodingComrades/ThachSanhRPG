@@ -23,7 +23,7 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private Vector2 move; // su dung tai day, de co the vua di chuyen vua tan cong
     [SerializeField] private Vector2 moveDir;
 
-    [SerializeField] private CameraController cameraController;
+    [SerializeField] private CameraController cameraController; //todo keo tha
 
     private Rigidbody2D playerRigidbody;
     private Animator playerAnimator;
@@ -32,7 +32,6 @@ public class PlayerController : Singleton<PlayerController>
     private ThachSanh thachSanh;
 
     public Vector2 GetMoveDir { get { return moveDir; } }
-
 
     protected override void Awake()
     {
@@ -46,11 +45,12 @@ public class PlayerController : Singleton<PlayerController>
         
         //inventory = new Inventory();
 
-        ui_Inventory.SetPlayerPos(this); // uiInventory lay vi tri player
+        ui_Inventory.SetPlayerPos(this); //todo uiInventory lay vi tri player
 
-        //CameraController.Instance.SetPlayerCameraFollow();
-        cameraController = FindObjectOfType<CameraController>();
-        cameraController.SetPlayerCameraFollow();
+        //cameraController = FindObjectOfType<CameraController>(); //! ko tim thay doi tuong thuoc CameraController.cs
+
+        //CameraController.Instance.SetPlayerCameraFollow(); // maybe use
+        cameraController.SetPlayerCameraFollow(); //todo phai co de khi resume camera theo doi
     }
 
     private void Start()

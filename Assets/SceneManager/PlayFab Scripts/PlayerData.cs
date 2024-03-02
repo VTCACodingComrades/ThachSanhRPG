@@ -12,9 +12,9 @@ public class CharacterInfoData {
     public string name;
     public int level;
     public float health;
-    public int coin;
+    public float coin;
 
-    public CharacterInfoData(string name, int levelPlayer, float health, int coin) {
+    public CharacterInfoData(string name, int levelPlayer, float health, float coin) {
         this.name = name;
         this.level = levelPlayer;
         this.health = health;
@@ -28,7 +28,7 @@ public class PlayerData : Singleton<PlayerData>
 
     private CharacterInfo ReturnClass() {
         return new CharacterInfo(name, 1, 
-        PlayerHealth.Instance.CurrentHealth, PlayerCoin.Instance.CurrentCoin); // lay gia tri o cac class de luu healthInput.value
+        PlayerHealth.Instance.CurrentHealth, PlayerCoin.Instance.CurrentBalance); // lay gia tri o cac class de luu healthInput.value
     }
     protected override void Awake()
     {
@@ -50,6 +50,7 @@ public class PlayerData : Singleton<PlayerData>
     IEnumerator DelaySetUIPlayerDataString() {
         yield return new WaitForSeconds(1f);
     }
+
     private void SetUIPlayerData_String() {
         StartCoroutine(DelaySetUIPlayerDataString());
         SetUI();
@@ -75,7 +76,7 @@ public class PlayerData : Singleton<PlayerData>
                 {"playerName", PlayerCoin.Instance.CurrentName.ToString()},
                 {"playerLevel", PlayerCoin.Instance.CurrentLevel.ToString()},// levelInput.value.ToString()
                 {"playerHealth", PlayerHealth.Instance.CurrentHealth.ToString()}, //healthInput.value.ToString()
-                {"playerCoin",   PlayerCoin.Instance.CurrentCoin.ToString()}, // cointInt.ToString()
+                {"playerCoin",   PlayerCoin.Instance.CurrentBalance.ToString()}, // cointInt.ToString()
             }
         },
         result => { Debug.Log("Player Data Title updated"); },
@@ -114,7 +115,8 @@ public class PlayerData : Singleton<PlayerData>
                     PlayerHealth.Instance.SetCurrentHealth(int.Parse(result.Data[eachData.Key].Value));
                     break;
                 case "playerCoin":
-                    PlayerCoin.Instance.SetCurrentCoin(int.Parse(result.Data[eachData.Key].Value));
+                    PlayerCoin.Instance.SetCurrentBalance(float.Parse(result.Data[eachData.Key].Value));
+                    
                     // if(int.Parse(result.Data[eachData.Key].Value) > 0) {
                     //     PlayerController.Instance.GetInventory().AddItem(new Item {itemScriptableObject = new ItemScriptableObject() {
                     //                                         itemType = Item.ItemType.Coin }, 

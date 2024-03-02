@@ -21,7 +21,8 @@ public class FinishPoints : MonoBehaviour
 
     void UnlockNewLevelPlayfab() // tang gia tri unLockLevelInt => hien sang nut chon level
     {
-        if(SceneManager.GetActiveScene().buildIndex >= UILevelSelectButton.Instance.UnlockLevelInt)
+        if(SceneManager.GetActiveScene().buildIndex >= UILevelSelectButton.Instance.UnlockLevelInt 
+            && UILevelSelectButton.Instance.UnlockLevelInt < UILevelSelectButton.Instance.MaxLevelInt)
         {
             UILevelSelectButton.Instance.UnlockLevelInt = SceneManager.GetActiveScene().buildIndex + 1;
             // UILevelSelectButton.Instance.SaveLevelInt("playerLevel", SceneManager.GetActiveScene().buildIndex + 1);

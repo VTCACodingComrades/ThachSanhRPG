@@ -12,9 +12,9 @@ public class CharacterInfo {
     public string name;
     public float level;
     public float health;
-    public int coin;
+    public float coin;
 
-    public CharacterInfo(string name, float levelPlayer, float health, int coin) {
+    public CharacterInfo(string name, float levelPlayer, float health, float coin) {
         this.name = name;
         this.level = levelPlayer;
         this.health = health;
@@ -35,12 +35,13 @@ public class PlayerData_Loggin : MonoBehaviour
     [SerializeField] private Slider healthInput;
     [SerializeField] private TMP_Text coinText;
     [SerializeField] private bool isRegistered;
+    [SerializeField] private float startingBalance = 400;
 
     public bool GetIsRegisteredID_Data{get {return isRegistered;}}
 
     private CharacterInfo ReturnClass() {
         return new CharacterInfo(nameInput.text, levelInput.value, 
-        PlayerHealth.Instance.CurrentHealth, PlayerCoin.Instance.CurrentCoin); // lay gia tri o cac class de luu healthInput.value
+        PlayerHealth.Instance.CurrentHealth, PlayerCoin.Instance.CurrentBalance); // lay gia tri o cac class de luu healthInput.value
     }
     private void Start() {
         // cointInt = 0;
@@ -114,7 +115,7 @@ public class PlayerData_Loggin : MonoBehaviour
                 {"playerName", nameInput.text.ToString()},
                 {"playerLevel", "1"},// levelInput.value.ToString()
                 {"playerHealth", "10"}, //healthInput.value.ToString()
-                {"playerCoin",   "0"}, // cointInt.ToString()
+                {"playerCoin",   startingBalance.ToString()}, // cointInt.ToString()
             }
         },
         result => { Debug.Log("Player Data Title updated");},

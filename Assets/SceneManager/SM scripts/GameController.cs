@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class GameController : Singleton<GameController>
@@ -48,6 +49,18 @@ public class GameController : Singleton<GameController>
     {
         gameOverPanel.SetActive(false);
         Time.timeScale = 1; // Unfreeze at collum 91 PlayerHealth.cs
+    }
+
+    public void ReloadCurrentSceneAfterDeath() {
+        //? load scene hien tai
+            gameOverPanel.SetActive(false);
+            var currentScene = SceneManager.GetActiveScene();
+            int currentSceneIndex = currentScene.buildIndex;
+            SceneManager.LoadSceneAsync(currentSceneIndex);
+            Time.timeScale = 1; //unfrezze
+
+            PlayerHealth.Instance.SetCurrentHealth(10);
+            PlayerHealth.Instance.SetIsPlayerDeath(false);
     }
 
 

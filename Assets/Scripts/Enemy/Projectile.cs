@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+
+    //todo gameObject = vien dan cua LogEnemy
     //[SerializeField] float moveSpeed = 25f;
     [SerializeField] private GameObject particleOnHitPrefabs;
+    [SerializeField] private int damageBullet_LogEnemy = 1;
     [SerializeField] private bool isEnemyProjectile = false; //? bullet cua enemy
     [SerializeField] private float movingSpeed;
     public float lifeTime;
@@ -70,7 +73,7 @@ public class Projectile : MonoBehaviour
             if(playerHealth && isEnemyProjectile && !playerHealth.isDead) {
 
                 Debug.Log("Player take damage");
-                playerHealth?.TakeDamage(1, transform);
+                playerHealth?.TakeDamage(damageBullet_LogEnemy, transform);
                 Instantiate(particleOnHitPrefabs, transform.position, transform.rotation);
                 Destroy(this.gameObject);
             }

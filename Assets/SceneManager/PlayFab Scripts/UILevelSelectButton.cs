@@ -102,6 +102,7 @@ public class UILevelSelectButton : MonoBehaviour
                     unLockLevelInt = int.Parse(value.Value);
                     
                     Debug.Log("level vua load xuong : " + unLockLevelInt);
+                    
                 }
                 else
                 {

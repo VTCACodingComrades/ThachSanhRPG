@@ -50,8 +50,11 @@ public class EnemyAI : MonoBehaviour
             CheckObtacleBottom();
 		}
 
-		checkDistance = Vector2.Distance(transform.position, PlayerController.Instance.transform.position);
-        MovementStateControl();
+		if(!PlayerHealth.Instance.isDead) {
+			checkDistance = Vector2.Distance(transform.position, PlayerController.Instance.transform.position);
+			MovementStateControl();
+		}
+		
     }
     private void MovementStateControl() {
 		

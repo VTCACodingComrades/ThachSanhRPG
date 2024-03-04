@@ -6,6 +6,7 @@ public class FireShooter : MonoBehaviour, IEnemy
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform newBulletPawnPoint;
     private EnemyAnimation enemyAnimation;
+    [SerializeField] private int damageBullet_FireShotter = 2;
 
     private void Awake() {
         enemyAnimation = GetComponent<EnemyAnimation>();
@@ -19,9 +20,9 @@ public class FireShooter : MonoBehaviour, IEnemy
 
         // huong vector tu player - gameobject hien tai
         Vector2 targetDirectionPlayer = PlayerController.Instance.transform.position - transform.position;
+        bulletPrefab.GetComponent<FireBullet>().damageBullet_FireShotter = this.damageBullet_FireShotter;
         GameObject newBullet = Instantiate(bulletPrefab, newBulletPawnPoint.transform.position, Quaternion.identity);
         newBullet.transform.right = targetDirectionPlayer;
-
     }
 
 }

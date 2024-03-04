@@ -60,6 +60,7 @@ public class SceneManagement : Singleton<SceneManagement>
         Debug.Log("scene vua roi khoi = "+ currentSceneIndex);
         
         SceneManager.LoadScene(Scenes.MainMenu.ToString());
+
     }
 
     //todo

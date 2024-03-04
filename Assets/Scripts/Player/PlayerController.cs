@@ -267,6 +267,7 @@ public class PlayerController : Singleton<PlayerController>
     private void OnTriggerEnter2D(Collider2D other)
     {
         ItemWorld itemWorld = other.GetComponent<ItemWorld>();
+
         if (itemWorld != null && itemWorld.GetItem().itemScriptableObject.itemType != Item.ItemType.Coin)
         {
             // lay ve doi tuong item Item.cs ( game object = vat pham pfItemWord vua louch)

@@ -28,7 +28,10 @@ public class LogEnemy : Enemy
     // Update is called once per frame
     void Update()
     {
-        CheckDistance();
+        if(!PlayerHealth.Instance.isDead) {
+            CheckDistance();
+        }
+        
     }
 
     void CheckDistance()

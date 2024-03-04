@@ -10,6 +10,7 @@ public class FireBullet : MonoBehaviour
     [SerializeField] private float projectileRange = 10f; //? pham vi dan cua enemy
     [SerializeField] private Vector2 dir;
     private Vector3 startPos;
+    [SerializeField] public int damageBullet_FireShotter;
     private void Start() {
         startPos = transform.position;
     }
@@ -60,7 +61,7 @@ public class FireBullet : MonoBehaviour
             {
                 //player take damage
                 Debug.Log("Player take damage");
-                player?.TakeDamage(1, transform);
+                player?.TakeDamage(damageBullet_FireShotter, transform);
 
                 Instantiate(particleOnHitPrefabs, transform.position, transform.rotation);
                 Destroy(gameObject);

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : Singleton<PlayerHealth>
@@ -19,6 +20,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     public int SetCurrentHealth(int health) {
         return this.currentHealth = health;
     }
+    public bool SetIsPlayerDeath(bool isPlayerDeath) => isDead = isPlayerDeath;
 
     protected override void Awake() {
         base.Awake();
@@ -82,9 +84,13 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
             isDead = true;
             currentHealth = 0;
+            //Destroy(PlayerHealth.Instance.gameObject);
             
             //xet Die animaiton
             //animator.SetTrigger("Die");
+
+            //? hien bang gameover
+            GameController.Instance.GameOverSendData();
         }
     }
     IEnumerator DamageReoveryRoutine() {

@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleOnHitPrefabs: {fileID: 5705619862396726126, guid: 85aedc08ec393774fbe41620bb9cb624, type: 3}
+  damageBullet_LogEnemy: 2
   isEnemyProjectile: 1
   movingSpeed: 5
   lifeTime: 2

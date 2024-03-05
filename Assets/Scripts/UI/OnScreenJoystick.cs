@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.Layouts;
 using UnityEngine.InputSystem.OnScreen;
+using UnityEngine.UI;
 
 public class OnScreenJoystick: OnScreenControl
 { 
@@ -75,5 +76,10 @@ public class OnScreenJoystick: OnScreenControl
 
         SendValueToControl(joystickVec);
 
+    }
+
+    public void ToggleButton()
+    {
+        gameObject.SetActive(!gameObject.activeSelf);
     }
 }

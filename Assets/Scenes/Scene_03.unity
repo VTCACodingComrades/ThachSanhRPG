@@ -10063,9 +10063,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6945096629000937034}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d495b426f062a3848bf9b414f6608c2d, type: 2}
+  m_Controller: {fileID: 9100000, guid: a77336b957c24fd4998586f86bf0ba81, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11372,11 +11372,11 @@ GameObject:
   - component: {fileID: 8906300248480385369}
   - component: {fileID: 2300104632197512158}
   - component: {fileID: 2729667937146961903}
-  - component: {fileID: 7598046941163668569}
   - component: {fileID: 1442402767018106505}
   - component: {fileID: 2715989963864907842}
+  - component: {fileID: 8906300248480385370}
   m_Layer: 7
-  m_Name: Log
+  m_Name: EnemyBoss
   m_TagString: CombatTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11407,27 +11407,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7598046941163668569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6945096629000937034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2135ae7e10a442742802ee0081b15fcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 6
-  enemyName: 
-  deathEffect: {fileID: 7264417325517988741, guid: c4ea62e665d2493448d6e5528667df3e, type: 3}
-  detectRadius: 10
-  attackRadius: 8
-  target: {fileID: 0}
-  moveSpeed: 3
-  firePos: {fileID: 4443338717038790136}
-  projectilePf: {fileID: 8172187201797174598, guid: 248c0930a3a3f2c4089cd06951b46d6e, type: 3}
 --- !u!223 &7678293874969229324
 Canvas:
   m_ObjectHideFlags: 0
@@ -11862,6 +11841,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8906300248480385370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945096629000937034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d686c48eda7f543ba7aaca3e73fa3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  enemyName: 
+  deathEffect: {fileID: 0}
+  overrideControllers: {fileID: 22100000, guid: cabee2eb2c88c9d45acd24cd1f04bec0, type: 2}
 --- !u!114 &8989874100280909040
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 74a8e23b351e9be4aa1f2466475cc199
+guid: fb79f86377df8284ebb7dbeb87c2a564
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChanTinh_0
+      name: ChanTinhAttack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2048
-        width: 64
-        height: 64
+        x: 16
+        y: 2049
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58e4984dcff53f241a5d33e9f6072118
-      internalID: 2131872311
+      spriteID: 5ecb611a907fec54e98a4df824249ffa
+      internalID: 647195868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_1
+      name: ChanTinhAttack_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 2048
-        width: 64
-        height: 64
+        x: 81
+        y: 2049
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c62c96acb6b82f4498efe3e38cc8891e
-      internalID: -1283268750
+      spriteID: ec62ffdd25e52434d91c6d072cbd7242
+      internalID: -886820873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_2
+      name: ChanTinhAttack_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 2048
-        width: 64
-        height: 64
+        x: 145
+        y: 2049
+        width: 30
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea1057d39969a3443bcc008f3faee103
-      internalID: 1340388995
+      spriteID: a21a038da3864244b8914fea71b077b3
+      internalID: -1380909952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_3
+      name: ChanTinhAttack_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 2048
-        width: 64
-        height: 64
+        x: 205
+        y: 2049
+        width: 38
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9f76dc3041362047a6c59b4b37ec28b
-      internalID: -1147910684
+      spriteID: 0e0a55c03a9635946a756fdb48aa3de4
+      internalID: -1775500087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_4
+      name: ChanTinhAttack_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 2048
-        width: 64
-        height: 64
+        x: 261
+        y: 2049
+        width: 53
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f00a3600e5f4d334d9ee49e57007dfcf
-      internalID: 762662163
+      spriteID: b8aab59f846f94e498ac124888c7d721
+      internalID: 374524002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_5
+      name: ChanTinhAttack_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 2048
-        width: 64
-        height: 64
+        x: 326
+        y: 2049
+        width: 51
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3413179c0ade4e24cab3aea0e2e2a912
-      internalID: -301908507
+      spriteID: 8781b77359acad045add19f19f597b07
+      internalID: 2072677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_6
+      name: ChanTinhAttack_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 2048
-        width: 64
-        height: 64
+        x: 397
+        y: 2049
+        width: 38
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0871a9bbcd7480b439c3686d2e94b3fe
-      internalID: -1795073967
+      spriteID: d86e44a3a1438514bb688880130ce75d
+      internalID: -1268809971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_7
+      name: ChanTinhAttack_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1984
-        width: 64
-        height: 64
+        x: 22
+        y: 1985
+        width: 22
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85389515a3789514895eedfb03a03a3f
-      internalID: 826454506
+      spriteID: 3a7d31e9b1928c7469ef07087980f3ec
+      internalID: -378545691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_8
+      name: ChanTinhAttack_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1984
-        width: 64
-        height: 64
+        x: 84
+        y: 1985
+        width: 25
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d0d4deb3f792344cb66cf25f34d81df
-      internalID: -1429455375
+      spriteID: 75ff5f0d937931a4db1d48a86d8dfe1f
+      internalID: 708738429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_9
+      name: ChanTinhAttack_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1984
-        width: 64
-        height: 64
+        x: 149
+        y: 1985
+        width: 23
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,20 +339,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0aa59a10a2d663438244e6156388c33
-      internalID: 2085622182
+      spriteID: febe0bada2748ca40b6b1ed91f7fcc61
+      internalID: 1762222704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_10
+      name: ChanTinhAttack_10
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1984
-        width: 64
-        height: 64
+        x: 211
+        y: 1985
+        width: 28
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,20 +360,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0372d00eba874bc439ce14cec0ef5883
-      internalID: -127570800
+      spriteID: f77bcedebd203a9448e5522fe6f7e6f2
+      internalID: -1081753230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_11
+      name: ChanTinhAttack_11
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1984
-        width: 64
-        height: 64
+        x: 273
+        y: 1985
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,20 +381,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ec9435e203106d4397764f6fb615d51
-      internalID: -1714159524
+      spriteID: 197917bd1aecdcc4a82cb72838984457
+      internalID: -963587187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_12
+      name: ChanTinhAttack_12
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1984
-        width: 64
-        height: 64
+        x: 337
+        y: 1985
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,20 +402,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e5ac69ce8d2cbd449f794ba3485da9c
-      internalID: -92575826
+      spriteID: 06e353c04f7dbc84c933695cdcb2f426
+      internalID: -583212683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_13
+      name: ChanTinhAttack_13
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1984
-        width: 64
-        height: 64
+        x: 403
+        y: 1985
+        width: 31
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -423,20 +423,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88f8df8ca388bf849a0a24de9b0a68ef
-      internalID: -1382307298
+      spriteID: 7592382b01efd9446a1d8261316f026c
+      internalID: -2097181098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_14
+      name: ChanTinhAttack_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1920
-        width: 64
-        height: 64
+        x: 16
+        y: 1921
+        width: 32
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,20 +444,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f117b2ad6b7f9da4c9538a34a505b16c
-      internalID: 197592451
+      spriteID: 5417b59f68e96f340815314e63ebaef5
+      internalID: -857331799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_15
+      name: ChanTinhAttack_15
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1920
-        width: 64
-        height: 64
+        x: 80
+        y: 1921
+        width: 32
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,20 +465,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a56510e273dc664ea7f903b319ee45b
-      internalID: 826055190
+      spriteID: d6ef7f62830b50149a3dff1ce457c2b0
+      internalID: 722484746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_16
+      name: ChanTinhAttack_16
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1920
-        width: 64
-        height: 64
+        x: 145
+        y: 1921
+        width: 30
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,20 +486,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76d7832a2563bde498d499686c7b8a02
-      internalID: -557086486
+      spriteID: 828371c6931fb544f9e7094449ab79dc
+      internalID: 1750570350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_17
+      name: ChanTinhAttack_17
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1920
-        width: 64
-        height: 64
+        x: 205
+        y: 1921
+        width: 38
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,20 +507,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae4fdc231b597a14a8995b6c857622cc
-      internalID: 955567041
+      spriteID: 9eb6be28172e8b3448cf45d91a823084
+      internalID: 1186817457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_18
+      name: ChanTinhAttack_18
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1920
-        width: 64
-        height: 64
+        x: 261
+        y: 1921
+        width: 53
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,20 +528,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a24bbdb49acfe804b933dcdfc6c38029
-      internalID: 1246772840
+      spriteID: 6f478d233adbbb84f9b0705cba342176
+      internalID: 1396304965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_19
+      name: ChanTinhAttack_19
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1920
-        width: 64
-        height: 64
+        x: 326
+        y: 1921
+        width: 51
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,20 +549,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff504c346ccb88f4fa2792fa47303f48
-      internalID: -1045552142
+      spriteID: 9570bc1643fce094388035af2d01492c
+      internalID: 210760884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_20
+      name: ChanTinhAttack_20
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1920
-        width: 64
-        height: 64
+        x: 398
+        y: 1921
+        width: 36
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,20 +570,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bafcedfe0b0034647bd6eff6a1d9ffad
-      internalID: 1225275342
+      spriteID: fa2d24087b9b56547ad88e3e79e6daf9
+      internalID: 305755152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_21
+      name: ChanTinhAttack_21
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1920
-        width: 64
-        height: 64
+        x: 498
+        y: 1930
+        width: 66
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,20 +591,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06000ae219b2aef488c2e2e4597b60a2
-      internalID: -172869340
+      spriteID: 31e8951ac3d7e6947a00fed86e0011bc
+      internalID: -766858962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_22
+      name: ChanTinhAttack_22
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1920
-        width: 64
-        height: 64
+        x: 20
+        y: 1857
+        width: 22
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -612,20 +612,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4249df2407a4abe4c82611f722426d0e
-      internalID: 1141307354
+      spriteID: 879f144b2940fbb42b3dce5648dd59b3
+      internalID: -1495293068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_23
+      name: ChanTinhAttack_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1856
-        width: 64
-        height: 64
+        x: 83
+        y: 1857
+        width: 25
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -633,20 +633,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3d7a99c7e0e3c14f8dffdb6b7aa5c24
-      internalID: 238932989
+      spriteID: 2e8ea00a6652d684fa8d44a1940965fa
+      internalID: -285728722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_24
+      name: ChanTinhAttack_24
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1856
-        width: 64
-        height: 64
+        x: 148
+        y: 1857
+        width: 23
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -654,20 +654,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d183b406602d04443b6c5de900f793bd
-      internalID: -1402997824
+      spriteID: 0fd543b6bd987e340b7835c28aea1fbf
+      internalID: 701782651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_25
+      name: ChanTinhAttack_25
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1856
-        width: 64
-        height: 64
+        x: 209
+        y: 1857
+        width: 28
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -675,20 +675,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010c4c1b542728448bdacc7e1c25ed69
-      internalID: 1006471380
+      spriteID: 6f718656a702a76409246ed6afb78bd9
+      internalID: -228965970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_26
+      name: ChanTinhAttack_26
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1856
-        width: 64
-        height: 64
+        x: 268
+        y: 1857
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,20 +696,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d07b3bd225d1bd44b119714f6351e18
-      internalID: 1573244596
+      spriteID: 2e446a43d1f01fc419d58eae2841dda0
+      internalID: -203352416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_27
+      name: ChanTinhAttack_27
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1856
-        width: 64
-        height: 64
+        x: 332
+        y: 1857
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -717,20 +717,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba84774ca82112642a1441056e8b0f43
-      internalID: -12551679
+      spriteID: 0efc116f050b4f347a72ecd9610e9e52
+      internalID: -944994179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_28
+      name: ChanTinhAttack_28
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1856
-        width: 64
-        height: 64
+        x: 399
+        y: 1857
+        width: 31
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -738,20 +738,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d10c920d70bcf7409ad344faf8df307
-      internalID: 1707845183
+      spriteID: 839c7dd97c822524890a81967660bdf9
+      internalID: -546945816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_29
+      name: ChanTinhAttack_29
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1856
-        width: 64
-        height: 64
+        x: 16
+        y: 1793
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -759,20 +759,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0623c0ea2dc79946a09ba8fd80c4e6e
-      internalID: 1162160918
+      spriteID: 07b7bf7606bcd4d4eb746a1f469131b7
+      internalID: -1371185102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_30
+      name: ChanTinhAttack_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1792
-        width: 64
-        height: 64
+        x: 83
+        y: 1791
+        width: 28
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -780,20 +780,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e15024a134fa69c4787d1c0675ab5525
-      internalID: 1736625433
+      spriteID: 0f780348c25350b4789ff33a85e3977f
+      internalID: -1633714633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_31
+      name: ChanTinhAttack_31
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1792
-        width: 64
-        height: 64
+        x: 148
+        y: 1791
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -801,20 +801,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 447e8bde3ba75b745af42aeae40201f2
-      internalID: 1250210152
+      spriteID: 779e14aa619a7c44daaf352f9643b4ee
+      internalID: 1715033517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_32
+      name: ChanTinhAttack_32
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1792
-        width: 64
-        height: 64
+        x: 212
+        y: 1791
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -822,20 +822,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73343253f4172d54da3803f78dfadcba
-      internalID: -1769781603
+      spriteID: 6febdad0dc5c3284b8e30b97e597bd65
+      internalID: -1595867854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_33
+      name: ChanTinhAttack_33
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1792
-        width: 64
-        height: 64
+        x: 277
+        y: 1791
+        width: 26
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -843,20 +843,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8190afff302cbb64ea92e91da850c01e
-      internalID: -1409125481
+      spriteID: bfe9cb1f1ba741e42a08872dcd16e40b
+      internalID: -1964127400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_34
+      name: ChanTinhAttack_34
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1792
-        width: 64
-        height: 64
+        x: 341
+        y: 1791
+        width: 26
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -864,20 +864,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5200f7041daae4c48b5455507059119c
-      internalID: -125543249
+      spriteID: 63a16e802b5af004085d4e3dc81b8500
+      internalID: -889620512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_35
+      name: ChanTinhAttack_35
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1792
-        width: 64
-        height: 64
+        x: 405
+        y: 1791
+        width: 26
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -885,20 +885,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45ec2c950bdbb284e847f562bf832015
-      internalID: 2033161497
+      spriteID: f797e37d4cd437a49886ef74324e5817
+      internalID: -263119367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_36
+      name: ChanTinhAttack_36
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1792
-        width: 64
-        height: 64
+        x: 468
+        y: 1791
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -906,20 +906,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 084033473748900408967611d2e14d1b
-      internalID: 2058047430
+      spriteID: 3679e0a00a2687e4bbd33e04fa21814d
+      internalID: -433764753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_37
+      name: ChanTinhAttack_37
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1792
-        width: 64
-        height: 64
+        x: 22
+        y: 1729
+        width: 22
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -927,20 +927,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f3efc803b3010b4e905079d673772d9
-      internalID: 2044578443
+      spriteID: 17d1ebd631c953041a29fee8bff435ec
+      internalID: -565613584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_38
+      name: ChanTinhAttack_38
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1728
-        width: 64
-        height: 64
+        x: 82
+        y: 1729
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -948,20 +948,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a60c2ef8828754dbcf4bb1b3108aae
-      internalID: -1490990243
+      spriteID: b78c7dc5a31554541aedc3f10defa1fb
+      internalID: 1687259312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_39
+      name: ChanTinhAttack_39
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1728
-        width: 64
-        height: 64
+        x: 146
+        y: 1729
+        width: 29
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -969,20 +969,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0651e7e300db30246831fc6e58fc2384
-      internalID: -1264211157
+      spriteID: b3e9d42ef4ab6c740a283ecd54205390
+      internalID: -883280939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_40
+      name: ChanTinhAttack_40
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1728
-        width: 64
-        height: 64
+        x: 213
+        y: 1729
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -990,20 +990,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 120dd85749457f0438b2c538438c367a
-      internalID: -943435750
+      spriteID: 4e969528089050743a3613b9231de55d
+      internalID: -284053815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_41
+      name: ChanTinhAttack_41
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1728
-        width: 64
-        height: 64
+        x: 270
+        y: 1729
+        width: 30
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1011,20 +1011,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ff97df56b893cb4ca90ab4a67f98c3e
-      internalID: -464141512
+      spriteID: 75ce70b40d53e614db2ebec803b629db
+      internalID: -705737750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_42
+      name: ChanTinhAttack_42
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1728
-        width: 64
-        height: 64
+        x: 331
+        y: 1729
+        width: 33
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1032,20 +1032,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c34a3536eb8d5454b83f23126b7300e9
-      internalID: -1223283269
+      spriteID: c38df6e26b1809647a03ad6a4eff2d87
+      internalID: 1323168181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_43
+      name: ChanTinhAttack_43
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1728
-        width: 64
-        height: 64
+        x: 398
+        y: 1729
+        width: 29
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1053,20 +1053,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d50ad6fb0dca2844aa7c4a9b8f0fba59
-      internalID: 25396619
+      spriteID: 06f305aaf1f55084182fabae2101e89f
+      internalID: 617768024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_44
+      name: ChanTinhAttack_44
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1728
-        width: 64
-        height: 64
+        x: 469
+        y: 1729
+        width: 28
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1074,20 +1074,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33663b4f75e702f49a166c8a5545185c
-      internalID: 1681263616
+      spriteID: f9b8d57c094ab8548944009cd25746ff
+      internalID: -837638242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_45
+      name: ChanTinhAttack_45
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1728
-        width: 64
-        height: 64
+        x: 16
+        y: 1665
+        width: 32
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1095,20 +1095,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a8489b6c252c4b40924fac72ccb0f36
-      internalID: -1194037145
+      spriteID: 20a7e2d83789ea74a83a5418a049d8f3
+      internalID: -1981960359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_46
+      name: ChanTinhAttack_46
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1664
-        width: 64
-        height: 64
+        x: 82
+        y: 1666
+        width: 27
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1116,20 +1116,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b22189c1ec8ed354d98406a2a26c19f5
-      internalID: -1780578278
+      spriteID: 70ad0fcc3a0ebb944a142a1f13dc2695
+      internalID: -2092338243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_47
+      name: ChanTinhAttack_47
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1664
-        width: 64
-        height: 64
+        x: 147
+        y: 1666
+        width: 26
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1137,20 +1137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67c3fe2cbb4b7f14e89768a49ef98108
-      internalID: -2037042646
+      spriteID: 86a7d78f5e26f3844abfbe3d1472030c
+      internalID: 690560712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_48
+      name: ChanTinhAttack_48
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1664
-        width: 64
-        height: 64
+        x: 209
+        y: 1666
+        width: 28
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1158,20 +1158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc21e63c55e22334984a71ddcc172e20
-      internalID: -442779993
+      spriteID: 9b561fd1989e7514984a2e20ff2c09f4
+      internalID: -1879774706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_49
+      name: ChanTinhAttack_49
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1664
-        width: 64
-        height: 64
+        x: 275
+        y: 1666
+        width: 26
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1179,20 +1179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ffa1d880f1c84a418baddf8a74ceebc
-      internalID: -762161486
+      spriteID: 94c9f8e4fd00ada47a8f8cd169f1f1c5
+      internalID: 2143720855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_50
+      name: ChanTinhAttack_50
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1664
-        width: 64
-        height: 64
+        x: 339
+        y: 1666
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1200,20 +1200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 477989d300184f64c9a9c76a71825d65
-      internalID: -928494977
+      spriteID: 8c87ffa21bf6d6145b3edfd4a8fdc3c4
+      internalID: -1207089478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_51
+      name: ChanTinhAttack_51
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1664
-        width: 64
-        height: 64
+        x: 403
+        y: 1666
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1221,20 +1221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 265421729fcdfd344b5f798cd0e9a34a
-      internalID: 362567802
+      spriteID: cd9865d5cfd08c2428616be1577c8ef0
+      internalID: 1962683807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_52
+      name: ChanTinhAttack_52
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1664
-        width: 64
-        height: 64
+        x: 465
+        y: 1666
+        width: 28
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1242,20 +1242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15cd36713a203ee4588d08a6314992b7
-      internalID: 1203401684
+      spriteID: 475effafb3d4c1d489405ee824067240
+      internalID: 1516709389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_53
+      name: ChanTinhAttack_53
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1664
-        width: 64
-        height: 64
+        x: 20
+        y: 1601
+        width: 22
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1263,20 +1263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37092e15fd315f148a7a140b2e7c25ff
-      internalID: -439055198
+      spriteID: c10d8b87b33009448adbaecd59412fe7
+      internalID: 2063137394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_54
+      name: ChanTinhAttack_54
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1600
-        width: 64
-        height: 64
+        x: 83
+        y: 1601
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1284,20 +1284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbd3014c961c98e4aa39d0f4ac5087f4
-      internalID: -606827758
+      spriteID: bfbdbd8147936ca419b7544aba406989
+      internalID: 1929081581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_55
+      name: ChanTinhAttack_55
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1600
-        width: 64
-        height: 64
+        x: 145
+        y: 1601
+        width: 29
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1305,20 +1305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 189a4c942a21a7640ad0f709cd50fda9
-      internalID: -1315617605
+      spriteID: e1701e7bfe90bf3498fd7a8d0c921f85
+      internalID: -1741468052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_56
+      name: ChanTinhAttack_56
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1600
-        width: 64
-        height: 64
+        x: 208
+        y: 1601
+        width: 28
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1326,20 +1326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab49137dcb58c7945a57b60a17fcc903
-      internalID: 1719190342
+      spriteID: 1692d65b539e38a499d8af4b88ff0782
+      internalID: -1493958555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_57
+      name: ChanTinhAttack_57
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1600
-        width: 64
-        height: 64
+        x: 277
+        y: 1601
+        width: 29
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1347,20 +1347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aa000dee2a6581458537687b5531079
-      internalID: -124443243
+      spriteID: a33ad177d9b712e4fa61bf4856056896
+      internalID: -512179591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_58
+      name: ChanTinhAttack_58
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1600
-        width: 64
-        height: 64
+        x: 341
+        y: 1601
+        width: 32
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1368,20 +1368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f97882080ad11de41ad3b38b69ef499f
-      internalID: -1302477144
+      spriteID: 3eb65b9c586913941a02c47e29fc6b8c
+      internalID: 364527341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_59
+      name: ChanTinhAttack_59
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1600
-        width: 64
-        height: 64
+        x: 405
+        y: 1601
+        width: 29
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1389,20 +1389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6e38c000eda3094296f5df39a3ad661
-      internalID: -205293388
+      spriteID: ae924f43e98584b4c8ce2d194ccdb1fb
+      internalID: -1555380220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_60
+      name: ChanTinhAttack_60
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1600
-        width: 64
-        height: 64
+        x: 464
+        y: 1601
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1410,20 +1410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a29b1809bf984e4799c8f7e75f0e2da
-      internalID: -808283749
+      spriteID: 0df4ab0f60cc0194eb9441d9e03dc586
+      internalID: 727738030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_61
+      name: ChanTinhAttack_61
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1600
-        width: 64
-        height: 64
+        x: 16
+        y: 1538
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1431,20 +1431,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c77548bf5f8d4fa469f2273baa997dc7
-      internalID: 5758461
+      spriteID: 54ed1f2c858ce0a44b4614951fc2ed49
+      internalID: -161919604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU0
+      name: ChanTinhAttack_62
       rect:
         serializedVersion: 2
-        x: 0
+        x: 80
+        y: 1538
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052edaf7a2b540342b4c28a528905145
+      internalID: 1882101954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChanTinhAttack_63
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1537
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6136f65aab5a292488681e073db3ee68
+      internalID: 1140521727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChanTinhAttack_64
+      rect:
+        serializedVersion: 2
+        x: 208
         y: 1536
-        width: 64
-        height: 64
+        width: 31
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1452,20 +1494,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10df91dda490f24d95895264b74bd42
-      internalID: 1397194046
+      spriteID: faf0802f09ec9e247bc631524bfdf144
+      internalID: -1447812268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU1
+      name: ChanTinhAttack_65
       rect:
         serializedVersion: 2
-        x: 64
+        x: 272
+        y: 1537
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95711d34de1ea564fac7d44923b38303
+      internalID: -1952206455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChanTinhAttack_66
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1538
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6677cfa3647806e49af01962864dcae7
+      internalID: -489840507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChanTinhAttack_67
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1537
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c19e6434e1adca4293a129404bbaa40
+      internalID: -506883557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChanTinhAttack_68
+      rect:
+        serializedVersion: 2
+        x: 465
         y: 1536
-        width: 64
-        height: 64
+        width: 32
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1473,20 +1578,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5028935606c1c9d48af70f3fcdeb87db
-      internalID: 470920733
+      spriteID: 2980c15478dd56443ad84edbb2ec0fc7
+      internalID: -1236655607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU2
+      name: ChanTinhAttack_69
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1536
-        width: 64
-        height: 64
+        x: 528
+        y: 1537
+        width: 32
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1494,20 +1599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 609e68c5c34569d48897f78de21b0e53
-      internalID: -1615985548
+      spriteID: 04b7a355ca331404b9bf2dd873e962da
+      internalID: -1363737972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU3
+      name: ChanTinhAttack_70
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1536
-        width: 64
-        height: 64
+        x: 22
+        y: 1473
+        width: 22
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1515,20 +1620,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 369cc1c1a43e84946bd11e4046a5f94b
-      internalID: -467163081
+      spriteID: bc919fb5693237648b18d7766376350d
+      internalID: 177477423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU4
+      name: ChanTinhAttack_71
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1536
-        width: 64
-        height: 64
+        x: 82
+        y: 1473
+        width: 27
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1536,20 +1641,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56794877216f0774e8a7c854551a404b
-      internalID: 1950404496
+      spriteID: 0ef5c893c7237ee4aa6006426d7e7354
+      internalID: -654084136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU5
+      name: ChanTinhAttack_72
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1536
-        width: 64
-        height: 64
+        x: 148
+        y: 1474
+        width: 24
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1557,20 +1662,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e83730833862b2458bc02df9d4146c5
-      internalID: -550746603
+      spriteID: 41042f2967ac1944bb2fbf1ce0363742
+      internalID: 1539614003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU6
+      name: ChanTinhAttack_73
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1536
-        width: 64
-        height: 64
+        x: 214
+        y: 1474
+        width: 24
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1578,20 +1683,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 963b09382c0dc2b41b6fdf8f381805db
-      internalID: 1777000401
+      spriteID: 60e8732b37cf02b458ed1ed1520a9510
+      internalID: -726947255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU7
+      name: ChanTinhAttack_74
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1536
-        width: 64
-        height: 64
+        x: 277
+        y: 1473
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1599,20 +1704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aea37b73b8228294faa55cceff47b71d
-      internalID: 2043253709
+      spriteID: ed718c1c23c471d40aa818ab469b4b87
+      internalID: 1250642960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WU8
+      name: ChanTinhAttack_75
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 64
-        height: 64
+        x: 339
+        y: 1473
+        width: 30
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1620,20 +1725,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32f61a022451fe848ad5c6509a3f14f5
-      internalID: -121914500
+      spriteID: e74dabb9e973bbd42aff781abe5ca8ae
+      internalID: -597305063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WL0
+      name: ChanTinhAttack_76
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1472
-        width: 64
-        height: 64
+        x: 406
+        y: 1473
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1641,20 +1746,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201a17706296fd640af12c6d1d8a0a9a
-      internalID: 1273285485
+      spriteID: 5f4cfa5c652bb924bb41ccc1feec7e17
+      internalID: 1284114607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WL1
+      name: ChanTinhAttack_77
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1472
-        width: 64
-        height: 64
+        x: 470
+        y: 1473
+        width: 24
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1662,20 +1767,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67ff2926409906b4fb66785190e97d99
-      internalID: 649870112
+      spriteID: a0aa2e57d2395324296496536d1c3d42
+      internalID: 1268578667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WL2
+      name: ChanTinhAttack_78
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1472
-        width: 64
-        height: 64
+        x: 534
+        y: 1473
+        width: 23
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1683,20 +1788,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3db506171f07316459c69192a274a8cc
-      internalID: 319475317
+      spriteID: a84d49f54bdce0046b0022656cfa0631
+      internalID: 1838234670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WL3
+      name: ChanTinhAttack_79
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1472
-        width: 64
-        height: 64
+        x: 16
+        y: 1409
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1704,20 +1809,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60cc7792571e53f46923a3f929c4084a
-      internalID: -1129754937
+      spriteID: 64c8abe6a0ffeb74da9703121eb986f9
+      internalID: 124905252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WL4
+      name: ChanTinhAttack_80
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1472
-        width: 64
-        height: 64
+        x: 80
+        y: 1409
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1725,104 +1830,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ad82017297081d40a575670b0baf98a
-      internalID: -810397949
+      spriteID: 4f18856a819cdd2479a9d509eadbd4a8
+      internalID: -464506319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WL5
+      name: ChanTinhAttack_81
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34c86c7892b024545a268d52931be14a
-      internalID: 795605262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_WL6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86955ecd0f744c240aaf675927072602
-      internalID: 132301034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_WL7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 1472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc7636eff29af6a4a94a0ff956f00f8a
-      internalID: -1419221364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_WL8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f0ac8aa746e7f44f99b0ddcff469f00
-      internalID: 896829121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_WD1
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 144
         y: 1408
-        width: 64
-        height: 64
+        width: 32
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1830,20 +1851,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3c73afb61695674688af6f4c852efe4
-      internalID: 568168038
+      spriteID: d2b410efc41db564fa64dbeec852f17c
+      internalID: -536165478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WD2
+      name: ChanTinhAttack_82
       rect:
         serializedVersion: 2
-        x: 64
+        x: 209
         y: 1408
-        width: 64
-        height: 64
+        width: 31
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1851,20 +1872,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd5b02e9678e934a9bd4c75331b690b
-      internalID: 2140541281
+      spriteID: 331b029fe7880414392ef07451f71908
+      internalID: 1307094939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WD3
+      name: ChanTinhAttack_83
       rect:
         serializedVersion: 2
-        x: 128
+        x: 272
         y: 1408
-        width: 64
-        height: 64
+        width: 32
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1872,20 +1893,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d432d6fda29523443a9de39382cd0671
-      internalID: -1067649956
+      spriteID: 90d182ac0554d9c44ad6b6ca1834a450
+      internalID: 1216133504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WD4
+      name: ChanTinhAttack_84
       rect:
         serializedVersion: 2
-        x: 192
+        x: 336
+        y: 1409
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1afd998499a7d4eb7eb3b484231ce5
+      internalID: -535161105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChanTinhAttack_85
+      rect:
+        serializedVersion: 2
+        x: 400
         y: 1408
-        width: 64
-        height: 64
+        width: 33
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1893,20 +1935,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b93545cb8cd505e4e90f41b7e19d9921
-      internalID: 1831620015
+      spriteID: 5b856866729563b4881cc17bbbb3b29c
+      internalID: 1532556709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WD5
+      name: ChanTinhAttack_86
       rect:
         serializedVersion: 2
-        x: 256
+        x: 464
         y: 1408
-        width: 64
-        height: 64
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1914,20 +1956,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c465f54d30e985c40840bfdd9375dc57
-      internalID: 1746393486
+      spriteID: 28a44a8a11f0a064db35f8b466ed17ff
+      internalID: -171598868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WD6
+      name: ChanTinhAttack_87
       rect:
         serializedVersion: 2
-        x: 320
+        x: 528
         y: 1408
-        width: 64
-        height: 64
+        width: 32
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1935,20 +1977,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3d7b555e47b42942869bbcf99c43ba2
-      internalID: -2015488918
+      spriteID: 00af86264cd9c5345b6ddffb9bf513f7
+      internalID: -1859582092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WD7
+      name: ChanTinhAttack_88
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1408
-        width: 64
-        height: 64
+        x: 20
+        y: 1345
+        width: 22
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1956,20 +1998,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5657dc62e6ced8742ba51339dedc492d
-      internalID: -1647494256
+      spriteID: dd701182583b022409741518a0b73c4f
+      internalID: 1421318886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WD8
+      name: ChanTinhAttack_89
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1408
-        width: 64
-        height: 64
+        x: 83
+        y: 1345
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1977,20 +2019,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98b55a154cf8f9c478e07ba5a0910f1f
-      internalID: 482511544
+      spriteID: 90685ba3c5050dc49b8050a028dd7ac7
+      internalID: -1780851138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WD9
+      name: ChanTinhAttack_90
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1408
-        width: 64
-        height: 64
+        x: 148
+        y: 1346
+        width: 24
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1998,20 +2040,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7359f51ed8a41144b1d321453c4917a
-      internalID: -1083979831
+      spriteID: 2776c05895a44ee49a801d2ecc4a639e
+      internalID: -2042073846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WR1
+      name: ChanTinhAttack_91
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1344
-        width: 64
-        height: 64
+        x: 210
+        y: 1346
+        width: 25
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2019,20 +2061,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fa9d78bad57f3845ab40a3160f111c3
-      internalID: 1900687989
+      spriteID: d56b611a8f0f876479b23b2b8aba2adf
+      internalID: 1309290426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WR2
+      name: ChanTinhAttack_92
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1344
-        width: 64
-        height: 64
+        x: 273
+        y: 1345
+        width: 27
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2040,20 +2082,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcd8bc78f83a9fa408df7a57e7acf7e8
-      internalID: 1540358802
+      spriteID: 713ac88c69dfc0e499f16419338e65b5
+      internalID: 1475278387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WR3
+      name: ChanTinhAttack_93
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1344
-        width: 64
-        height: 64
+        x: 335
+        y: 1345
+        width: 31
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2061,20 +2103,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1a7aee6e103bec459d397f05f5ccb3c
-      internalID: -1500675418
+      spriteID: 85fbc884f5164ae4c8d6d17edf1ae0ca
+      internalID: -829134858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WR4
+      name: ChanTinhAttack_94
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1344
-        width: 64
-        height: 64
+        x: 401
+        y: 1345
+        width: 25
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2082,20 +2124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd9affc0c54eff743a26cb2a8bf2d8c3
-      internalID: 651788888
+      spriteID: 0c60c94425a8a974e951bf456f94cfe7
+      internalID: -1412261486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WR5
+      name: ChanTinhAttack_95
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1344
-        width: 64
-        height: 64
+        x: 466
+        y: 1345
+        width: 24
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2103,20 +2145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 003d848ace2765342a272a15933a92db
-      internalID: 1093361407
+      spriteID: 7f7ea7c176fb31d4bace6fc343696152
+      internalID: -175335585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WR6
+      name: ChanTinhAttack_96
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1344
-        width: 64
-        height: 64
+        x: 531
+        y: 1345
+        width: 23
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2124,20 +2166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42d50bd4f24e3d3499571258c6564673
-      internalID: -1735383038
+      spriteID: d2d442e633cf95b43849c2af3f42f4fd
+      internalID: -1196846066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WR7
+      name: ChanTinhAttack_97
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1344
-        width: 64
-        height: 64
+        x: 16
+        y: 1281
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2145,62 +2187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b685a75bd84fa92429f4cddf0cf31b11
-      internalID: 219043720
+      spriteID: adce466270eea2943aa37b7277a1df38
+      internalID: -707631619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_WR8
+      name: ChanTinhAttack_98
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1344
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed38ecdab4a4a9746bce958eaab614bd
-      internalID: 1010786361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_WR9
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1344
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 572d52a0a863c6c43ab55eaf2d2cb846
-      internalID: -1590969282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_98
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 82
         y: 1280
-        width: 64
-        height: 64
+        width: 28
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2208,20 +2208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef4203446fbf162419fa7bc919699eb7
-      internalID: -206803108
+      spriteID: f30f88ab6754ffb4e90a8f71b414e59d
+      internalID: 17973336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_99
+      name: ChanTinhAttack_99
       rect:
         serializedVersion: 2
-        x: 64
+        x: 146
         y: 1280
-        width: 64
-        height: 64
+        width: 28
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2229,20 +2229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b5cface1393f584eb4a498e49b964f6
-      internalID: -1278064376
+      spriteID: ba3a285ed31505847b49127ead52ef8b
+      internalID: -25151005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_100
+      name: ChanTinhAttack_100
       rect:
         serializedVersion: 2
-        x: 128
+        x: 210
         y: 1280
-        width: 64
-        height: 64
+        width: 29
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2250,20 +2250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b48e97d9d9bc0143aa750e6543fcb3f
-      internalID: -950747397
+      spriteID: 03da60b7949e4734587a2d51cdf6f783
+      internalID: 1189825468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_101
+      name: ChanTinhAttack_101
       rect:
         serializedVersion: 2
-        x: 192
+        x: 273
         y: 1280
-        width: 64
-        height: 64
+        width: 38
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2271,20 +2271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aa79167c2f42de42ad76657a2680247
-      internalID: -64111439
+      spriteID: fdf4448f13d151e4987a1a628317ab09
+      internalID: 1656579567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_102
+      name: ChanTinhAttack_102
       rect:
         serializedVersion: 2
-        x: 256
+        x: 337
         y: 1280
-        width: 64
-        height: 64
+        width: 41
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2292,41 +2292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f73754cbefac52a4e8f335f143117213
-      internalID: 1976019407
+      spriteID: 5bdc4a6de5dda224ea3cc693698312f3
+      internalID: -1235585601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_103
+      name: ChanTinhAttack_103
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d61d4309f2d47b14fb80fdefd9dd81d9
-      internalID: 1644435200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_104
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 22
         y: 1216
-        width: 64
-        height: 64
+        width: 22
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2334,20 +2313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c007ebfe2a3995c4db9d07e658719219
-      internalID: -439168038
+      spriteID: be9e443bf24bb7b4b9da77dfea8ea412
+      internalID: 836964401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_105
+      name: ChanTinhAttack_104
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 1216
-        width: 64
-        height: 64
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2355,20 +2334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 062721d5752daa04d811b716877a4d17
-      internalID: -417071626
+      spriteID: a72381db484078f40bfd6c3dfd655e8a
+      internalID: 2083288297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_106
+      name: ChanTinhAttack_105
       rect:
         serializedVersion: 2
-        x: 128
+        x: 147
         y: 1216
-        width: 64
-        height: 64
+        width: 26
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2376,20 +2355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25f1a595f422bfe448de7713df270a6b
-      internalID: 1854133404
+      spriteID: 18bc21f1e88f41f4cbb5535f53e9b1b7
+      internalID: 1310605162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_107
+      name: ChanTinhAttack_106
       rect:
         serializedVersion: 2
-        x: 192
+        x: 202
         y: 1216
-        width: 64
-        height: 64
+        width: 36
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2397,20 +2376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1116e091bb0eb9445a1131ae1ed6a957
-      internalID: 1253223150
+      spriteID: 438f3d54e66c78e43ae7b59814adffaf
+      internalID: -410926164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_108
+      name: ChanTinhAttack_107
       rect:
         serializedVersion: 2
-        x: 256
+        x: 263
         y: 1216
-        width: 64
-        height: 64
+        width: 38
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2418,20 +2397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99fd2df43bf3f7144b7d8fdf4f089a60
-      internalID: 427635894
+      spriteID: 9c5a42f9b3360c747bf1b6f858a9cfce
+      internalID: -1968118136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_109
+      name: ChanTinhAttack_108
       rect:
         serializedVersion: 2
-        x: 320
+        x: 330
         y: 1216
-        width: 64
-        height: 64
+        width: 36
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2439,20 +2418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9454cdd244e176a41b04328e84cf4efd
-      internalID: 1241592916
+      spriteID: 63aa8a3556766694687e745abf97e755
+      internalID: -33504962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_110
+      name: ChanTinhAttack_109
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 1152
-        width: 64
-        height: 64
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2460,20 +2439,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31aa800dc6b3f9d4bb16dac9eda3aa06
-      internalID: 1449860554
+      spriteID: 3be31a35203e0da409cae0d6ec509c64
+      internalID: -1529144637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_111
+      name: ChanTinhAttack_110
       rect:
         serializedVersion: 2
-        x: 64
+        x: 82
         y: 1152
-        width: 64
-        height: 64
+        width: 28
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2481,20 +2460,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9fc6d00ca5e8c842863b910416fd11a
-      internalID: -105677591
+      spriteID: 1b9b2215c36e13647b878f712294e769
+      internalID: 1661987600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_112
+      name: ChanTinhAttack_111
       rect:
         serializedVersion: 2
-        x: 128
+        x: 146
         y: 1152
-        width: 64
-        height: 64
+        width: 28
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2502,20 +2481,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0e34bbc5e0425445988693acdd61635
-      internalID: 541823590
+      spriteID: c5a075b9eed313a45b671f2ee466c0e7
+      internalID: 1547440621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_113
+      name: ChanTinhAttack_112
       rect:
         serializedVersion: 2
-        x: 192
+        x: 211
         y: 1152
-        width: 64
-        height: 64
+        width: 28
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2523,20 +2502,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dda362e7f8fecb4c815e05277b6e3af
-      internalID: -225942606
+      spriteID: 97668ab6a7685104eb02659fa6f47e84
+      internalID: -1407313309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_114
+      name: ChanTinhAttack_113
       rect:
         serializedVersion: 2
-        x: 256
+        x: 275
         y: 1152
-        width: 64
-        height: 64
+        width: 37
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2544,20 +2523,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6296bc70fee80644ea5ebb3e5369f176
-      internalID: -1753336974
+      spriteID: 6024c49ae3c1ac94bafbd0eddda8fd17
+      internalID: 1049605634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_115
+      name: ChanTinhAttack_114
       rect:
         serializedVersion: 2
-        x: 320
+        x: 338
         y: 1152
-        width: 64
-        height: 64
+        width: 41
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2565,20 +2544,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc3d2b1ab66fd804489be35206521050
-      internalID: -74844356
+      spriteID: 3c9fa05829c78ee4a9299199bc360887
+      internalID: -318807516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_116
+      name: ChanTinhAttack_115
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1088
-        width: 64
-        height: 64
+        x: 20
+        y: 1089
+        width: 22
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2586,20 +2565,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5689ecdab876bd441aaf49ab10b4f4e6
-      internalID: 1834176038
+      spriteID: c956f7d3fe4e1b742b4183d0176b2c34
+      internalID: 93096160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_117
+      name: ChanTinhAttack_116
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1088
-        width: 64
-        height: 64
+        x: 85
+        y: 1089
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2607,20 +2586,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0daf1f46dbf184428b58a59d3111ef0
-      internalID: -1347613645
+      spriteID: 7d31e25ed107a804db09351fa9cd9e9f
+      internalID: 1822487933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_118
+      name: ChanTinhAttack_117
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1088
-        width: 64
-        height: 64
+        x: 147
+        y: 1089
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2628,20 +2607,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46947afa4db10d046a21edf61ce6101e
-      internalID: -533598481
+      spriteID: 96f0f711b8289f24184bc8dd0059282d
+      internalID: -398290149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_119
+      name: ChanTinhAttack_118
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1088
-        width: 64
-        height: 64
+        x: 210
+        y: 1089
+        width: 36
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2649,20 +2628,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51f751a762d8a9044a17f91360fbefbd
-      internalID: -1533344987
+      spriteID: 04f6c88687889c945b6c2b6ef4910df5
+      internalID: 558297670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_120
+      name: ChanTinhAttack_119
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1088
-        width: 64
-        height: 64
+        x: 275
+        y: 1089
+        width: 38
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2670,20 +2649,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3437ccde51b244c49a4bb3ad365d9d4c
-      internalID: -2132625052
+      spriteID: c75ad80c1a1b7004a880133e0580582d
+      internalID: 2082949111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_121
+      name: ChanTinhAttack_120
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1088
-        width: 64
-        height: 64
+        x: 339
+        y: 1089
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2691,20 +2670,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4286bfec2946c543866c848bdaf9eda
-      internalID: -32648372
+      spriteID: 5c5405323effa3148afbf403ce205a1b
+      internalID: -1490276154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_122
+      name: ChanTinhAttack_121
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 64
-        height: 64
+        x: 15
+        y: 1025
+        width: 32
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2712,20 +2691,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5673d22456709b147a8e6588b8bcb80a
-      internalID: 128380988
+      spriteID: 325ec28b066d1e247bc45ccb4b47717c
+      internalID: -597653016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_123
+      name: ChanTinhAttack_122
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1024
-        width: 64
-        height: 64
+        x: 82
+        y: 1023
+        width: 28
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2733,20 +2712,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aed56dc1acfe15a4eadd406985e2741d
-      internalID: 699052598
+      spriteID: 68e0fbcfdbd51f745b9a3727bb29ea19
+      internalID: 1919195073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_124
+      name: ChanTinhAttack_123
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1024
-        width: 64
-        height: 64
+        x: 147
+        y: 1023
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2754,20 +2733,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4399802af462c1842a98e755b450ac5b
-      internalID: 464206498
+      spriteID: 5c118e143304a4f43bb7f9ae2c6b7ff5
+      internalID: 693071143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_125
+      name: ChanTinhAttack_124
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1024
-        width: 64
-        height: 64
+        x: 210
+        y: 1023
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2775,20 +2754,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebf63b51ae26c43408b8b219ae040ce0
-      internalID: -900746938
+      spriteID: e57dc2e39d6931947a1237b49f55ef94
+      internalID: -886440995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_126
+      name: ChanTinhAttack_125
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 64
-        height: 64
+        x: 274
+        y: 1023
+        width: 30
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2796,20 +2775,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 565e5b591ddbb0b46928e3e4fdf8c39c
-      internalID: -986803663
+      spriteID: 0cc2c0b453441c34e89505d3d019cec5
+      internalID: -255454978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_127
+      name: ChanTinhAttack_126
       rect:
         serializedVersion: 2
-        x: 320
-        y: 1024
-        width: 64
-        height: 64
+        x: 338
+        y: 1023
+        width: 29
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2817,20 +2796,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 518c2367aa15cef499f1a5da03056e52
-      internalID: -1020377186
+      spriteID: 60fce0742735baa4eb29eaf23eee68bb
+      internalID: -174841623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_128
+      name: ChanTinhAttack_127
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1024
-        width: 64
-        height: 64
+        x: 402
+        y: 1023
+        width: 30
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2838,20 +2817,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 434955a3d2d2b7a4e9ec15b0230e0b05
-      internalID: -889694371
+      spriteID: 76ed95c25c5dd1b4c8ba21b683e36c53
+      internalID: -940303142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_129
+      name: ChanTinhAttack_128
       rect:
         serializedVersion: 2
-        x: 448
-        y: 1024
-        width: 64
-        height: 64
+        x: 466
+        y: 1023
+        width: 31
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2859,20 +2838,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be8c5357765d72c41b09c89043deafbd
-      internalID: 1318807729
+      spriteID: 70f1b1ede2339434e83be2c8c1867451
+      internalID: -780675345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_130
+      name: ChanTinhAttack_129
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 64
-        height: 64
+        x: 530
+        y: 1023
+        width: 32
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2880,20 +2859,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49d9d245209798249931899baa487d83
-      internalID: 838340417
+      spriteID: 1d1cb01351eb46c4891f141c0eeb4b02
+      internalID: 1911899344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_131
+      name: ChanTinhAttack_130
       rect:
         serializedVersion: 2
-        x: 576
-        y: 1024
-        width: 64
-        height: 64
+        x: 594
+        y: 1023
+        width: 30
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2901,20 +2880,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72c7d885611e0e2459debea769b67d55
-      internalID: 1953268602
+      spriteID: 7c081fb12c5e8054ba1714bd60fc4a57
+      internalID: 1803658448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_132
+      name: ChanTinhAttack_131
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1024
-        width: 64
-        height: 64
+        x: 658
+        y: 1023
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2922,20 +2901,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c908da7047c49b4fa12387fca53e882
-      internalID: -845664152
+      spriteID: 7d6b3a37362e3984a89e43abc5050d15
+      internalID: 1219270182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_133
+      name: ChanTinhAttack_132
       rect:
         serializedVersion: 2
-        x: 704
-        y: 1024
-        width: 64
-        height: 64
+        x: 721
+        y: 1023
+        width: 27
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2943,20 +2922,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97821a06c1a875d478bfeacf68acbb4a
-      internalID: 950982012
+      spriteID: c5baf53694e79b343bbbcd823639102a
+      internalID: -1613919223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_134
+      name: ChanTinhAttack_133
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1024
-        width: 64
-        height: 64
+        x: 786
+        y: 1023
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2964,20 +2943,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f72cedcff1e911943842dc0f80addb4f
-      internalID: -1349377029
+      spriteID: dc527d24b679afd45a58f0d849fef229
+      internalID: -790753497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_135
+      name: ChanTinhAttack_134
       rect:
         serializedVersion: 2
-        x: 0
-        y: 960
-        width: 64
-        height: 64
+        x: 23
+        y: 961
+        width: 22
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2985,20 +2964,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 019707c54a23d4f4f83f1c8396eb5a57
-      internalID: 223500422
+      spriteID: 092573069fd487f4db7db13f31e1a565
+      internalID: 2114278299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_136
+      name: ChanTinhAttack_135
       rect:
         serializedVersion: 2
-        x: 64
-        y: 960
-        width: 64
-        height: 64
+        x: 83
+        y: 961
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3006,20 +2985,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cefe4d7c141dda49af2ea03c252b7da
-      internalID: 124983813
+      spriteID: 98a6103822b2948428118ecd286ebb37
+      internalID: 1650777687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_137
+      name: ChanTinhAttack_136
       rect:
         serializedVersion: 2
-        x: 128
-        y: 960
-        width: 64
-        height: 64
+        x: 142
+        y: 961
+        width: 34
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3027,20 +3006,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b50513d8b9e740e4e97c291612234594
-      internalID: -1726318845
+      spriteID: 05fbfbc22e7b7034fabfdbc6bb12fd86
+      internalID: 343508634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_138
+      name: ChanTinhAttack_137
       rect:
         serializedVersion: 2
-        x: 192
-        y: 960
-        width: 64
-        height: 64
+        x: 204
+        y: 961
+        width: 37
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3048,20 +3027,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ff6238df84af1945a85d6777798a3ce
-      internalID: -221384788
+      spriteID: e4228a7c2aa1c8b49a45ef18854a323a
+      internalID: -1392963119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_139
+      name: ChanTinhAttack_138
       rect:
         serializedVersion: 2
-        x: 256
-        y: 960
-        width: 64
-        height: 64
+        x: 268
+        y: 961
+        width: 37
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3069,20 +3048,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a2890626273d47489b53f6640f245ee
-      internalID: -1714712736
+      spriteID: 06a95ef6989956147adab6a110385b3c
+      internalID: -334918709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_140
+      name: ChanTinhAttack_139
       rect:
         serializedVersion: 2
-        x: 320
-        y: 960
-        width: 64
-        height: 64
+        x: 331
+        y: 961
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3090,20 +3069,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b27c177155b9fc439490c690bec4c01
-      internalID: -635275565
+      spriteID: f8ea18d9c15ba294cb6084250210029c
+      internalID: -1185064957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_141
+      name: ChanTinhAttack_140
       rect:
         serializedVersion: 2
-        x: 384
-        y: 960
-        width: 64
-        height: 64
+        x: 395
+        y: 961
+        width: 37
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3111,20 +3090,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a17bc36c56ca23468f7807e22f119bd
-      internalID: 795648935
+      spriteID: dbf11ed3fcf06624fb962d17e64fb1e2
+      internalID: -1509688061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_142
+      name: ChanTinhAttack_141
       rect:
         serializedVersion: 2
-        x: 448
-        y: 960
-        width: 64
-        height: 64
+        x: 459
+        y: 961
+        width: 40
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3132,20 +3111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cf0c6a33c240424c8b5a27be33d9043
-      internalID: -1077679707
+      spriteID: fc877bb33fd696749adb96110b0ef766
+      internalID: -745328907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_143
+      name: ChanTinhAttack_142
       rect:
         serializedVersion: 2
-        x: 512
-        y: 960
-        width: 64
-        height: 64
+        x: 523
+        y: 961
+        width: 42
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3153,20 +3132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ed156ae1705c6945ae7f0a9a1f2cf8d
-      internalID: 989913647
+      spriteID: d23439ee56138f24494f3517ff2f0b85
+      internalID: -1207845897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_144
+      name: ChanTinhAttack_143
       rect:
         serializedVersion: 2
-        x: 576
-        y: 960
-        width: 64
-        height: 64
+        x: 587
+        y: 961
+        width: 38
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3174,20 +3153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8b4ffc4bfbea05468144d4ea04c938e
-      internalID: -269616087
+      spriteID: 635387929f3830748a147c7cb72b7851
+      internalID: 806342636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_145
+      name: ChanTinhAttack_144
       rect:
         serializedVersion: 2
-        x: 640
-        y: 960
-        width: 64
-        height: 64
+        x: 652
+        y: 961
+        width: 36
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3195,20 +3174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2214774901406884ca9b24be18912a7b
-      internalID: -1384035529
+      spriteID: 6786a08b343488b449cb19d240a005d3
+      internalID: 1106149037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_146
+      name: ChanTinhAttack_145
       rect:
         serializedVersion: 2
-        x: 704
-        y: 960
-        width: 64
-        height: 64
+        x: 716
+        y: 961
+        width: 32
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3216,20 +3195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f42ce86132ba70c4eac085f632c1c9cd
-      internalID: 899975957
+      spriteID: 5a1cdcfaa3d71bd4b9dfe097ab4c4c3b
+      internalID: -1146385522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_147
+      name: ChanTinhAttack_146
       rect:
         serializedVersion: 2
-        x: 768
-        y: 960
-        width: 64
-        height: 64
+        x: 780
+        y: 961
+        width: 36
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3237,20 +3216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79ddd8276b2c50e4e8779d780008d73f
-      internalID: 1078962699
+      spriteID: b6efe57c48df5454e8c8a1d2acd8f61f
+      internalID: -383978329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_148
+      name: ChanTinhAttack_147
       rect:
         serializedVersion: 2
-        x: 0
-        y: 896
-        width: 64
-        height: 64
+        x: 15
+        y: 897
+        width: 32
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3258,20 +3237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a41fff93a4d7541b00d439168c860b
-      internalID: -1734810105
+      spriteID: c8dc51751c7172349bc08ba2b6a11d2a
+      internalID: -1159121557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_149
+      name: ChanTinhAttack_148
       rect:
         serializedVersion: 2
-        x: 64
-        y: 896
-        width: 64
-        height: 64
+        x: 81
+        y: 898
+        width: 27
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3279,20 +3258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ba026461a303f9498ce516938e64b54
-      internalID: -1525294374
+      spriteID: e60d9dadefaccfe4d9884913fd9ce853
+      internalID: -836139378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_150
+      name: ChanTinhAttack_149
       rect:
         serializedVersion: 2
-        x: 128
-        y: 896
-        width: 64
-        height: 64
+        x: 145
+        y: 898
+        width: 27
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3300,20 +3279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba10ddc2c6ed5424fa0988918a4e826b
-      internalID: -1240078848
+      spriteID: 11ad50f2aadd65641ae3bdafbf1a7b9e
+      internalID: -1988329383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_151
+      name: ChanTinhAttack_150
       rect:
         serializedVersion: 2
-        x: 192
-        y: 896
-        width: 64
-        height: 64
+        x: 209
+        y: 897
+        width: 27
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3321,20 +3300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9304703cd1935b447b730f532eaacbda
-      internalID: 782153089
+      spriteID: c53e569e57768834698257198ae1492f
+      internalID: -1034405409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_152
+      name: ChanTinhAttack_151
       rect:
         serializedVersion: 2
-        x: 256
-        y: 896
-        width: 64
-        height: 64
+        x: 274
+        y: 897
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3342,20 +3321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03144208df3f4b7429ad813ad812eb08
-      internalID: -1708105998
+      spriteID: e4ec83e9fdd2be74c911b39508ec0499
+      internalID: 606606965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_153
+      name: ChanTinhAttack_152
       rect:
         serializedVersion: 2
-        x: 320
-        y: 896
-        width: 64
-        height: 64
+        x: 338
+        y: 897
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3363,20 +3342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bc0da1023be4804599b3ec85c87c834
-      internalID: 1417003809
+      spriteID: 1f48be80e21d7994f972a579f61721ea
+      internalID: 405158951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_154
+      name: ChanTinhAttack_153
       rect:
         serializedVersion: 2
-        x: 384
-        y: 896
-        width: 64
-        height: 64
+        x: 402
+        y: 897
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3384,20 +3363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80ea3e924e1180545b78afab9e9314df
-      internalID: 673736956
+      spriteID: 94c4b7dbe99d0cf4b85a28a2642915ad
+      internalID: -146697198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_155
+      name: ChanTinhAttack_154
       rect:
         serializedVersion: 2
-        x: 448
-        y: 896
-        width: 64
-        height: 64
+        x: 465
+        y: 897
+        width: 27
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3405,20 +3384,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88b30d218d2ce764c893a58c93625181
-      internalID: -794117899
+      spriteID: ad34a44d8617af9469778bcefd4267a2
+      internalID: -902050677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_156
+      name: ChanTinhAttack_155
       rect:
         serializedVersion: 2
-        x: 512
-        y: 896
-        width: 64
-        height: 64
+        x: 529
+        y: 897
+        width: 27
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3426,20 +3405,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e7286960fe39a044b98cbd8db211512
-      internalID: 1379727005
+      spriteID: 58462420941d747439111161e49caff8
+      internalID: -619854223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_157
+      name: ChanTinhAttack_156
       rect:
         serializedVersion: 2
-        x: 576
-        y: 896
-        width: 64
-        height: 64
+        x: 594
+        y: 897
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3447,20 +3426,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3cb380c2cd91b44db6448d0004ee9bf
-      internalID: 543080276
+      spriteID: a466c6e362266cb439ca4af78bb679fa
+      internalID: -45654429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_158
+      name: ChanTinhAttack_157
       rect:
         serializedVersion: 2
-        x: 640
-        y: 896
-        width: 64
-        height: 64
+        x: 656
+        y: 897
+        width: 28
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3468,20 +3447,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc4c751823deab046b476d909ee6d4ec
-      internalID: -921845942
+      spriteID: e85ec62414829ba4bb5d576761afaa56
+      internalID: 1968933990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_159
+      name: ChanTinhAttack_158
       rect:
         serializedVersion: 2
-        x: 704
-        y: 896
-        width: 64
-        height: 64
+        x: 722
+        y: 897
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3489,20 +3468,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd751a59c8c73014e85e0cafd0da55bf
-      internalID: -1524481752
+      spriteID: 2c13c6fb1ce7eaf47a06ac83b3e3a19d
+      internalID: -1853448157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_160
+      name: ChanTinhAttack_159
       rect:
         serializedVersion: 2
-        x: 768
-        y: 896
-        width: 64
-        height: 64
+        x: 785
+        y: 897
+        width: 27
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3510,20 +3489,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 878a02341426166418b387d251741226
-      internalID: 96497313
+      spriteID: 9cc2b8ad27df3a540b461c335bca65d3
+      internalID: -1451469798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_161
+      name: ChanTinhAttack_160
       rect:
         serializedVersion: 2
-        x: 0
-        y: 832
-        width: 64
-        height: 64
+        x: 19
+        y: 833
+        width: 22
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3531,20 +3510,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 321c0f0875992ad40aead46b90ee4820
-      internalID: 2142523321
+      spriteID: b450126ab3326c4499c9254aa1e62d74
+      internalID: -445299517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_162
+      name: ChanTinhAttack_161
       rect:
         serializedVersion: 2
-        x: 64
-        y: 832
-        width: 64
-        height: 64
+        x: 82
+        y: 833
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3552,20 +3531,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5844195065528e14b9c4b73e1db161bf
-      internalID: -611209311
+      spriteID: 9bd21a9b88b9d114ea0048a4056e5412
+      internalID: 1474500011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_163
+      name: ChanTinhAttack_162
       rect:
         serializedVersion: 2
-        x: 128
-        y: 832
-        width: 64
-        height: 64
+        x: 144
+        y: 833
+        width: 34
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3573,20 +3552,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55d0eec0dafa67549a6dca93fae9f1e4
-      internalID: 1058242190
+      spriteID: 35682c0af24410145b0fcfa3019d745f
+      internalID: 924668985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_164
+      name: ChanTinhAttack_163
       rect:
         serializedVersion: 2
-        x: 192
-        y: 832
-        width: 64
-        height: 64
+        x: 207
+        y: 833
+        width: 37
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3594,20 +3573,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9a20465995b0947bd36b57be097532
-      internalID: 689426157
+      spriteID: ed7e7e7421761e14596cda6263e50df6
+      internalID: -715212245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_165
+      name: ChanTinhAttack_164
       rect:
         serializedVersion: 2
-        x: 256
-        y: 832
-        width: 64
-        height: 64
+        x: 271
+        y: 833
+        width: 37
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3615,20 +3594,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e497b439214c504e9352442b5e08a1a
-      internalID: -1317001487
+      spriteID: 337c4a36becb8b84a94ae5610f04b5ec
+      internalID: 749766062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_166
+      name: ChanTinhAttack_165
       rect:
         serializedVersion: 2
-        x: 320
-        y: 832
-        width: 64
-        height: 64
+        x: 339
+        y: 833
+        width: 34
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3636,20 +3615,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afe3bdda23050eb44aa923ffdea5afeb
-      internalID: 2059742777
+      spriteID: 26598a2a0fa9cbd4fa438cc3c7e048f5
+      internalID: 1617723573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_167
+      name: ChanTinhAttack_166
       rect:
         serializedVersion: 2
-        x: 384
-        y: 832
-        width: 64
-        height: 64
+        x: 401
+        y: 833
+        width: 36
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3657,20 +3636,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1d2098b9e02d9142ae5afad7ad709c0
-      internalID: -1468559413
+      spriteID: 7f7970d948a8a884bba3ec6928894147
+      internalID: -365277798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_168
+      name: ChanTinhAttack_167
       rect:
         serializedVersion: 2
-        x: 448
-        y: 832
-        width: 64
-        height: 64
+        x: 462
+        y: 833
+        width: 38
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3678,20 +3657,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a31019764cfe7af43a75f5e0189f7b1e
-      internalID: 1251722872
+      spriteID: a16dfea63d49d784096f3343e451480f
+      internalID: -65867209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_169
+      name: ChanTinhAttack_168
       rect:
         serializedVersion: 2
-        x: 512
-        y: 832
-        width: 64
-        height: 64
+        x: 523
+        y: 833
+        width: 42
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3699,20 +3678,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 866b5262ed5ebfe4ba8811de4a149d30
-      internalID: 60243349
+      spriteID: 6d7b471f3f978004eaa0b1e8cf42d3ff
+      internalID: -1070088889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_170
+      name: ChanTinhAttack_169
       rect:
         serializedVersion: 2
-        x: 576
-        y: 832
-        width: 64
-        height: 64
+        x: 590
+        y: 833
+        width: 39
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3720,20 +3699,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fed2e5f309520843b5f59472f909615
-      internalID: 212651174
+      spriteID: f99510ac82bf7314d8d7a357f98ba6aa
+      internalID: -511384491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_171
+      name: ChanTinhAttack_170
       rect:
         serializedVersion: 2
-        x: 640
-        y: 832
-        width: 64
-        height: 64
+        x: 655
+        y: 833
+        width: 38
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3741,20 +3720,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d38a2d642c95b94bb700af63a11475d
-      internalID: 857738751
+      spriteID: a098439620ccdd24dbff0c61f3d09078
+      internalID: 2092381862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_172
+      name: ChanTinhAttack_171
       rect:
         serializedVersion: 2
-        x: 704
-        y: 832
-        width: 64
-        height: 64
+        x: 724
+        y: 833
+        width: 32
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3762,20 +3741,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f912944a11512b40a0a2d01de7249e0
-      internalID: -80718307
+      spriteID: 64d0f2e26d07ac343a319d33b661cb14
+      internalID: -1472277516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_173
+      name: ChanTinhAttack_172
       rect:
         serializedVersion: 2
-        x: 768
-        y: 832
-        width: 64
-        height: 64
+        x: 784
+        y: 833
+        width: 36
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3783,20 +3762,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab21259412f2c6742b2908fa777a5ce5
-      internalID: -2126513738
+      spriteID: 7bffd9a34ce2ab842ac0e128b07b4ddf
+      internalID: -178688794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_174
+      name: ChanTinhAttack_173
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 64
-        height: 64
+        x: 16
+        y: 769
+        width: 32
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3804,20 +3783,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9268704f41883b94c82208b58b5ba9d9
-      internalID: -922434891
+      spriteID: 05554b184e28ec04fbbad2abd64a0940
+      internalID: -2112449038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_175
+      name: ChanTinhAttack_174
       rect:
         serializedVersion: 2
-        x: 64
-        y: 768
-        width: 64
-        height: 64
+        x: 81
+        y: 769
+        width: 33
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3825,20 +3804,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a6fab65cf25f6d43bf0baabe5584aeb
-      internalID: -1316939
+      spriteID: dd31f248201efa04c97cfe360a4cefda
+      internalID: 1118678823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_176
+      name: ChanTinhAttack_175
       rect:
         serializedVersion: 2
-        x: 128
-        y: 768
-        width: 64
-        height: 64
+        x: 146
+        y: 769
+        width: 32
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3846,20 +3825,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1063d7d8160b7d47b5a909d7ba40638
-      internalID: -1308032987
+      spriteID: f2ab6706e66971647ace8c21e2d4e19a
+      internalID: -1345090920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_177
+      name: ChanTinhAttack_176
       rect:
         serializedVersion: 2
-        x: 192
-        y: 768
-        width: 64
-        height: 64
+        x: 210
+        y: 770
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3867,20 +3846,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8a4f5197393de4dba61ef1e864e349
-      internalID: -2109647478
+      spriteID: 4f4123d5d30a2ae41a87aced3314d260
+      internalID: 2041235303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_178
+      name: ChanTinhAttack_177
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 64
-        height: 64
+        x: 274
+        y: 770
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700299ffc5d9a894597d79dd61526197
+      internalID: 536554336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChanTinhAttack_178
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 769
+        width: 36
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3888,20 +3888,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae9ba06547ae7534693e87e1848f4dec
-      internalID: 1029887520
+      spriteID: 67621bbe1026e3e43aa05c159721fe57
+      internalID: 57617385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_179
+      name: ChanTinhAttack_U1
       rect:
         serializedVersion: 2
-        x: 320
-        y: 768
+        x: 66
+        y: 639
         width: 64
         height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a33c83410794d4f8a8b40dbe821f1a
+      internalID: 678508190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChanTinhAttack_U2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 629
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3909,17 +3930,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 529ebe386b99d7045a3b9256436c8f1c
-      internalID: 810108994
+      spriteID: 84b8cfc799fc9e74ebfb0a2b233efda0
+      internalID: 445288917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_180
+      name: ChanTinhAttack_U3
       rect:
         serializedVersion: 2
-        x: 64
+        x: 449
         y: 640
         width: 64
         height: 64
@@ -3930,20 +3951,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf4fabc8304d8a1408481bfc28a79c98
-      internalID: -379672411
+      spriteID: f8ab1598611321b47b77d15ad3d780f0
+      internalID: 229016211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_181
+      name: ChanTinhAttack_U4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 640
-        width: 64
-        height: 64
+        x: 628
+        y: 627
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3951,123 +3972,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17e904e8bceaf2742a58200c31738713
-      internalID: -1036194497
+      spriteID: 4ac9c62611140e74799b44e9be71aacc
+      internalID: 1381775477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_182
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 640
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9dd1c48715950f94893fd07c090c2b98
-      internalID: 940260668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_183
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 640
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ef0069fc7168b84288e26bc82dc1144
-      internalID: 1095888928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_184
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 640
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bff4dca2cc3302d47868333abd4f88de
-      internalID: 1003310539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_185
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 640
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0a059ddbaf49134fb391ad5f1bd17a8
-      internalID: 1208191600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_186
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 640
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7010a4fe624da4a40bdbe8b7e57bec2c
-      internalID: -342252533
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_187
+      name: ChanTinhAttack_U5
       rect:
         serializedVersion: 2
         x: 832
-        y: 640
+        y: 639
         width: 64
         height: 64
       alignment: 0
@@ -4077,14 +3993,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54ef92b38a21c4b41b76c4d029b1df87
-      internalID: 41098182
+      spriteID: 43170c2b882569d479a6f0a469b7a694
+      internalID: -518481479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_188
+      name: ChanTinhAttack_U6
       rect:
         serializedVersion: 2
         x: 1024
@@ -4098,18 +4014,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39767418165d5604d9519e25d4e7aafa
-      internalID: 1878311146
+      spriteID: fdb5fcfe98fba1b4eb7d2314a92c06a5
+      internalID: -359349338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_189
+      name: ChanTinhAttack_L1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 448
+        x: 59
+        y: 449
         width: 64
         height: 64
       alignment: 0
@@ -4119,20 +4035,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 616c42445ad8f5042a9ce107bdedbf63
-      internalID: -150816286
+      spriteID: 4fc1ec9eb269527479814c2a18f44fb4
+      internalID: 650307205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_190
+      name: ChanTinhAttack_L2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 448
-        width: 64
-        height: 64
+        x: 240
+        y: 439
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4140,20 +4056,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a423176ee28d8e45a932cd58abb15b5
-      internalID: -521477672
+      spriteID: b1a59c77e33899f40b8c6cf38a27de5b
+      internalID: 1468739217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_191
+      name: ChanTinhAttack_L3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 448
-        width: 64
-        height: 64
+        x: 433
+        y: 439
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4161,20 +4077,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40219673111771c4091d1732574e0353
-      internalID: -914012984
+      spriteID: 4b714631db7d081468aa4a9a5f6cf719
+      internalID: -1602407278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_192
+      name: ChanTinhAttack_L4
       rect:
         serializedVersion: 2
-        x: 384
-        y: 448
-        width: 64
-        height: 64
+        x: 627
+        y: 439
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4182,20 +4098,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 404b50d09a1e345499c1d2f2b94da3f9
-      internalID: 1344173563
+      spriteID: f452bb0ead18cb948ab43cb3819da4c0
+      internalID: -891015599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_193
+      name: ChanTinhAttack_L5
       rect:
         serializedVersion: 2
-        x: 448
-        y: 448
-        width: 64
-        height: 64
+        x: 819
+        y: 437
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4203,20 +4119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b58c80f7ef2c2c647a0815d28880c1bc
-      internalID: 173548874
+      spriteID: cd1cf3429bef7644289604ebb35db1fc
+      internalID: -966508340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_194
+      name: ChanTinhAttack_L6
       rect:
         serializedVersion: 2
-        x: 576
-        y: 448
-        width: 64
-        height: 64
+        x: 1013
+        y: 439
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4224,20 +4140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b45b78920c00e741a3527ee5b38aacf
-      internalID: -2056209487
+      spriteID: 259cf45eaf39d054aa6b6690de4009ed
+      internalID: -1824789473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_195
+      name: ChanTinhAttack_D1
       rect:
         serializedVersion: 2
-        x: 640
-        y: 448
-        width: 64
-        height: 64
+        x: 56
+        y: 248
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4245,20 +4161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 104b4f7bbf9fcad4daea29f69619008f
-      internalID: -241119778
+      spriteID: 20acfafbdb6b7ef4aa3bc9faa8bd3d5f
+      internalID: 539690007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_196
+      name: ChanTinhAttack_D2
       rect:
         serializedVersion: 2
-        x: 768
-        y: 448
-        width: 64
-        height: 64
+        x: 247
+        y: 248
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4266,20 +4182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9df46a83aec9f7d4c951843839b3b38f
-      internalID: 1807950240
+      spriteID: 5a51858e79d04c94bb2454ff111ee63a
+      internalID: 362779920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_197
+      name: ChanTinhAttack_D3
       rect:
         serializedVersion: 2
-        x: 832
-        y: 448
-        width: 64
-        height: 64
+        x: 439
+        y: 247
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4287,20 +4203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98ace5b652bfdf43b405e66c6be20da
-      internalID: 1203458219
+      spriteID: b819e609adf655f4895ae3f38e815524
+      internalID: -1374366499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_198
+      name: ChanTinhAttack_D4
       rect:
         serializedVersion: 2
-        x: 960
-        y: 448
-        width: 64
-        height: 64
+        x: 628
+        y: 246
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4308,20 +4224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6706258010669a4a84e90adb3794a8f
-      internalID: -1615703522
+      spriteID: dce1e6af3911fad40bbff2c2b185c3d6
+      internalID: 1165094273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_199
+      name: ChanTinhAttack_D5
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 448
-        width: 64
-        height: 64
+        x: 821
+        y: 248
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4329,20 +4245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fac14771e6e931498fd80f8f8576a30
-      internalID: -559873781
+      spriteID: 85247e6d9c3c8ec408b7e3fa9b4fdfa4
+      internalID: -811071264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_200
+      name: ChanTinhAttack_D6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
-        width: 64
-        height: 64
+        x: 1013
+        y: 249
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4350,20 +4266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 435c530c663127f429dbfd1e3fd5e5ad
-      internalID: -770624677
+      spriteID: 6692b3ed8facbe548bdf0765d0677458
+      internalID: 1826697507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_201
+      name: ChanTinhAttack_R1
       rect:
         serializedVersion: 2
-        x: 448
-        y: 384
-        width: 64
-        height: 64
+        x: 57
+        y: 54
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4371,20 +4287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66ed0d3d0f0e7f949b73c5f201f624f7
-      internalID: -889985693
+      spriteID: c9862f95f0348104caab8ae2f9a0752f
+      internalID: 420879280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_202
+      name: ChanTinhAttack_R2
       rect:
         serializedVersion: 2
-        x: 640
-        y: 384
-        width: 64
-        height: 64
+        x: 249
+        y: 54
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4392,20 +4308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e05c87542492c34c80456c5ef640d14
-      internalID: -1578263352
+      spriteID: a51d5e5589e98e04c98e71f99ff6d831
+      internalID: 589684863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_203
+      name: ChanTinhAttack_R3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 384
-        width: 64
-        height: 64
+        x: 440
+        y: 54
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4413,20 +4329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f11778b7d65e2449b4291b6fc7cdb25
-      internalID: -831068867
+      spriteID: 87d315a445139ee438c94364629fd152
+      internalID: 1131385717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_204
+      name: ChanTinhAttack_R4
       rect:
         serializedVersion: 2
-        x: 832
-        y: 384
-        width: 64
-        height: 64
+        x: 631
+        y: 54
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4434,20 +4350,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f60d2cd307e978f42aa653fa41a805e7
-      internalID: -410371451
+      spriteID: 3097e17563437e144bf1aea2b72e4370
+      internalID: -446573906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_205
+      name: ChanTinhAttack_R5
       rect:
         serializedVersion: 2
-        x: 960
-        y: 384
-        width: 64
-        height: 64
+        x: 824
+        y: 53
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4455,20 +4371,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164b0888b28f2ba49843e0aed772b0ef
-      internalID: -685280346
+      spriteID: 2fe2cbedafefc564986426fc7007f123
+      internalID: 53893282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_206
+      name: ChanTinhAttack_R6
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 384
-        width: 64
-        height: 64
+        x: 1014
+        y: 55
+        width: 86
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4476,659 +4392,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fafab6c179cc6af4cb54f2c83a899efd
-      internalID: 1952347995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_207
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ed2cf124750861479c2612573abeaa0
-      internalID: -1221623782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_208
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84b59bcf51abb564999675efd6d149c1
-      internalID: 232913901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_209
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 131cd7a4352a864439d9ca19530ba2b2
-      internalID: 1977668916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_210
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9beae429bd24ee248bcf90fc5a8a2fd6
-      internalID: -142915677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_211
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9d06de4e8f977a48b4070251733ae88
-      internalID: -1921212117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_212
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55506d8f6f3d652478c5bd63d066e0f2
-      internalID: -958110783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_213
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ae0f3600027c3040acba8dffc9e680c
-      internalID: 422937650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_214
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31699e11c998cf44ca817ff0cd8bd7ec
-      internalID: 798227643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_215
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d508a21cf71911940ac906f3d7954720
-      internalID: 1243033899
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_216
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99e97dff96aea61499dbe24f3ec668db
-      internalID: 754274050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_217
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1d098eba9e35f94b9e7e60f5fbb567b
-      internalID: -653520231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_218
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91b37e3bd2fa7c940ad8b5fef4fb7806
-      internalID: 345901575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_219
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d6f756be2d82bd4e837d78263d84e5b
-      internalID: 1012590118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_220
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96f0abac158ca2f4d930c50a8700573b
-      internalID: 535879149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_221
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22853e47b3e725741a8f61d8dc9d1d2e
-      internalID: 603837809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_222
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1442f95dbdd8cf44e9c00e8c2074e36d
-      internalID: 733994626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_223
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 978c30ad050d5ca4ba0c6634e1f87bd0
-      internalID: 1730296460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_224
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be10c572b44fd354da31ef23fabc3fb3
-      internalID: -44574454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_225
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1e1661ee0f1eeb4a9dc9dabb147f694
-      internalID: 103465211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_226
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c481191204ac6a34f8689e6e4317ad68
-      internalID: -1126118733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_227
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c766cabdb383d5a4888993c6e1e1fb8a
-      internalID: -2044418887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_228
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25c9e9b0c576b39429d979844563c3bb
-      internalID: -118055896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_229
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfb6d526ef687cf469c32731bf3136cf
-      internalID: -393100302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_230
-      rect:
-        serializedVersion: 2
-        x: 1088
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c5700f18fa9a874dbde627a37c8d482
-      internalID: -360404972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_231
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc1d960d7941ae84a80a8ec08a53200a
-      internalID: 1885062430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_232
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7996e1a084574234d81e486f938dc47e
-      internalID: -1656432197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_233
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fffa5b804e38f64a9e47a91148e0d3d
-      internalID: 1290298723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_234
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f3bb846f58fb734d9791e70148b1a46
-      internalID: -570072773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_235
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b082dd6c9c963644fb5df5a5f1d633b6
-      internalID: -1100038814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_236
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6565dce174941b54f8e32691ac6523b2
-      internalID: -1343773176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChanTinh_237
-      rect:
-        serializedVersion: 2
-        x: 1088
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7549c836f635dc419bbea31a11b6ba2
-      internalID: 1711603997
+      spriteID: eadc75304b704304c9e6db357c66908a
+      internalID: -938608919
       vertices: []
       indices: 
       edges: []
@@ -5144,244 +4409,209 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ChanTinh_0: 2131872311
-      ChanTinh_1: -1283268750
-      ChanTinh_10: -127570800
-      ChanTinh_100: -950747397
-      ChanTinh_101: -64111439
-      ChanTinh_102: 1976019407
-      ChanTinh_103: 1644435200
-      ChanTinh_104: -439168038
-      ChanTinh_105: -417071626
-      ChanTinh_106: 1854133404
-      ChanTinh_107: 1253223150
-      ChanTinh_108: 427635894
-      ChanTinh_109: 1241592916
-      ChanTinh_11: -1714159524
-      ChanTinh_110: 1449860554
-      ChanTinh_111: -105677591
-      ChanTinh_112: 541823590
-      ChanTinh_113: -225942606
-      ChanTinh_114: -1753336974
-      ChanTinh_115: -74844356
-      ChanTinh_116: 1834176038
-      ChanTinh_117: -1347613645
-      ChanTinh_118: -533598481
-      ChanTinh_119: -1533344987
-      ChanTinh_12: -92575826
-      ChanTinh_120: -2132625052
-      ChanTinh_121: -32648372
-      ChanTinh_122: 128380988
-      ChanTinh_123: 699052598
-      ChanTinh_124: 464206498
-      ChanTinh_125: -900746938
-      ChanTinh_126: -986803663
-      ChanTinh_127: -1020377186
-      ChanTinh_128: -889694371
-      ChanTinh_129: 1318807729
-      ChanTinh_13: -1382307298
-      ChanTinh_130: 838340417
-      ChanTinh_131: 1953268602
-      ChanTinh_132: -845664152
-      ChanTinh_133: 950982012
-      ChanTinh_134: -1349377029
-      ChanTinh_135: 223500422
-      ChanTinh_136: 124983813
-      ChanTinh_137: -1726318845
-      ChanTinh_138: -221384788
-      ChanTinh_139: -1714712736
-      ChanTinh_14: 197592451
-      ChanTinh_140: -635275565
-      ChanTinh_141: 795648935
-      ChanTinh_142: -1077679707
-      ChanTinh_143: 989913647
-      ChanTinh_144: -269616087
-      ChanTinh_145: -1384035529
-      ChanTinh_146: 899975957
-      ChanTinh_147: 1078962699
-      ChanTinh_148: -1734810105
-      ChanTinh_149: -1525294374
-      ChanTinh_15: 826055190
-      ChanTinh_150: -1240078848
-      ChanTinh_151: 782153089
-      ChanTinh_152: -1708105998
-      ChanTinh_153: 1417003809
-      ChanTinh_154: 673736956
-      ChanTinh_155: -794117899
-      ChanTinh_156: 1379727005
-      ChanTinh_157: 543080276
-      ChanTinh_158: -921845942
-      ChanTinh_159: -1524481752
-      ChanTinh_16: -557086486
-      ChanTinh_160: 96497313
-      ChanTinh_161: 2142523321
-      ChanTinh_162: -611209311
-      ChanTinh_163: 1058242190
-      ChanTinh_164: 689426157
-      ChanTinh_165: -1317001487
-      ChanTinh_166: 2059742777
-      ChanTinh_167: -1468559413
-      ChanTinh_168: 1251722872
-      ChanTinh_169: 60243349
-      ChanTinh_17: 955567041
-      ChanTinh_170: 212651174
-      ChanTinh_171: 857738751
-      ChanTinh_172: -80718307
-      ChanTinh_173: -2126513738
-      ChanTinh_174: -922434891
-      ChanTinh_175: -1316939
-      ChanTinh_176: -1308032987
-      ChanTinh_177: -2109647478
-      ChanTinh_178: 1029887520
-      ChanTinh_179: 810108994
-      ChanTinh_18: 1246772840
-      ChanTinh_180: -379672411
-      ChanTinh_181: -1036194497
-      ChanTinh_182: 940260668
-      ChanTinh_183: 1095888928
-      ChanTinh_184: 1003310539
-      ChanTinh_185: 1208191600
-      ChanTinh_186: -342252533
-      ChanTinh_187: 41098182
-      ChanTinh_188: 1878311146
-      ChanTinh_189: -150816286
-      ChanTinh_19: -1045552142
-      ChanTinh_190: -521477672
-      ChanTinh_191: -914012984
-      ChanTinh_192: 1344173563
-      ChanTinh_193: 173548874
-      ChanTinh_194: -2056209487
-      ChanTinh_195: -241119778
-      ChanTinh_196: 1807950240
-      ChanTinh_197: 1203458219
-      ChanTinh_198: -1615703522
-      ChanTinh_199: -559873781
-      ChanTinh_2: 1340388995
-      ChanTinh_20: 1225275342
-      ChanTinh_200: -770624677
-      ChanTinh_201: -889985693
-      ChanTinh_202: -1578263352
-      ChanTinh_203: -831068867
-      ChanTinh_204: -410371451
-      ChanTinh_205: -685280346
-      ChanTinh_206: 1952347995
-      ChanTinh_207: -1221623782
-      ChanTinh_208: 232913901
-      ChanTinh_209: 1977668916
-      ChanTinh_21: -172869340
-      ChanTinh_210: -142915677
-      ChanTinh_211: -1921212117
-      ChanTinh_212: -958110783
-      ChanTinh_213: 422937650
-      ChanTinh_214: 798227643
-      ChanTinh_215: 1243033899
-      ChanTinh_216: 754274050
-      ChanTinh_217: -653520231
-      ChanTinh_218: 345901575
-      ChanTinh_219: 1012590118
-      ChanTinh_22: 1141307354
-      ChanTinh_220: 535879149
-      ChanTinh_221: 603837809
-      ChanTinh_222: 733994626
-      ChanTinh_223: 1730296460
-      ChanTinh_224: -44574454
-      ChanTinh_225: 103465211
-      ChanTinh_226: -1126118733
-      ChanTinh_227: -2044418887
-      ChanTinh_228: -118055896
-      ChanTinh_229: -393100302
-      ChanTinh_23: 238932989
-      ChanTinh_230: -360404972
-      ChanTinh_231: 1885062430
-      ChanTinh_232: -1656432197
-      ChanTinh_233: 1290298723
-      ChanTinh_234: -570072773
-      ChanTinh_235: -1100038814
-      ChanTinh_236: -1343773176
-      ChanTinh_237: 1711603997
-      ChanTinh_24: -1402997824
-      ChanTinh_25: 1006471380
-      ChanTinh_26: 1573244596
-      ChanTinh_27: -12551679
-      ChanTinh_28: 1707845183
-      ChanTinh_29: 1162160918
-      ChanTinh_3: -1147910684
-      ChanTinh_30: 1736625433
-      ChanTinh_31: 1250210152
-      ChanTinh_32: -1769781603
-      ChanTinh_33: -1409125481
-      ChanTinh_34: -125543249
-      ChanTinh_35: 2033161497
-      ChanTinh_36: 2058047430
-      ChanTinh_37: 2044578443
-      ChanTinh_38: -1490990243
-      ChanTinh_39: -1264211157
-      ChanTinh_4: 762662163
-      ChanTinh_40: -943435750
-      ChanTinh_41: -464141512
-      ChanTinh_42: -1223283269
-      ChanTinh_43: 25396619
-      ChanTinh_44: 1681263616
-      ChanTinh_45: -1194037145
-      ChanTinh_46: -1780578278
-      ChanTinh_47: -2037042646
-      ChanTinh_48: -442779993
-      ChanTinh_49: -762161486
-      ChanTinh_5: -301908507
-      ChanTinh_50: -928494977
-      ChanTinh_51: 362567802
-      ChanTinh_52: 1203401684
-      ChanTinh_53: -439055198
-      ChanTinh_54: -606827758
-      ChanTinh_55: -1315617605
-      ChanTinh_56: 1719190342
-      ChanTinh_57: -124443243
-      ChanTinh_58: -1302477144
-      ChanTinh_59: -205293388
-      ChanTinh_6: -1795073967
-      ChanTinh_60: -808283749
-      ChanTinh_61: 5758461
-      ChanTinh_7: 826454506
-      ChanTinh_8: -1429455375
-      ChanTinh_9: 2085622182
-      ChanTinh_98: -206803108
-      ChanTinh_99: -1278064376
-      ChanTinh_WD1: 568168038
-      ChanTinh_WD2: 2140541281
-      ChanTinh_WD3: -1067649956
-      ChanTinh_WD4: 1831620015
-      ChanTinh_WD5: 1746393486
-      ChanTinh_WD6: -2015488918
-      ChanTinh_WD7: -1647494256
-      ChanTinh_WD8: 482511544
-      ChanTinh_WD9: -1083979831
-      ChanTinh_WL0: 1273285485
-      ChanTinh_WL1: 649870112
-      ChanTinh_WL2: 319475317
-      ChanTinh_WL3: -1129754937
-      ChanTinh_WL4: -810397949
-      ChanTinh_WL5: 795605262
-      ChanTinh_WL6: 132301034
-      ChanTinh_WL7: -1419221364
-      ChanTinh_WL8: 896829121
-      ChanTinh_WR1: 1900687989
-      ChanTinh_WR2: 1540358802
-      ChanTinh_WR3: -1500675418
-      ChanTinh_WR4: 651788888
-      ChanTinh_WR5: 1093361407
-      ChanTinh_WR6: -1735383038
-      ChanTinh_WR7: 219043720
-      ChanTinh_WR8: 1010786361
-      ChanTinh_WR9: -1590969282
-      ChanTinh_WU0: 1397194046
-      ChanTinh_WU1: 470920733
-      ChanTinh_WU2: -1615985548
-      ChanTinh_WU3: -467163081
-      ChanTinh_WU4: 1950404496
-      ChanTinh_WU5: -550746603
-      ChanTinh_WU6: 1777000401
-      ChanTinh_WU7: 2043253709
-      ChanTinh_WU8: -121914500
+      ChanTinhAttack_0: 647195868
+      ChanTinhAttack_1: -886820873
+      ChanTinhAttack_10: -1081753230
+      ChanTinhAttack_100: 1189825468
+      ChanTinhAttack_101: 1656579567
+      ChanTinhAttack_102: -1235585601
+      ChanTinhAttack_103: 836964401
+      ChanTinhAttack_104: 2083288297
+      ChanTinhAttack_105: 1310605162
+      ChanTinhAttack_106: -410926164
+      ChanTinhAttack_107: -1968118136
+      ChanTinhAttack_108: -33504962
+      ChanTinhAttack_109: -1529144637
+      ChanTinhAttack_11: -963587187
+      ChanTinhAttack_110: 1661987600
+      ChanTinhAttack_111: 1547440621
+      ChanTinhAttack_112: -1407313309
+      ChanTinhAttack_113: 1049605634
+      ChanTinhAttack_114: -318807516
+      ChanTinhAttack_115: 93096160
+      ChanTinhAttack_116: 1822487933
+      ChanTinhAttack_117: -398290149
+      ChanTinhAttack_118: 558297670
+      ChanTinhAttack_119: 2082949111
+      ChanTinhAttack_12: -583212683
+      ChanTinhAttack_120: -1490276154
+      ChanTinhAttack_121: -597653016
+      ChanTinhAttack_122: 1919195073
+      ChanTinhAttack_123: 693071143
+      ChanTinhAttack_124: -886440995
+      ChanTinhAttack_125: -255454978
+      ChanTinhAttack_126: -174841623
+      ChanTinhAttack_127: -940303142
+      ChanTinhAttack_128: -780675345
+      ChanTinhAttack_129: 1911899344
+      ChanTinhAttack_13: -2097181098
+      ChanTinhAttack_130: 1803658448
+      ChanTinhAttack_131: 1219270182
+      ChanTinhAttack_132: -1613919223
+      ChanTinhAttack_133: -790753497
+      ChanTinhAttack_134: 2114278299
+      ChanTinhAttack_135: 1650777687
+      ChanTinhAttack_136: 343508634
+      ChanTinhAttack_137: -1392963119
+      ChanTinhAttack_138: -334918709
+      ChanTinhAttack_139: -1185064957
+      ChanTinhAttack_14: -857331799
+      ChanTinhAttack_140: -1509688061
+      ChanTinhAttack_141: -745328907
+      ChanTinhAttack_142: -1207845897
+      ChanTinhAttack_143: 806342636
+      ChanTinhAttack_144: 1106149037
+      ChanTinhAttack_145: -1146385522
+      ChanTinhAttack_146: -383978329
+      ChanTinhAttack_147: -1159121557
+      ChanTinhAttack_148: -836139378
+      ChanTinhAttack_149: -1988329383
+      ChanTinhAttack_15: 722484746
+      ChanTinhAttack_150: -1034405409
+      ChanTinhAttack_151: 606606965
+      ChanTinhAttack_152: 405158951
+      ChanTinhAttack_153: -146697198
+      ChanTinhAttack_154: -902050677
+      ChanTinhAttack_155: -619854223
+      ChanTinhAttack_156: -45654429
+      ChanTinhAttack_157: 1968933990
+      ChanTinhAttack_158: -1853448157
+      ChanTinhAttack_159: -1451469798
+      ChanTinhAttack_16: 1750570350
+      ChanTinhAttack_160: -445299517
+      ChanTinhAttack_161: 1474500011
+      ChanTinhAttack_162: 924668985
+      ChanTinhAttack_163: -715212245
+      ChanTinhAttack_164: 749766062
+      ChanTinhAttack_165: 1617723573
+      ChanTinhAttack_166: -365277798
+      ChanTinhAttack_167: -65867209
+      ChanTinhAttack_168: -1070088889
+      ChanTinhAttack_169: -511384491
+      ChanTinhAttack_17: 1186817457
+      ChanTinhAttack_170: 2092381862
+      ChanTinhAttack_171: -1472277516
+      ChanTinhAttack_172: -178688794
+      ChanTinhAttack_173: -2112449038
+      ChanTinhAttack_174: 1118678823
+      ChanTinhAttack_175: -1345090920
+      ChanTinhAttack_176: 2041235303
+      ChanTinhAttack_177: 536554336
+      ChanTinhAttack_178: 57617385
+      ChanTinhAttack_18: 1396304965
+      ChanTinhAttack_19: 210760884
+      ChanTinhAttack_2: -1380909952
+      ChanTinhAttack_20: 305755152
+      ChanTinhAttack_21: -766858962
+      ChanTinhAttack_22: -1495293068
+      ChanTinhAttack_23: -285728722
+      ChanTinhAttack_24: 701782651
+      ChanTinhAttack_25: -228965970
+      ChanTinhAttack_26: -203352416
+      ChanTinhAttack_27: -944994179
+      ChanTinhAttack_28: -546945816
+      ChanTinhAttack_29: -1371185102
+      ChanTinhAttack_3: -1775500087
+      ChanTinhAttack_30: -1633714633
+      ChanTinhAttack_31: 1715033517
+      ChanTinhAttack_32: -1595867854
+      ChanTinhAttack_33: -1964127400
+      ChanTinhAttack_34: -889620512
+      ChanTinhAttack_35: -263119367
+      ChanTinhAttack_36: -433764753
+      ChanTinhAttack_37: -565613584
+      ChanTinhAttack_38: 1687259312
+      ChanTinhAttack_39: -883280939
+      ChanTinhAttack_4: 374524002
+      ChanTinhAttack_40: -284053815
+      ChanTinhAttack_41: -705737750
+      ChanTinhAttack_42: 1323168181
+      ChanTinhAttack_43: 617768024
+      ChanTinhAttack_44: -837638242
+      ChanTinhAttack_45: -1981960359
+      ChanTinhAttack_46: -2092338243
+      ChanTinhAttack_47: 690560712
+      ChanTinhAttack_48: -1879774706
+      ChanTinhAttack_49: 2143720855
+      ChanTinhAttack_5: 2072677
+      ChanTinhAttack_50: -1207089478
+      ChanTinhAttack_51: 1962683807
+      ChanTinhAttack_52: 1516709389
+      ChanTinhAttack_53: 2063137394
+      ChanTinhAttack_54: 1929081581
+      ChanTinhAttack_55: -1741468052
+      ChanTinhAttack_56: -1493958555
+      ChanTinhAttack_57: -512179591
+      ChanTinhAttack_58: 364527341
+      ChanTinhAttack_59: -1555380220
+      ChanTinhAttack_6: -1268809971
+      ChanTinhAttack_60: 727738030
+      ChanTinhAttack_61: -161919604
+      ChanTinhAttack_62: 1882101954
+      ChanTinhAttack_63: 1140521727
+      ChanTinhAttack_64: -1447812268
+      ChanTinhAttack_65: -1952206455
+      ChanTinhAttack_66: -489840507
+      ChanTinhAttack_67: -506883557
+      ChanTinhAttack_68: -1236655607
+      ChanTinhAttack_69: -1363737972
+      ChanTinhAttack_7: -378545691
+      ChanTinhAttack_70: 177477423
+      ChanTinhAttack_71: -654084136
+      ChanTinhAttack_72: 1539614003
+      ChanTinhAttack_73: -726947255
+      ChanTinhAttack_74: 1250642960
+      ChanTinhAttack_75: -597305063
+      ChanTinhAttack_76: 1284114607
+      ChanTinhAttack_77: 1268578667
+      ChanTinhAttack_78: 1838234670
+      ChanTinhAttack_79: 124905252
+      ChanTinhAttack_8: 708738429
+      ChanTinhAttack_80: -464506319
+      ChanTinhAttack_81: -536165478
+      ChanTinhAttack_82: 1307094939
+      ChanTinhAttack_83: 1216133504
+      ChanTinhAttack_84: -535161105
+      ChanTinhAttack_85: 1532556709
+      ChanTinhAttack_86: -171598868
+      ChanTinhAttack_87: -1859582092
+      ChanTinhAttack_88: 1421318886
+      ChanTinhAttack_89: -1780851138
+      ChanTinhAttack_9: 1762222704
+      ChanTinhAttack_90: -2042073846
+      ChanTinhAttack_91: 1309290426
+      ChanTinhAttack_92: 1475278387
+      ChanTinhAttack_93: -829134858
+      ChanTinhAttack_94: -1412261486
+      ChanTinhAttack_95: -175335585
+      ChanTinhAttack_96: -1196846066
+      ChanTinhAttack_97: -707631619
+      ChanTinhAttack_98: 17973336
+      ChanTinhAttack_99: -25151005
+      ChanTinhAttack_D1: 539690007
+      ChanTinhAttack_D2: 362779920
+      ChanTinhAttack_D3: -1374366499
+      ChanTinhAttack_D4: 1165094273
+      ChanTinhAttack_D5: -811071264
+      ChanTinhAttack_D6: 1826697507
+      ChanTinhAttack_L1: 650307205
+      ChanTinhAttack_L2: 1468739217
+      ChanTinhAttack_L3: -1602407278
+      ChanTinhAttack_L4: -891015599
+      ChanTinhAttack_L5: -966508340
+      ChanTinhAttack_L6: -1824789473
+      ChanTinhAttack_R1: 420879280
+      ChanTinhAttack_R2: 589684863
+      ChanTinhAttack_R3: 1131385717
+      ChanTinhAttack_R4: -446573906
+      ChanTinhAttack_R5: 53893282
+      ChanTinhAttack_R6: -938608919
+      ChanTinhAttack_U1: 678508190
+      ChanTinhAttack_U2: 445288917
+      ChanTinhAttack_U3: 229016211
+      ChanTinhAttack_U4: 1381775477
+      ChanTinhAttack_U5: -518481479
+      ChanTinhAttack_U6: -359349338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

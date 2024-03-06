@@ -94,9 +94,9 @@ public class PlayerConversant : MonoBehaviour
     public void Quit()
     {      
         OnExitAction();
-        currentConversant = null;
-        currentDialogue = null;
-        currentNode = null;
+        //currentConversant = null;
+        //currentDialogue = null;
+        //currentNode = null;
         isChoose = false;
     }
 

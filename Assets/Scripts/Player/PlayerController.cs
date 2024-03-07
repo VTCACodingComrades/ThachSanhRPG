@@ -44,13 +44,14 @@ public class PlayerController : Singleton<PlayerController>
         inventory = new Inventory(UseItem); // => khoi tao Inventory() => itemList
         
         //inventory = new Inventory();
-
-        ui_Inventory.SetPlayerPos(this); //todo uiInventory lay vi tri player
+        if (ui_Inventory != null)
+            ui_Inventory.SetPlayerPos(this); //todo uiInventory lay vi tri player
 
         //cameraController = FindObjectOfType<CameraController>(); //! ko tim thay doi tuong thuoc CameraController.cs
 
         //CameraController.Instance.SetPlayerCameraFollow(); // maybe use
-        cameraController.SetPlayerCameraFollow(); //todo phai co de khi resume camera theo doi
+        if (cameraController != null)
+          cameraController.SetPlayerCameraFollow(); //todo phai co de khi resume camera theo doi
     }
 
     private void Start()
@@ -94,6 +95,11 @@ public class PlayerController : Singleton<PlayerController>
     {
         if (value.started && currentState != PlayerState.attack)
             Attack();
+    }
+
+    public Vector2 GetMoveAmount()
+    {
+        return move;
     }
     
     private void Move()

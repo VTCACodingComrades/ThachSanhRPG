@@ -12177,6 +12177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Inventory_Go
       objectReference: {fileID: 0}
+    - target: {fileID: 7077918444090819403, guid: 12c744b49afad22449e9960b5095bccb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

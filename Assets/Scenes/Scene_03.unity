@@ -9865,8 +9865,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0.5
+  m_Mass: 50
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -10486,6 +10486,10 @@ PrefabInstance:
     - target: {fileID: 7077918444090819403, guid: 12c744b49afad22449e9960b5095bccb, type: 3}
       propertyPath: m_Name
       value: UI_Inventory_Go
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077918444090819403, guid: 12c744b49afad22449e9960b5095bccb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11857,6 +11861,10 @@ MonoBehaviour:
   enemyName: 
   deathEffect: {fileID: 0}
   overrideControllers: {fileID: 22100000, guid: cabee2eb2c88c9d45acd24cd1f04bec0, type: 2}
+  target: {fileID: 0}
+  detectRadius: 6
+  attackRadius: 3
+  moveSpeed: 1
 --- !u!114 &8989874100280909040
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -35,7 +35,6 @@ public class PlayerAttacking : MonoBehaviour
         switch (eventName)
         {
             case "Hit":
-                Debug.Log("Attack neeeeeee");
                 Collider2D[] hitColliders = Physics2D.OverlapBoxAll(Edge.position, Edge.localScale, 0);
                 
                 foreach (Collider2D hitCollider in hitColliders)

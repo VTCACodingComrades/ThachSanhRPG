@@ -10063,6 +10063,9 @@ MonoBehaviour:
   pfEnemyDeathAnimation: {fileID: 7264417325517988741, guid: c4ea62e665d2493448d6e5528667df3e, type: 3}
   startHealth: 10
   currentHealth: 0
+  OnDie:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &2729667937146961903
 Animator:
   serializedVersion: 5
@@ -10073,7 +10076,7 @@ Animator:
   m_GameObject: {fileID: 6945096629000937034}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a77336b957c24fd4998586f86bf0ba81, type: 2}
+  m_Controller: {fileID: 22100000, guid: cabee2eb2c88c9d45acd24cd1f04bec0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10761,8 +10764,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.02, y: -0.13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 212758502060794589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11387,6 +11390,7 @@ GameObject:
   - component: {fileID: 1442402767018106505}
   - component: {fileID: 2715989963864907842}
   - component: {fileID: 8906300248480385370}
+  - component: {fileID: 8906300248480385371}
   m_Layer: 6
   m_Name: EnemyBoss
   m_TagString: CombatTarget
@@ -11873,6 +11877,21 @@ MonoBehaviour:
   detectRadius: 6
   attackRadius: 3
   moveSpeed: 1
+--- !u!114 &8906300248480385371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945096629000937034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12009348dad294e45a8bfa0a5a0aa5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Edge: {fileID: 4443338717038790136}
+  thurstForce: 0
+  damage: 1
 --- !u!114 &8989874100280909040
 MonoBehaviour:
   m_ObjectHideFlags: 0

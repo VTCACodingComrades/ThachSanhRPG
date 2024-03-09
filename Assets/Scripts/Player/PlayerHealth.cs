@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -17,6 +18,13 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private Animator animator;
     private bool canTakeDamage = true;
     public int CurrentHealth {get{return currentHealth;}}
+    public TakeDamageEvent OnTakeDamage;
+
+    [Serializable]
+    public class TakeDamageEvent : UnityEvent<float>
+    {
+
+    }
     public int SetCurrentHealth(int health) {
         return this.currentHealth = health;
     }
@@ -70,7 +78,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         //goi ham playerKnockBack 3Dcontroller
 
         // goi ham flash sang len chop tat
-
+        OnTakeDamage?.Invoke(damageAmount);
         canTakeDamage = false;
         currentHealth -= damageAmount;
         Debug.Log("currenthealth = "+ currentHealth);

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,7 +11,13 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] int currentHealth;
     private bool isDie = false;
     public UnityEvent OnDie;
+    public TakeDamageEvent OnTakeDamage;
 
+    [Serializable]
+    public class TakeDamageEvent : UnityEvent<float>
+    {
+
+    }
     private void Start() {
         currentHealth = startHealth;
         enemyHealthBar = GetComponentInChildren<EnemyHealthBar>();
@@ -22,6 +29,7 @@ public class EnemyHealth : MonoBehaviour
 
         enemyHealthBar.SetHealthBarEnemyPercent((float)currentHealth / startHealth);
 
+        OnTakeDamage?.Invoke(damage);
         // knockBack.GetKnockBack(PlayerController.Instance.transform, knockBackThrust);
         // StartCoroutine(flash.FlashRoutine()); //todo change white - defaultMat
         StartCoroutine(CheckDetecDeathRoutine());

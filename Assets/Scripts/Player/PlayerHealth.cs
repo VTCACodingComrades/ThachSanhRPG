@@ -30,7 +30,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private void Start() {
         isDead = false;
         currentHealth = maxHealth;
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         UpdateHealthSilder();
     }
     private void Update() {
@@ -84,17 +84,32 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
             isDead = true;
             currentHealth = 0;
+            canTakeDamage = false;
             //Destroy(PlayerHealth.Instance.gameObject);
             
             //xet Die animaiton
-            //animator.SetTrigger("Die");
+            animator.SetBool("IsDie", true);
+            Debug.Log("Set die ne");
 
             //? hien bang gameover
-            GameController.Instance.GameOverSendData();
+            //GameController.Instance.GameOverSendData();
+            StartCoroutine(ShowGameOver());
         }
+    }
+
+    IEnumerator ShowGameOver()
+    {
+        yield return new WaitForSeconds(4);
+        GameController.Instance.GameOverSendData();
     }
     IEnumerator DamageReoveryRoutine() {
         yield return new WaitForSeconds(damageRecoveryTime);
+        canTakeDamage = true;
+    }
+
+    public void ResetAnimation()
+    {
+        animator.SetBool("IsDie", false);
         canTakeDamage = true;
     }
 

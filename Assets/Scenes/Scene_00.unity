@@ -9688,6 +9688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire_Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2225176823567000666, guid: 0c6e1d986ad43854e9739fd1e3669233, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4061457544670539391, guid: 0c6e1d986ad43854e9739fd1e3669233, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.82
@@ -9979,7 +9983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1664019743
 Transform:
   m_ObjectHideFlags: 0
@@ -10524,6 +10528,10 @@ PrefabInstance:
     - target: {fileID: 2225176823567000666, guid: 0c6e1d986ad43854e9739fd1e3669233, type: 3}
       propertyPath: m_Name
       value: Fire_Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225176823567000666, guid: 0c6e1d986ad43854e9739fd1e3669233, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4061457544670539391, guid: 0c6e1d986ad43854e9739fd1e3669233, type: 3}
       propertyPath: m_LocalPosition.x

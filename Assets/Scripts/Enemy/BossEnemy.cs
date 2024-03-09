@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class BossEnemy : Enemy
     private Vector3 initialPosition;
     private float attackCooldown = 1f;
     private float timeSinceLastAttack;
+    private EnemyHealth enemyHealth;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +24,25 @@ public class BossEnemy : Enemy
         enemyAnimator.runtimeAnimatorController = overrideControllers;
         target = GameObject.Find("Player").transform;
         timeSinceLastAttack = attackCooldown;
+        enemyHealth = GetComponent<EnemyHealth>();
+        enemyHealth.OnDie.AddListener(Die);
     }
+
+    //private void OnEnable()
+    //{
+        
+    //}
+
+    private void OnDisable()
+    {
+        enemyHealth.OnDie.RemoveListener(Die);
+    }
+    
 
     // Update is called once per frame
     void Update()
     {
+        if (enemyHealth.IsDie()) return;
         if (isSleeping)
         {
             enemyAnimator.SetBool("Walk", false);
@@ -83,5 +99,10 @@ public class BossEnemy : Enemy
         Vector2 moveDirction = (targetPosition - transform.position).normalized;
         enemyAnimator.SetFloat("MoveX", moveDirction.x);
         enemyAnimator.SetFloat("MoveY", moveDirction.y);
+    }
+
+    private void Die()
+    {
+        enemyAnimator.SetBool("IsDie", true);
     }
 }

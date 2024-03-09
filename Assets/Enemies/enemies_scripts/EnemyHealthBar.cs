@@ -10,7 +10,7 @@ public class EnemyHealthBar : MonoBehaviour
     [SerializeField] private Image backGroundImage;
     
     private void Update() {
-        transform.position = Camera.main.WorldToScreenPoint(target.position);
+        transform.position = Camera.main.WorldToScreenPoint(target.position + offset);
     }
     public void SetHealthBarEnemyPercent(float percent) {
         float parentWidth = GetComponent<RectTransform>().rect.width;

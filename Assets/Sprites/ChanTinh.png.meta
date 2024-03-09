@@ -3790,7 +3790,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_174
+      name: ChanTinh_Die1
       rect:
         serializedVersion: 2
         x: 0
@@ -3811,7 +3811,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_175
+      name: ChanTinh_Die2
       rect:
         serializedVersion: 2
         x: 64
@@ -3832,7 +3832,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_176
+      name: ChanTinh_Die3
       rect:
         serializedVersion: 2
         x: 128
@@ -3853,7 +3853,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_177
+      name: ChanTinh_Die4
       rect:
         serializedVersion: 2
         x: 192
@@ -3874,7 +3874,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_178
+      name: ChanTinh_Die5
       rect:
         serializedVersion: 2
         x: 256
@@ -3895,7 +3895,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChanTinh_179
+      name: ChanTinh_Die6
       rect:
         serializedVersion: 2
         x: 320
@@ -5228,12 +5228,6 @@ TextureImporter:
       ChanTinh_171: 857738751
       ChanTinh_172: -80718307
       ChanTinh_173: -2126513738
-      ChanTinh_174: -922434891
-      ChanTinh_175: -1316939
-      ChanTinh_176: -1308032987
-      ChanTinh_177: -2109647478
-      ChanTinh_178: 1029887520
-      ChanTinh_179: 810108994
       ChanTinh_18: 1246772840
       ChanTinh_180: -379672411
       ChanTinh_181: -1036194497
@@ -5346,6 +5340,12 @@ TextureImporter:
       ChanTinh_9: 2085622182
       ChanTinh_98: -206803108
       ChanTinh_99: -1278064376
+      ChanTinh_Die1: -922434891
+      ChanTinh_Die2: -1316939
+      ChanTinh_Die3: -1308032987
+      ChanTinh_Die4: -2109647478
+      ChanTinh_Die5: 1029887520
+      ChanTinh_Die6: 810108994
       ChanTinh_WD1: 568168038
       ChanTinh_WD2: 2140541281
       ChanTinh_WD3: -1067649956

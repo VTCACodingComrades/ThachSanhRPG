@@ -35,6 +35,7 @@ public class PlayerAttacking : MonoBehaviour
         switch (eventName)
         {
             case "Hit":
+                Debug.Log("Attack neeeeeee");
                 Collider2D[] hitColliders = Physics2D.OverlapBoxAll(Edge.position, Edge.localScale, 0);
                 
                 foreach (Collider2D hitCollider in hitColliders)
@@ -50,7 +51,7 @@ public class PlayerAttacking : MonoBehaviour
                         Rigidbody2D enemyRb = hitCollider.gameObject.GetComponent<Rigidbody2D>();
                         Vector2 direction = (hitCollider.transform.position - transform.position).normalized * thurstForce;
                         enemyRb.AddForce(direction, ForceMode2D.Impulse);
-                        hitCollider.GetComponent<Enemy>().TakeDamage(damage);
+                        hitCollider.GetComponent<EnemyHealth>().TakeDamage(damage);
                     }
 
                     if(hitCollider.gameObject.GetComponent<EnemyAI>() != null) {

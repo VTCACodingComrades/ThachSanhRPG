@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIMainMenuButton : MonoBehaviour
@@ -12,10 +13,14 @@ public class UIMainMenuButton : MonoBehaviour
     [SerializeField] Button levelsButton;
     private float delayTimeUIButtonPressed = 0.1f;
 
-
     private void Awake() {
         //player = GameObject.Find("Player"); //todo find folder Player de khi can playnewGame se xoa this.gameobject
         levelsButton.enabled = false;
+    }
+
+    private void Start()
+    {
+        
     }
 
     private void Update() {
@@ -57,4 +62,5 @@ public class UIMainMenuButton : MonoBehaviour
 
 
     //todo 
+   
 }

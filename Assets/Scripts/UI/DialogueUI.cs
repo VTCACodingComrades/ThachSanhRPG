@@ -13,6 +13,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI textAI;
     [SerializeField] Button nextButton;
     [SerializeField] Button closeButton;
+    [SerializeField] Button okButton;
     [SerializeField] GameObject reponseAI;
     [SerializeField] Transform choiceRoot;
     [SerializeField] GameObject choicePrefab;
@@ -29,19 +30,31 @@ public class DialogueUI : MonoBehaviour
     {
         nextButton.onClick.AddListener(NextButton);
         closeButton.onClick.AddListener(CloseButton);
+        okButton.onClick.AddListener(OKButton);
     }
 
+   
     private void OnDisable()
     {
         nextButton.onClick.RemoveListener(NextButton);
         closeButton.onClick.RemoveListener(CloseButton);
+        okButton.onClick.RemoveListener(OKButton);
     }
 
     private void CloseButton()
     {
-        playerConversant.Quit();
-        dialogueUI.SetActive(false);      
+        playerConversant.Close();
+        dialogueUI.SetActive(false);
+        StopAllCoroutines();
     }
+
+    private void OKButton()
+    {
+        playerConversant.Quit();
+        dialogueUI.SetActive(false);
+        StopAllCoroutines();
+    }
+
 
     public void NextButton()
     {
@@ -75,7 +88,14 @@ public class DialogueUI : MonoBehaviour
         else
         {
             textAI.text = playerConversant.GetText();
-            nextButton.gameObject.SetActive(playerConversant.HasNext());
+            //nextButton.gameObject.SetActive(playerConversant.HasNext());
         }
+        StartCoroutine(NextDialogue());
+    }
+
+    IEnumerator NextDialogue()
+    {
+        yield return new WaitForSeconds(2f);
+        NextButton();
     }
 }

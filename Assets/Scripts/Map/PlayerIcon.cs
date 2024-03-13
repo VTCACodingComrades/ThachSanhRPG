@@ -16,12 +16,13 @@ public class PlayerIcon : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Move();
     }
     void Move()
     {
+        if (!playerController.IsMoving()) return;
         move = playerController.GetMoveAmount();
         playerRigidbody.MovePosition(playerRigidbody.position + move * moveSpeed * Time.deltaTime);
     }

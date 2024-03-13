@@ -111,7 +111,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2.0006514}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -576,6 +576,21 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   damageRecoveryTime: 1
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4668320714198284720}
+        m_TargetAssemblyTypeName: DamageTextSpawner, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4335090285348177162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,3 +725,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8677594425355335207, guid: 1482ab610c18e0942aa30d8890c9caa4, type: 3}
   m_PrefabInstance: {fileID: 6051784455847837702}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4668320714198284720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1384141183733234102, guid: 1482ab610c18e0942aa30d8890c9caa4, type: 3}
+  m_PrefabInstance: {fileID: 6051784455847837702}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f15bf842a738e48a26ead8ce3bdca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

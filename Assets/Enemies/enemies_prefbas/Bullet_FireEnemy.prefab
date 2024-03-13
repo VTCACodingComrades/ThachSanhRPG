@@ -51,6 +51,8 @@ MonoBehaviour:
   particleOnHitPrefabs: {fileID: 5705619862396726126, guid: 85aedc08ec393774fbe41620bb9cb624, type: 3}
   isEnemyProjectile: 1
   projectileRange: 10
+  dir: {x: 0, y: 0}
+  damageBullet_FireShotter: 1
 --- !u!212 &8560002093811428322
 SpriteRenderer:
   m_ObjectHideFlags: 0

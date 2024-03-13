@@ -30,6 +30,7 @@ public class PlayerController : Singleton<PlayerController>
     private PlayerState currentState;
     private WeaponSO currentWeapon;
     private ThachSanh thachSanh;
+    private Vector3 previousPosition;
 
     public Vector2 GetMoveDir { get { return moveDir; } }
 
@@ -63,6 +64,7 @@ public class PlayerController : Singleton<PlayerController>
             EquipWeapon(defaultWeapon);
         }
         ui_Inventory.SetInventory(inventory); // bien inventory in doi tuong UI_Inventory duoi canvas da duoc gan gia tri
+        previousPosition = transform.position;
     }
     private void OnEnable() {
         thachSanh.Enable();
@@ -291,6 +293,24 @@ public class PlayerController : Singleton<PlayerController>
     public Inventory GetPlayerInventory()
     {
         return inventory;
+    }
+
+    public bool IsMoving()
+    {
+        // Check if the current position is different from the previous position
+        if (transform.position != previousPosition)
+        {
+            // Object is moving
+            //Debug.Log("Object is moving");
+            // Update the previous position to the current position
+            previousPosition = transform.position;
+            return true;
+        }
+        else
+        {
+            // Object is not moving
+            return false;
+        }
     }
 
 }

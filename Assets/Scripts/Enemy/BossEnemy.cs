@@ -42,6 +42,7 @@ public class BossEnemy : Enemy
     // Update is called once per frame
     void Update()
     {
+        if (target.GetComponent<PlayerHealth>().isDead) return;
         if (enemyHealth.IsDie()) return;
         if (isSleeping)
         {

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -7,7 +9,15 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject pfEnemyDeathAnimation;
     [SerializeField] int startHealth = 3;
     [SerializeField] int currentHealth;
+    private bool isDie = false;
+    public UnityEvent OnDie;
+    public TakeDamageEvent OnTakeDamage;
 
+    [Serializable]
+    public class TakeDamageEvent : UnityEvent<float>
+    {
+
+    }
     private void Start() {
         currentHealth = startHealth;
         enemyHealthBar = GetComponentInChildren<EnemyHealthBar>();
@@ -19,10 +29,16 @@ public class EnemyHealth : MonoBehaviour
 
         enemyHealthBar.SetHealthBarEnemyPercent((float)currentHealth / startHealth);
 
+        OnTakeDamage?.Invoke(damage);
         // knockBack.GetKnockBack(PlayerController.Instance.transform, knockBackThrust);
         // StartCoroutine(flash.FlashRoutine()); //todo change white - defaultMat
         StartCoroutine(CheckDetecDeathRoutine());
-        Debug.Log("enemy health: " + currentHealth);
+        //Debug.Log("enemy health: " + currentHealth);
+    }
+
+    public bool IsDie()
+    {
+        return isDie;
     }
 
     private IEnumerator CheckDetecDeathRoutine() {
@@ -32,11 +48,15 @@ public class EnemyHealth : MonoBehaviour
 
     private void DetecDeath(){
         
-        if(currentHealth <=0){
+        if(currentHealth <=0 && !isDie){
+            isDie = true;
             enemyHealthBar.gameObject.SetActive(false);
+            StartCoroutine(SpawnDieEffect());
+            //GameObject effect = Instantiate(pfEnemyDeathAnimation, transform.position, transform.rotation, this.gameObject.transform.parent);
 
-            Instantiate(pfEnemyDeathAnimation, transform.position, transform.rotation, this.gameObject.transform.parent);
-            
+            //Destroy(effect, 1f);
+
+            OnDie?.Invoke();
             //Instantiate(deathVFXPrefab,transform.position + Vector3.up,Quaternion.identity);
 
             //GetComponent<PickupInstantiate>().ItemsDrop(); // truoc khi enemy die se vang ra item
@@ -44,7 +64,16 @@ public class EnemyHealth : MonoBehaviour
             // if(TryGetComponent(out PickupInstantiate pickupInstantiate)) {
             //     pickupInstantiate.ItemsDrop();
             // }
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 2f);
         } 
+    }
+
+    IEnumerator SpawnDieEffect()
+    {
+        yield return new WaitForSeconds(1);
+        GameObject effect = Instantiate(pfEnemyDeathAnimation, transform.position, transform.rotation, this.gameObject.transform.parent);
+
+        Destroy(effect, 1f);
+
     }
 }

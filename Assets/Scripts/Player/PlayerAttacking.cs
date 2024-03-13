@@ -51,7 +51,7 @@ public class PlayerAttacking : MonoBehaviour
                         Rigidbody2D enemyRb = hitCollider.gameObject.GetComponent<Rigidbody2D>();
                         Vector2 direction = (hitCollider.transform.position - transform.position).normalized * thurstForce;
                         enemyRb.AddForce(direction, ForceMode2D.Impulse);
-                        hitCollider.GetComponent<Enemy>().TakeDamage(damage);
+                        hitCollider.GetComponent<EnemyHealth>().TakeDamage(damage);
                     }
 
                     if(hitCollider.gameObject.GetComponent<EnemyAI>() != null) {

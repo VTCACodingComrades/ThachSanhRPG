@@ -36,31 +36,32 @@ public class MiniMap : Singleton<MiniMap>
     }
     public void SetPlayerIconBeginingPosition()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        string sceneName = SceneManager.GetActiveScene().name;
         string beginingPosition = SceneManagement.Instance.SceneTransitionName;
-        Debug.Log(currentSceneIndex);
+        //Debug.Log(currentSceneIndex);
         Debug.Log(beginingPosition);
-        if (currentSceneIndex == 3 && beginingPosition == "East_Entrance") //Scene 2 East Entrance
+        if (sceneName == "Scene_02" && beginingPosition == "East_Entrance") //Scene 2 East Entrance
         {
             playerIcon.transform.position = scene02_east.position;
         }
-        else if (currentSceneIndex == 4 && beginingPosition == "West_Entrance") //Scene 3 West Entrance
+        else if (sceneName == "Scene_03" && beginingPosition == "West_Entrance") //Scene 3 West Entrance
         {
             playerIcon.transform.position = scene03_west.position;
         }
-        else if (currentSceneIndex == 3 && beginingPosition == "South_Entrance")
+        else if (sceneName == "Scene_02" && beginingPosition == "South_Entrance")
         {
             playerIcon.transform.position = scene02_south.position;
         }
-        else if (currentSceneIndex == 2 && beginingPosition == "North_Entrance")
+        else if (sceneName == "Scene_01" && beginingPosition == "North_Entrance")
         {
             playerIcon.transform.position = scene01_north.position;
         }
-        else if (currentSceneIndex == 2 && beginingPosition == "West_Entrance")
+        else if (sceneName == "Scene_01" && beginingPosition == "West_Entrance")
         {
             playerIcon.transform.position = scene01_west.position;
         }
-        else if (currentSceneIndex == 1 && beginingPosition == "East_Entrance")
+        else if (sceneName == "Scene_00" && beginingPosition == "East_Entrance")
         {
             playerIcon.transform.position = scene00_east.position;
         }

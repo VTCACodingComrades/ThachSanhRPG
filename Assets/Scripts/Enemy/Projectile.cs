@@ -72,7 +72,7 @@ public class Projectile : MonoBehaviour
         {
             if(playerHealth && isEnemyProjectile && !playerHealth.isDead) {
 
-                Debug.Log("Player take damage");
+                //Debug.Log("Player take damage");
                 playerHealth?.TakeDamage(damageBullet_LogEnemy, transform);
                 Instantiate(particleOnHitPrefabs, transform.position, transform.rotation);
                 Destroy(this.gameObject);

@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923da15c3104f4b459d3e4472dca425d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyVFX: {fileID: 0}
   enemyType: {fileID: 0}
   Edge: {fileID: 4808513384370807261}
   thurstForce: 0
@@ -240,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923da15c3104f4b459d3e4472dca425d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyVFX: {fileID: 3578537859334736398, guid: 8810d282fc920a043af1cec1f3f29940, type: 3}
   enemyType: {fileID: 0}
   Edge: {fileID: 4808513384370807261}
   thurstForce: 3
@@ -459,8 +461,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 1.4614899
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -559,6 +561,7 @@ MonoBehaviour:
   moveAmount: {x: 0, y: 0}
   move: {x: 0, y: 0}
   moveDir: {x: 0, y: 0}
+  velocity: {x: 0, y: 0, z: 0}
   cameraController: {fileID: 0}
 --- !u!114 &6344612756621472391
 MonoBehaviour:

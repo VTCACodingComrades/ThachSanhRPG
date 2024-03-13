@@ -22,7 +22,7 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private Vector2 moveAmount;
     [SerializeField] private Vector2 move; // su dung tai day, de co the vua di chuyen vua tan cong
     [SerializeField] private Vector2 moveDir;
-
+    [SerializeField] private Vector3 velocity;
     [SerializeField] private CameraController cameraController; //todo keo tha
 
     private Rigidbody2D playerRigidbody;
@@ -73,6 +73,7 @@ public class PlayerController : Singleton<PlayerController>
         //Debug.Log("in gia tri inventory "+inventory);
         move = thachSanh.Player.Move.ReadValue<Vector2>();
         UpdateAnimation();
+        
     }
 
     private void FixedUpdate()

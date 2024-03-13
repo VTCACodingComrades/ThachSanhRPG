@@ -78,7 +78,6 @@ public class FireBullet : MonoBehaviour
         if(Vector3.Distance(transform.position, startPos) > projectileRange) //weaponInfo.weaponRange
         {
             //tao hieu ung o day truoc khi destroy
-
             Destroy(gameObject);
         }
     }

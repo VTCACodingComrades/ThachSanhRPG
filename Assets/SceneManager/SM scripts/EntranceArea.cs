@@ -19,7 +19,8 @@ public class EntranceArea : MonoBehaviour
 
             UIFadeChangeScene.Instance.FadeToClear();
 
-            SceneManagement.Instance.SetTransitionName(null); // reset lai gia tri SceneTransitionName = null
+            //SceneManagement.Instance.SetTransitionName(null); // reset lai gia tri SceneTransitionName = null
         }
+        MiniMap.Instance.SetPlayerIconBeginingPosition();
     }
 }

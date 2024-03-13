@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Purse : MonoBehaviour
 {
-    private float startingBalance = 400f;
+    //private float startingBalance = 400f;
 
     private float balance; // todo balance duoc xet starting collum 118 PlayerData_Logign.cs
 

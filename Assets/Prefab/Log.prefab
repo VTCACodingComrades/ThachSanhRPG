@@ -473,10 +473,10 @@ MonoBehaviour:
   health: 6
   enemyName: 
   deathEffect: {fileID: 7264417325517988741, guid: c4ea62e665d2493448d6e5528667df3e, type: 3}
-  detectRadius: 10
-  attackRadius: 8
+  detectRadius: 8
+  attackRadius: 5
   target: {fileID: 0}
-  moveSpeed: 3
+  moveSpeed: 1
   firePos: {fileID: 4443338715514951810}
   projectilePf: {fileID: 8172187201797174598, guid: 248c0930a3a3f2c4089cd06951b46d6e, type: 3}
 --- !u!61 &1442402767601894387
@@ -540,3 +540,9 @@ MonoBehaviour:
   pfEnemyDeathAnimation: {fileID: 7264417325517988741, guid: c4ea62e665d2493448d6e5528667df3e, type: 3}
   startHealth: 5
   currentHealth: 0
+  OnDie:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []

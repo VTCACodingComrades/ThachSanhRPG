@@ -262,6 +262,12 @@ MonoBehaviour:
   pfEnemyDeathAnimation: {fileID: 7405361402734404751, guid: 4edc3eccc2136e944b3123896348eaf2, type: 3}
   startHealth: 5
   currentHealth: 0
+  OnDie:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2753749978980126273
 MonoBehaviour:
   m_ObjectHideFlags: 0

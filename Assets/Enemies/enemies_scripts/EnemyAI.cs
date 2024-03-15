@@ -31,6 +31,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private bool stopMovingWhileAttacking = false;
     [SerializeField] private float attackCoolDown = 2f;
     [SerializeField] private MonoBehaviour enemyType; // scrip loai enemy
+	private EnemyHealth enemyHealth;
 
     private void Awake() {
         enemyPathFinding = GetComponent<EnemyPathFinding>();
@@ -38,6 +39,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void Start() {
+		enemyHealth = GetComponent<EnemyHealth>();
         roamPosition = GetRoamingPos();
     }
     private void Update() {
@@ -110,7 +112,7 @@ public class EnemyAI : MonoBehaviour
 			state = State.Roaming;
 		}
 
-		if(attackRange != 0 && canAttack) {
+		if(attackRange != 0 && canAttack && !enemyHealth.IsDie()) {
 			canAttack = false;
 			// goi ham attqack thong qua interface
 			(enemyType as IEnemy). Attack();

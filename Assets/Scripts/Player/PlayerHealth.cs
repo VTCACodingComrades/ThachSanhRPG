@@ -15,6 +15,8 @@ public class PlayerHealth : Singleton<PlayerHealth>
     [SerializeField] private int maxHealth = 10;
     [SerializeField] private int currentHealth;
     [SerializeField] private float damageRecoveryTime = 1f;
+    [SerializeField] private float delayTimeToShowGameOverPanel = 1f;
+
     private Animator animator;
     private bool canTakeDamage = true;
     public int CurrentHealth {get{return currentHealth;}}
@@ -107,7 +109,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     IEnumerator ShowGameOver()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(delayTimeToShowGameOverPanel);
         GameController.Instance.GameOverSendData();
     }
     IEnumerator DamageReoveryRoutine() {

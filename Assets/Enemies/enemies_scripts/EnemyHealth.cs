@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject pfEnemyDeathAnimation;
     [SerializeField] int startHealth = 3;
     [SerializeField] int currentHealth;
+    [SerializeField] private float timeToDestroyEnemies = 0.5f;
     private bool isDie = false;
     public UnityEvent OnDie;
     public TakeDamageEvent OnTakeDamage;
@@ -42,13 +43,13 @@ public class EnemyHealth : MonoBehaviour
     }
 
     private IEnumerator CheckDetecDeathRoutine() {
-        yield return new WaitForSeconds(0.1f); // detect die cham lai
+        yield return new WaitForSeconds(0f); // detect die cham lai
         DetecDeath();
     }
 
     private void DetecDeath(){
         
-        if(currentHealth <=0 && !isDie){
+        if(currentHealth <= 0 && !isDie){
             isDie = true;
             enemyHealthBar.gameObject.SetActive(false);
             StartCoroutine(SpawnDieEffect());
@@ -64,16 +65,16 @@ public class EnemyHealth : MonoBehaviour
             // if(TryGetComponent(out PickupInstantiate pickupInstantiate)) {
             //     pickupInstantiate.ItemsDrop();
             // }
-            Destroy(this.gameObject, 2f);
+            Destroy(this.gameObject, timeToDestroyEnemies); //todo xoa enemies object de thay duoc death animation cua enemies tam_comment
         } 
     }
 
     IEnumerator SpawnDieEffect()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
         GameObject effect = Instantiate(pfEnemyDeathAnimation, transform.position, transform.rotation, this.gameObject.transform.parent);
 
-        Destroy(effect, 1f);
+        Destroy(effect, 3f);
 
     }
 }

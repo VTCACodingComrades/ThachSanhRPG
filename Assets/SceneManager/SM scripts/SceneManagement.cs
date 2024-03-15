@@ -22,6 +22,7 @@ public class SceneManagement : Singleton<SceneManagement>
     public int CurrentSceneIndex {get{return currentSceneIndex;}}
     public enum Scenes
     {
+        LoadScene,
         MainMenu, //0
         Scene_00,//1
         Scene_01, //2

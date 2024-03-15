@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerAttacking : MonoBehaviour
 {
+    [SerializeField] GameObject destroyVFX;
     [SerializeField] private MonoBehaviour enemyType; // scrip loai enemy
     //public AnimationEvents AnimationEvents;
     public event Action<string> OnCustomEvent = s => { };
@@ -58,6 +59,17 @@ public class PlayerAttacking : MonoBehaviour
                         Debug.Log("player hit enemyHealth");
                         hitCollider.GetComponent<EnemyHealth>().TakeDamage(damage);
                     }
+
+                    if(hitCollider.gameObject.GetComponent<InDestructible>()) {
+                        var trans = hitCollider.gameObject.GetComponent<InDestructible>().transform;
+                        Instantiate(destroyVFX, trans.position, Quaternion.identity);
+                    }
+                    if(hitCollider.gameObject.GetComponent<Destructible>()) {
+                        var trans = hitCollider.gameObject.GetComponent<Destructible>().transform;
+                        Instantiate(destroyVFX, trans.position, Quaternion.identity);
+                        Destroy(hitCollider.gameObject.GetComponent<Destructible>().gameObject);
+                    }
+                    
 
                 }
                 break;

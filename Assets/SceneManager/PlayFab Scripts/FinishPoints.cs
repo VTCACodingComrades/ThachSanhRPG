@@ -24,7 +24,7 @@ public class FinishPoints : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex >= UILevelSelectButton.Instance.UnlockLevelInt 
             && UILevelSelectButton.Instance.UnlockLevelInt < UILevelSelectButton.Instance.MaxLevelInt)
         {
-            UILevelSelectButton.Instance.UnlockLevelInt = SceneManager.GetActiveScene().buildIndex + 1;
+            UILevelSelectButton.Instance.UnlockLevelInt = SceneManager.GetActiveScene().buildIndex; //+1
             // UILevelSelectButton.Instance.SaveLevelInt("playerLevel", SceneManager.GetActiveScene().buildIndex + 1);
             // UILevelSelectButton.Instance.LoadLevelInt("playerLevel");
         }

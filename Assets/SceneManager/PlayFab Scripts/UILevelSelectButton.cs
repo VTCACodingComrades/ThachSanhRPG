@@ -19,7 +19,7 @@ public class UILevelSelectButton : MonoBehaviour
 
     public static UILevelSelectButton Instance;
     [SerializeField] private int unLockLevelInt;
-    [SerializeField] private int maxLevel = 3;
+    [SerializeField] private int maxLevel = 4;
 
     public int UnlockLevelInt {get{return unLockLevelInt;} set{unLockLevelInt = value;}}
     public int MaxLevelInt{get{return maxLevel;}}

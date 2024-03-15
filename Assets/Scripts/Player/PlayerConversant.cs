@@ -105,6 +105,16 @@ public class PlayerConversant : MonoBehaviour
         currentConversant = null;
     }
 
+    public void StartNextConversant()
+    {
+        currentConversant.StartNextConversant();
+    }
+
+    public bool HasNextConversant()
+    {
+        return currentConversant.HasNext();
+    }
+
     private void OnExitAction()
     {
         //DialogueTrigger dialogueTrigger = currentConversant.GetComponent<DialogueTrigger>();
@@ -117,4 +127,5 @@ public class PlayerConversant : MonoBehaviour
             }
         }
     }
+
 }

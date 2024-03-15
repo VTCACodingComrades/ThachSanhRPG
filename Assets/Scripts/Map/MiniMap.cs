@@ -39,8 +39,8 @@ public class MiniMap : Singleton<MiniMap>
         //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         string sceneName = SceneManager.GetActiveScene().name;
         string beginingPosition = SceneManagement.Instance.SceneTransitionName;
-        //Debug.Log(currentSceneIndex);
-        Debug.Log(beginingPosition);
+        //Debug.Log(sceneName);
+        //Debug.Log(beginingPosition);
         if (sceneName == "Scene_02" && beginingPosition == "East_Entrance") //Scene 2 East Entrance
         {
             playerIcon.transform.position = scene02_east.position;

@@ -1,12 +1,13 @@
 using RPG.Dialogue;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class QuestChecking : MonoBehaviour
 {
     [SerializeField] string objective;
-    [SerializeField] Dialogue newDialogue;
+    //[SerializeField] Dialogue newDialogue;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,10 @@ public class QuestChecking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        GameObject[] objectives = GameObject.FindGameObjectsWithTag(objective);
-        if (objectives.Length == 0)
+        List<GameObject> objectives = GameObject.FindGameObjectsWithTag(objective).ToList();
+        if (objectives.Count == 0)
         {
-            gameObject.GetComponentInParent<AIConversant>().SetDialogue(newDialogue);
+            gameObject.GetComponentInParent<AIConversant>().SetNextDialogue();
             StopChecking();
         }
     }

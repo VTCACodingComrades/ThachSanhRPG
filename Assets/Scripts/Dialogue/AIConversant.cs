@@ -6,21 +6,26 @@ using UnityEngine;
 
 public class AIConversant : MonoBehaviour
 {
-    [SerializeField] Dialogue dialogue;
-    //private int currentDialogueIndex = -1;
+    [SerializeField] Dialogue[] dialogues;
+    Dialogue currentDialogue;
+    private int currentDialogueIndex = 0;
 
+    private void Start()
+    {
+        currentDialogue = dialogues[0];
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerConversant>().StartConversant(dialogue, this);
+            collision.GetComponent<PlayerConversant>().StartConversant(currentDialogue, this);
         }
     }
 
-    public void SetDialogue(Dialogue newDialogue)
-    {
-        dialogue = newDialogue;
-    }
+    //public void SetDialogue(Dialogue newDialogue)
+    //{
+    //    dialogue = newDialogue;
+    //}
     //public Dialogue GetNextDialogue()
     //{
     //    if (!HasNext()) return null;
@@ -33,8 +38,15 @@ public class AIConversant : MonoBehaviour
     //    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartConversant(GetNextDialogue(), this);
     //}
 
-    //internal bool HasNext()
-    //{
-    //    return currentDialogueIndex < dialogue.Length - 1;
-    //}
+    public void SetNextDialogue()
+    {
+        if (!HasNext()) return;
+        currentDialogueIndex += 1;
+        currentDialogue =  dialogues[currentDialogueIndex];
+    }
+
+    public bool HasNext()
+    {
+        return currentDialogueIndex < dialogues.Length - 1;
+    }
 }

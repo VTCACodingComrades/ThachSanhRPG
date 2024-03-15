@@ -10714,8 +10714,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: CombatTarget
-  number: 0
-  newDialogue: {fileID: 11400000, guid: f85e6fbbf1e05a44992c1097f002ecbd, type: 2}
 --- !u!1 &1085995142
 GameObject:
   m_ObjectHideFlags: 0
@@ -12180,7 +12178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72baad53fc5c0e74c86efe37fa15a64f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 301dc3cf72c08804390fc64470b7f8fb, type: 2}
+  dialogues:
+  - {fileID: 11400000, guid: 301dc3cf72c08804390fc64470b7f8fb, type: 2}
+  - {fileID: 11400000, guid: f85e6fbbf1e05a44992c1097f002ecbd, type: 2}
 --- !u!114 &1957357075
 MonoBehaviour:
   m_ObjectHideFlags: 0

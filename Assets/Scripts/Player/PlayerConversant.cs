@@ -42,7 +42,7 @@ public class PlayerConversant : MonoBehaviour
             return "";
     }
 
-    public void GetNextText()
+    public void GetNextText1()
     {
         int numPlayerReponse = currentDialogue.GetPlayerChildren(currentNode).Count();
         if(numPlayerReponse > 0)
@@ -57,6 +57,11 @@ public class PlayerConversant : MonoBehaviour
             int randomIndex = Random.Range(0, nodes.Length);
             currentNode = nodes[randomIndex];
         }
+    }
+
+    public void GetNextText()
+    {
+        currentNode = currentDialogue.GetNextNode();
     }
 
     public void SelectChoice(DialogueNode node)
@@ -95,6 +100,7 @@ public class PlayerConversant : MonoBehaviour
     {      
         OnExitAction();
         currentConversant = null;
+        currentDialogue.ResetIndex();
         //currentDialogue = null;
         //currentNode = null;
         isChoose = false;
@@ -103,17 +109,18 @@ public class PlayerConversant : MonoBehaviour
     public void Close()
     {
         currentConversant = null;
+        currentDialogue.ResetIndex();
     }
 
-    public void StartNextConversant()
-    {
-        currentConversant.StartNextConversant();
-    }
+    //public void StartNextConversant()
+    //{
+    //    currentConversant.StartNextConversant();
+    //}
 
-    public bool HasNextConversant()
-    {
-        return currentConversant.HasNext();
-    }
+    //public bool HasNextConversant()
+    //{
+    //    return currentConversant.HasNext();
+    //}
 
     private void OnExitAction()
     {

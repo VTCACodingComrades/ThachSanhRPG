@@ -14,6 +14,7 @@ namespace RPG.Dialogue
 
         Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
         private  Vector2 offsetPosition = new(250, 0);
+        int currentIndex = 0;
 
         private void OnValidate()
         {
@@ -118,7 +119,7 @@ namespace RPG.Dialogue
         {
         }
 
-        internal IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
+        public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
         {
            foreach(DialogueNode node in GetAllChildren(currentNode))
             {
@@ -128,13 +129,25 @@ namespace RPG.Dialogue
 
         }
 
-        internal IEnumerable<DialogueNode> GetAIChildren(DialogueNode currentNode)
+        public IEnumerable<DialogueNode> GetAIChildren(DialogueNode currentNode)
         {
             foreach (DialogueNode node in GetAllChildren(currentNode))
             {
                 if (!node.IsPlayerSpeaking())
                     yield return node;
             }
+        }
+
+        public  DialogueNode GetNextNode()
+        {
+            currentIndex++;
+            return nodes[currentIndex];
+
+        }
+
+        public void ResetIndex()
+        {
+            currentIndex = 0;
         }
     }
 }

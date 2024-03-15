@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e59fef1b16a8c4a9314566fe1ad42d, type: 3}
+  m_Name: OldmanScene00_2
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1805422540370748833}
+  - {fileID: 385248547127898451}
+  - {fileID: 6435908416465884809}
+--- !u!114 &385248547127898451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 3a48d0f1-59d0-480d-937d-2e48a6151c4a
+  m_EditorClassIdentifier: 
+  speakerName: "\xD4ng l\xE3o"
+  isPlayerSpeaking: 0
+  text: "H\xE3y nh\u1EADn ph\u1EA7n th\u01B0\u1EDFng"
+  children:
+  - 8222200a-e507-4a54-825f-6b0bb4ce8691
+  rect:
+    serializedVersion: 2
+    x: 273
+    y: 90
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: 
+--- !u!114 &1805422540370748833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 18973eae-78d7-43ed-b92a-276f71ec0e82
+  m_EditorClassIdentifier: 
+  speakerName: "\xD4ng l\xE3o"
+  isPlayerSpeaking: 0
+  text: "T\u1ED1t l\u1EAFm ch\xE0ng trai tr\u1EBB"
+  children:
+  - 3a48d0f1-59d0-480d-937d-2e48a6151c4a
+  rect:
+    serializedVersion: 2
+    x: 22
+    y: 23
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: 
+--- !u!114 &6435908416465884809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 8222200a-e507-4a54-825f-6b0bb4ce8691
+  m_EditorClassIdentifier: 
+  speakerName: "\xD4ng l\xE3o"
+  isPlayerSpeaking: 0
+  text: "Ki\u1EC3m tra trong t\xFAi \u0111\u1ED3 \u0111i"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 519
+    y: 158
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: Complete

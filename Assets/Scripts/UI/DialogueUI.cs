@@ -59,9 +59,9 @@ public class DialogueUI : MonoBehaviour
     public void NextButton()
     {
         //Debug.Log("Click ne");
-        //playerConversant.GetNextText();
-        //UpdateTextUI();
-        playerConversant.StartNextConversant();
+        playerConversant.GetNextText();
+        UpdateTextUI();
+        //playerConversant.StartNextConversant();
     }
 
     private void UpdateTextUI()
@@ -89,9 +89,10 @@ public class DialogueUI : MonoBehaviour
         else
         {
             textAI.text = playerConversant.GetText();
-            //nextButton.gameObject.SetActive(playerConversant.HasNext());
-            nextButton.gameObject.SetActive(playerConversant.HasNextConversant());
-            okButton.gameObject.SetActive(!playerConversant.HasNextConversant());
+            nextButton.gameObject.SetActive(playerConversant.HasNext());
+            okButton.gameObject.SetActive(!playerConversant.HasNext());
+            //nextButton.gameObject.SetActive(playerConversant.HasNextConversant());
+            //okButton.gameObject.SetActive(!playerConversant.HasNextConversant());
         }
         //StartCoroutine(NextDialogue());
     }

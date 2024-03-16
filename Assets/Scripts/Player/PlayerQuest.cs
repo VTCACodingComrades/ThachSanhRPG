@@ -17,6 +17,10 @@ public class PlayerQuest : MonoBehaviour
 
     public void SetQuest(Quest quest)
     {
+        if (questsStatus.Any(q => q.GetQuest().GetTitle() == quest.GetTitle()))
+        {
+            return;
+        }
         QuestStatus questStatus = new QuestStatus(quest);
         questsStatus.Add(questStatus);
         OnQuestStatusUpdate.Invoke();

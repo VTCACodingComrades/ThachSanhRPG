@@ -1,3 +1,4 @@
+using RPGame.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -51,19 +52,53 @@ public class GameController : Singleton<GameController>
         Time.timeScale = 1; // Unfreeze at collum 91 PlayerHealth.cs
     }
 
-    public void ReloadCurrentSceneAfterDeath() {
-        //? load scene hien tai
-            gameOverPanel.SetActive(false);
-            var currentScene = SceneManager.GetActiveScene();
-            int currentSceneIndex = currentScene.buildIndex;
-            SceneManager.LoadSceneAsync(currentSceneIndex);
-            Time.timeScale = 1; //unfrezze
+    //public void ReloadCurrentSceneAfterDeath() {
+    //    //? load scene hien tai
+    //        SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+    //        savingWrapper.Save();
+    //        gameOverPanel.SetActive(false);
+    //        var currentScene = SceneManager.GetActiveScene();
+    //        int currentSceneIndex = currentScene.buildIndex;
+    //        SceneManager.LoadSceneAsync(currentSceneIndex);
+    //        Time.timeScale = 1; //unfrezze
+    //        savingWrapper.Load();
+    //        PlayerHealth.Instance.SetCurrentHealth(10);
+    //        PlayerHealth.Instance.SetIsPlayerDeath(false);
+    //        PlayerHealth.Instance.ResetAnimation();
 
-            PlayerHealth.Instance.SetCurrentHealth(10);
-            PlayerHealth.Instance.SetIsPlayerDeath(false);
-            PlayerHealth.Instance.ResetAnimation();
+    //}
 
+    public void ReloadCurrentSceneAfterDeath()
+    {
+        SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+        savingWrapper.Save();
+        gameOverPanel.SetActive(false);
+        var currentScene = SceneManager.GetActiveScene();
+        int currentSceneIndex = currentScene.buildIndex;
+
+        // Subscribe to the sceneLoaded event
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+        // Load the scene asynchronously
+        SceneManager.LoadSceneAsync(currentSceneIndex);
     }
 
+    // Method to handle the sceneLoaded event
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Unsubscribe from the event to prevent multiple calls
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+
+        // Resume time
+        Time.timeScale = 1;
+
+        // Load the saved data
+        FindObjectOfType<SavingWrapper>().Load();
+
+        // Reset player health, death status, and animation
+        PlayerHealth.Instance.SetCurrentHealth(10);
+        PlayerHealth.Instance.SetIsPlayerDeath(false);
+        PlayerHealth.Instance.ResetAnimation();
+    }
 
 }

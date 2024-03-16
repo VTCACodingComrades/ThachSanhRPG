@@ -1,14 +1,16 @@
 using RPG.Dialogue;
+using RPGame.Saving;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class QuestChecking : MonoBehaviour
+public class QuestChecking : MonoBehaviour, ISaveable
 {
     [SerializeField] string objective;
     //[SerializeField] Dialogue newDialogue;
     // Start is called before the first frame update
+    bool isCheck = false;
     void Start()
     {
         
@@ -17,7 +19,9 @@ public class QuestChecking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isCheck) return;    
         List<GameObject> objectives = GameObject.FindGameObjectsWithTag(objective).ToList();
+        Debug.Log(objectives.Count);
         if (objectives.Count == 0)
         {
             gameObject.GetComponentInParent<AIConversant>().SetNextDialogue();
@@ -27,11 +31,23 @@ public class QuestChecking : MonoBehaviour
 
     public void StartChecking()
     {
-        gameObject.SetActive(true);
+        //gameObject.SetActive(true);
+        isCheck = true;
     }
 
     public void StopChecking()
     {
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        isCheck = false;
+    }
+
+    public object CaptureState()
+    {
+        return isCheck;
+    }
+
+    public void RestoreState(object state)
+    {
+        isCheck = (bool) state;
     }
 }

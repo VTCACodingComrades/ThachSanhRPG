@@ -99,8 +99,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
             
             //xet Die animaiton
             animator.SetBool("IsDie", true);
-            Debug.Log("Set die ne");
-
+    
             //? hien bang gameover
             //GameController.Instance.GameOverSendData();
             StartCoroutine(ShowGameOver());

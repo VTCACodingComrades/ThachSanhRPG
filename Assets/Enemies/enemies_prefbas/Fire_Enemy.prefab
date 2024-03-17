@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 2971538665185711996}
   m_Layer: 0
   m_Name: Fire_Enemy
-  m_TagString: Untagged
+  m_TagString: FireBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,6 +262,7 @@ MonoBehaviour:
   pfEnemyDeathAnimation: {fileID: 7405361402734404751, guid: 4edc3eccc2136e944b3123896348eaf2, type: 3}
   startHealth: 5
   currentHealth: 0
+  timeToDestroyEnemies: 0.5
   OnDie:
     m_PersistentCalls:
       m_Calls: []
@@ -295,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2371097790961591963, guid: c13c773d32968154288167652f6bd727, type: 3}
   newBulletPawnPoint: {fileID: 479867962338775781}
-  damageBullet_FireShotter: 3
+  damageBullet_FireShotter: 1
 --- !u!114 &4532313805809785809
 MonoBehaviour:
   m_ObjectHideFlags: 0

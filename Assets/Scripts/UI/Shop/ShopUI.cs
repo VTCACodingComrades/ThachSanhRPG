@@ -58,19 +58,19 @@ public class ShopUI : MonoBehaviour
             row.Setup(currentShop, item);
         }
         confirmButton.interactable = currentShop.CanTransact();
-        totalField.text = $"Total: ${currentShop.TransactionTotal():N2} Gold";
+        totalField.text = $"T?ng: ${currentShop.TransactionTotal():N2} Vàng";
         totalField.color = currentShop.CanTransact() ? originalTotalTextColor : Color.red;
         TextMeshProUGUI switchText = switchButton.GetComponentInChildren<TextMeshProUGUI>();
         TextMeshProUGUI confirmText = confirmButton.GetComponentInChildren<TextMeshProUGUI>();
         if (currentShop.IsBuyingMode())
         {
-            switchText.text = "Switch To Selling";
-            confirmText.text = "Buy";
+            switchText.text = "Chuy?n sang bán";
+            confirmText.text = "Mua";
         }
         else
         {
-            switchText.text = "Switch To Buying";
-            confirmText.text = "Sell";
+            switchText.text = "Chuy?n sang mua";
+            confirmText.text = "Mua";
         }
     }
 

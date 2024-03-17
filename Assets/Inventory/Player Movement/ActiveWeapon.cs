@@ -109,5 +109,10 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         StopAllCoroutines();
         StartCoroutine(TimeBetweenAttackRoutine()); //isAttacking = false;
     }
+
+    public string GetCurrentWeapon()
+    {
+        return weaponName;
+    }
     
 }

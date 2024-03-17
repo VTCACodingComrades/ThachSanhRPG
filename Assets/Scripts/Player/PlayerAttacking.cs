@@ -13,6 +13,7 @@ public class PlayerAttacking : MonoBehaviour
     public Transform Edge;
     public int thurstForce;
     private int damage;
+    private string currentWeapon;
     //private int hitCount = 0;
     //[SerializeField] GameObject slashEffect;
     //[SerializeField] GameObject axeWeapon;
@@ -33,6 +34,7 @@ public class PlayerAttacking : MonoBehaviour
 
     private void OnAnimationEvent(string eventName)
     {
+        currentWeapon = ActiveWeapon.Instance.GetCurrentWeapon();
         switch (eventName)
         {
             case "Hit":
@@ -47,7 +49,7 @@ public class PlayerAttacking : MonoBehaviour
                     if (hitCollider.gameObject.CompareTag("CombatTarget"))
                     {
                         damage = ActiveWeapon.Instance.GetWeaponDamage();
-                        Debug.Log(damage);
+                        //Debug.Log(damage);
                         Rigidbody2D enemyRb = hitCollider.gameObject.GetComponent<Rigidbody2D>();
                         Vector2 direction = (hitCollider.transform.position - transform.position).normalized * thurstForce;
                         enemyRb.AddForce(direction, ForceMode2D.Impulse);
@@ -56,7 +58,7 @@ public class PlayerAttacking : MonoBehaviour
 
                     if(hitCollider.gameObject.GetComponent<EnemyAI>() != null) {
                         damage = ActiveWeapon.Instance.GetWeaponDamage();
-                        Debug.Log("player hit enemyHealth");
+                        //Debug.Log("player hit enemyHealth");
                         hitCollider.GetComponent<EnemyHealth>().TakeDamage(damage);
                     }
 
@@ -64,7 +66,7 @@ public class PlayerAttacking : MonoBehaviour
                         var trans = hitCollider.gameObject.GetComponent<InDestructible>().transform;
                         Instantiate(destroyVFX, trans.position, Quaternion.identity);
                     }
-                    if(hitCollider.gameObject.GetComponent<Destructible>()) {
+                    if(hitCollider.gameObject.GetComponent<Destructible>() && currentWeapon != "Hand"){
                         var trans = hitCollider.gameObject.GetComponent<Destructible>().transform;
                         Instantiate(destroyVFX, trans.position, Quaternion.identity);
                         Destroy(hitCollider.gameObject.GetComponent<Destructible>().gameObject);

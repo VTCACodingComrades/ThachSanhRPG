@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: 1f13fd9f-8a76-4ea6-9199-48d3c89a2488
   m_EditorClassIdentifier: 
-  speakerName: "\xD4ng l\xE3o"
+  speakerName: "\xD4ng B\u1EE5t"
   isPlayerSpeaking: 0
   text: "Sau \u0111\xF3 quay l\u1EA1i \u0111\xE2y g\u1EB7p ta"
   children: []
@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: 43626af5-1974-4c40-8f6f-ea3c1e56cd0d
   m_EditorClassIdentifier: 
-  speakerName: "\xD4ng l\xE3o"
+  speakerName: "\xD4ng B\u1EE5t"
   isPlayerSpeaking: 0
   text: "H\xE3y l\xEAn \u0111\u01B0\u1EDDng gi\u1EA3i c\u1EE9u c\xF4ng ch\xFAa"
   children:
@@ -44,7 +44,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 282
-    y: 122
+    y: 121
     width: 200
     height: 100
   enterNodeAction: 
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: 3feee936-f9cb-470e-b232-3d5a8f3a7ced
   m_EditorClassIdentifier: 
-  speakerName: "\xD4ng l\xE3o"
+  speakerName: "\xD4ng B\u1EE5t"
   isPlayerSpeaking: 0
   text: "\u0110\u1EA7u ti\xEAn h\xE3y \u0111i t\xECm ti\xEAu di\u1EC7t c\xE1c m\u1ED9c
     tinh"
@@ -86,8 +86,8 @@ MonoBehaviour:
   - 1f13fd9f-8a76-4ea6-9199-48d3c89a2488
   rect:
     serializedVersion: 2
-    x: 567
-    y: 170
+    x: 568
+    y: 168
     width: 200
     height: 100
   enterNodeAction: 
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: 374a8a28-fa9c-4d5c-a553-1376955e04a8
   m_EditorClassIdentifier: 
-  speakerName: "\xD4ng l\xE3o"
+  speakerName: "\xD4ng B\u1EE5t"
   isPlayerSpeaking: 0
   text: "C\xF4ng ch\xFAa \u0111\xE3 b\u1ECB ch\u1EB1n tinh b\u1EAFt \u0111i"
   children:

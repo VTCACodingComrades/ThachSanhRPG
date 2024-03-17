@@ -19,5 +19,5 @@ MonoBehaviour:
   pfSword: {fileID: 865213935175162613, guid: 4a7f6266f9f49d549998a388f3072ae7, type: 3}
   animatorOverrideController: {fileID: 22100000, guid: 5cb79c460d003df4eaf8f48e7d3ef1ad, type: 2}
   damage: 4
-  price: 100
+  price: 300
   weaponRange: 10

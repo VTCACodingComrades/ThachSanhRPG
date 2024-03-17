@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 2895879739239792336}
   m_Layer: 6
   m_Name: SkeletonEnemy
-  m_TagString: CombatTarget
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -254,8 +254,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealthBar: {fileID: 7981477519570244906}
   pfEnemyDeathAnimation: {fileID: 7264417325517988741, guid: c4ea62e665d2493448d6e5528667df3e, type: 3}
-  startHealth: 10
+  startHealth: 3
   currentHealth: 0
+  timeToDestroyEnemies: 0.5
   OnDie:
     m_PersistentCalls:
       m_Calls: []

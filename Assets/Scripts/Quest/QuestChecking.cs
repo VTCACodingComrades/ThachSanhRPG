@@ -23,7 +23,7 @@ public class QuestChecking : MonoBehaviour, ISaveable
     {
         if (!isCheck) return;    
         List<GameObject> objectives = GameObject.FindGameObjectsWithTag(objective).ToList();
-        Debug.Log(objectives.Count);
+        //Debug.Log(objectives.Count);
         if (objectives.Count == 0)
         {
             gameObject.GetComponentInParent<AIConversant>().SetNextDialogue();

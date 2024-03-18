@@ -117,5 +117,10 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     {
         return weaponName;
     }
+
+    public void ResetAttack()
+    {
+        StopAttacking();
+    }
     
 }

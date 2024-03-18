@@ -99,6 +99,7 @@ public class GameController : Singleton<GameController>
         PlayerHealth.Instance.SetCurrentHealth(10);
         PlayerHealth.Instance.SetIsPlayerDeath(false);
         PlayerHealth.Instance.ResetAnimation();
+        ActiveWeapon.Instance.ResetAttack();
     }
 
 }

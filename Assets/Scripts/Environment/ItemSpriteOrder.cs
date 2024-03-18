@@ -8,7 +8,7 @@ public class ItemSpriteOrder : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Goi ham order ne");
+            //Debug.Log("Goi ham order ne");
             SpriteRenderer itemSpriteRenderer = GetComponent<SpriteRenderer>();
             SpriteRenderer playerSpriteRenderer = collision.gameObject.GetComponent<SpriteRenderer>();
 

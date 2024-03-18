@@ -11180,9 +11180,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShowHideUI, Assembly-CSharp
-        m_MethodName: Toggle
+      - m_Target: {fileID: 7094529696526253473}
+        m_TargetAssemblyTypeName: AIConversant, Assembly-CSharp
+        m_MethodName: ResetDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

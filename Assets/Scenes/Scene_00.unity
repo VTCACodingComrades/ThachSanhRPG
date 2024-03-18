@@ -5254,7 +5254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1355847643800958383, guid: 1c1e6183e7803b34ca0ee7e6a487a33b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4737816533368345363, guid: 1c1e6183e7803b34ca0ee7e6a487a33b, type: 3}
       propertyPath: m_LocalScale.x
@@ -12764,9 +12764,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1665737325760329774}
+    - target: {fileID: 6715183773505394112, guid: 0d8ac9b2712420f4e995e877087ca210, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7303934063101015594, guid: 0d8ac9b2712420f4e995e877087ca210, type: 3}
       propertyPath: m_Name
       value: UI_Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404975786839361305, guid: 0d8ac9b2712420f4e995e877087ca210, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8496526082782521084, guid: 0d8ac9b2712420f4e995e877087ca210, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -15384,7 +15392,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 603123630683805815, guid: 2433e5e2c7dee144f801f45f072f983e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.9
+      value: -5.6
       objectReference: {fileID: 0}
     - target: {fileID: 603123630683805815, guid: 2433e5e2c7dee144f801f45f072f983e, type: 3}
       propertyPath: m_LocalPosition.y

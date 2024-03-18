@@ -16,7 +16,7 @@ public class AIConversant : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && currentDialogue != null)
         {
             collision.GetComponent<PlayerConversant>().StartConversant(currentDialogue, this);
         }
@@ -48,5 +48,10 @@ public class AIConversant : MonoBehaviour
     public bool HasNext()
     {
         return currentDialogueIndex < dialogues.Length - 1;
+    }
+
+    public void ResetDialogue()
+    {
+        currentDialogue = null;
     }
 }

@@ -17,7 +17,7 @@ MonoBehaviour:
     description: "Ti\xEAu di\u1EC7t t\u1EA5t c\u1EA3 chi\u1EBFn binh kh\xF4 l\xE2u"
   rewards:
   - item:
-      itemScriptableObject: {fileID: 11400000, guid: 64c71beef4b00434b863810c2eb3b35f, type: 2}
+      itemScriptableObject: {fileID: 11400000, guid: 9c97d3c0b7c943f4ab2b31704fc98a60, type: 2}
       amount: 1
   - item:
       itemScriptableObject: {fileID: 11400000, guid: eaeadf57eeea3d84695684106abef78a, type: 2}

@@ -14,6 +14,7 @@ public class ItemScriptableObject : ScriptableObject, ISerializationCallbackRece
     public AnimatorOverrideController animatorOverrideController;
     public int damage;
     public float price;
+    public AudioClip sound;
 
 
     // STATE

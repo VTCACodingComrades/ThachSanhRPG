@@ -20,4 +20,5 @@ MonoBehaviour:
   animatorOverrideController: {fileID: 22100000, guid: 9873028797d8a0047ac74088c21a4606, type: 2}
   damage: 3
   price: 200
+  sound: {fileID: 8300000, guid: 159aff7164e8c8241bec87cc1076f843, type: 3}
   weaponRange: 0

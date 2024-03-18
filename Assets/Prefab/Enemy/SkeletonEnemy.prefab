@@ -254,7 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealthBar: {fileID: 7981477519570244906}
   pfEnemyDeathAnimation: {fileID: 7264417325517988741, guid: c4ea62e665d2493448d6e5528667df3e, type: 3}
-  startHealth: 3
+  startHealth: 15
   currentHealth: 0
   timeToDestroyEnemies: 0.5
   OnDie:

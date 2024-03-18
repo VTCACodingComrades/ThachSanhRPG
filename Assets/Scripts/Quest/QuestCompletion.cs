@@ -12,4 +12,10 @@ public class QuestCompletion : MonoBehaviour
         PlayerQuest playerQuest = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerQuest>();
         playerQuest.CompleteObjective(quest, objective);
     }
+
+    public void GiveReward()
+    {
+        PlayerQuest playerQuest = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerQuest>();
+        playerQuest.GiveRewards(quest);
+    }
 }

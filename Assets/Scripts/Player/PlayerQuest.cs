@@ -17,6 +17,10 @@ public class PlayerQuest : MonoBehaviour
 
     public void SetQuest(Quest quest)
     {
+        if (questsStatus.Any(q => q.GetQuest().GetTitle() == quest.GetTitle()))
+        {
+            return;
+        }
         QuestStatus questStatus = new QuestStatus(quest);
         questsStatus.Add(questStatus);
         OnQuestStatusUpdate.Invoke();
@@ -26,21 +30,22 @@ public class PlayerQuest : MonoBehaviour
     {
         QuestStatus questStatus = GetQuestStatus(quest);
         questStatus.CompleteObjective(objective);
-        if (questStatus.IsComplete())
-        {
-            GiveRewards(quest);
-        }
+        //if (questStatus.IsComplete())
+        //{
+        //    GiveRewards(quest);
+        //}
         OnQuestStatusUpdate.Invoke();
     }
 
-    private void GiveRewards(Quest quest)
+    public void GiveRewards(Quest quest)
     {
         Inventory playerInventory = GetComponent<PlayerController>().GetPlayerInventory();
         foreach (var reward in quest.GetRewards())
         {
             if (reward.item.itemScriptableObject.itemType == Item.ItemType.Coin)
             {
-                Debug.Log("Add coin for player");
+                Purse shopperPurse = GameObject.FindGameObjectWithTag("Player").GetComponent<Purse>();
+                shopperPurse.UpdateBalance(reward.item.amount);
             }
             else
             {

@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: efa2a5e6-7114-49bd-914c-6279f7ad85e2
   m_EditorClassIdentifier: 
-  speakerName: Princess
+  speakerName: "C\xF4ng ch\xFAa"
   isPlayerSpeaking: 0
-  text: Thank you very much
-  children: []
+  text: "C\u1EA3m \u01A1n ch\xE0ng \u0111\xE3 gi\u1EA3i c\u1EE9u ta"
+  children:
+  - 5100785d-7cc2-49e5-a704-e65a3d990dcf
   rect:
     serializedVersion: 2
-    x: 291
-    y: 44
+    x: 293
+    y: 17
     width: 200
     height: 100
   enterNodeAction: 
@@ -36,15 +37,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
   m_Name: b3ea43b6-3455-4c18-b735-f224fc2dc4d8
   m_EditorClassIdentifier: 
-  speakerName: Princess
+  speakerName: "C\xF4ng ch\xFAa"
   isPlayerSpeaking: 0
-  text: Hi my hero
+  text: "Ch\xE0o Th\u1EA1ch Sanh"
   children:
   - efa2a5e6-7114-49bd-914c-6279f7ad85e2
   rect:
     serializedVersion: 2
     x: 41
-    y: 43
+    y: 42
     width: 200
     height: 100
   enterNodeAction: 
@@ -64,3 +65,28 @@ MonoBehaviour:
   nodes:
   - {fileID: -5795211194250154823}
   - {fileID: -6124488452201378284}
+  - {fileID: 9194338342970902226}
+--- !u!114 &9194338342970902226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 5100785d-7cc2-49e5-a704-e65a3d990dcf
+  m_EditorClassIdentifier: 
+  speakerName: "C\xF4ng ch\xFAa"
+  isPlayerSpeaking: 0
+  text: "Ch\xFAng ta c\xF9ng v\u1EC1 ho\xE0ng cung n\xE0o <3"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 541
+    y: 42
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: Victory

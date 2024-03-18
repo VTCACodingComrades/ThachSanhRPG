@@ -80,4 +80,24 @@ public class Projectile : MonoBehaviour
         }
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+
+        //neu other cham gameobject ko phai trigger (player dang !isTrigger)
+        //co the dung vien dan nay de so sanh voi nhung game object khac de tao hieu ung khac nhau
+        if (playerHealth)
+        {
+            if (playerHealth && isEnemyProjectile && !playerHealth.isDead)
+            {
+
+                //Debug.Log("Player take damage");
+                playerHealth?.TakeDamage(damageBullet_LogEnemy, transform);
+                
+            }
+        }
+        Instantiate(particleOnHitPrefabs, transform.position, transform.rotation);
+        Destroy(this.gameObject);
+    }
 }

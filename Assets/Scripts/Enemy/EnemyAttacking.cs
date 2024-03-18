@@ -29,7 +29,7 @@ public class EnemyAttacking : MonoBehaviour
         switch (eventName)
         {
             case "Hit":
-                Debug.Log("Boss enemy hit something ne");
+                //Debug.Log("Boss enemy hit something ne");
                 Collider2D[] hitColliders = Physics2D.OverlapBoxAll(Edge.position, Edge.localScale, 0);
 
                 foreach (Collider2D hitCollider in hitColliders)
@@ -37,7 +37,7 @@ public class EnemyAttacking : MonoBehaviour
 
                     if (hitCollider.gameObject.CompareTag("Player"))
                     {
-                        Debug.Log("Boss Enemy hit player ne");
+                        //Debug.Log("Boss Enemy hit player ne");
                         Rigidbody2D enemyRb = hitCollider.gameObject.GetComponent<Rigidbody2D>();
                         Vector2 direction = (hitCollider.transform.position - transform.position).normalized * thurstForce;
                         enemyRb.AddForce(direction, ForceMode2D.Impulse);

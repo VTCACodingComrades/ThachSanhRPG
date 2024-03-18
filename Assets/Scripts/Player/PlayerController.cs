@@ -116,6 +116,11 @@ public class PlayerController : Singleton<PlayerController>
         Animator animator = GetComponent<Animator>();
         weapon.Spawn(animator);
     }
+
+    public WeaponSO GetCurrentWeapon()
+    {
+        return currentWeapon;
+    }
     private void Attack()
     {
         currentState = PlayerState.attack;

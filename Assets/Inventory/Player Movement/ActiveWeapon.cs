@@ -13,13 +13,13 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public AnimatorOverrideController overrideControllers;
     private string weaponName;
     private int weaponDamage;
-
     bool attackButton, isAttacking = false;
     public bool AttackButtonPress { get; private set; }
 
     private ThachSanh thachSanh;
     [SerializeField] private float timeBetweenAttacks = .5f;
-    
+    private AudioSource audioSource;
+    private AudioClip weaponSound;
     protected override void Awake() {
         base.Awake();
 
@@ -38,6 +38,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         playerAnimator = GetComponentInParent<Animator>();
         CurrenActiveWeapon = DefaultWeapon.pfSword.GetComponent<MonoBehaviour>();
         NewWeapon(CurrenActiveWeapon);
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void StopAttacking()
@@ -65,6 +66,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         overrideControllers = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().animatorOverrideController;
         //Debug.Log(overrideControllers.name);
         playerAnimator.runtimeAnimatorController = overrideControllers; //-> Phuc them
+        weaponSound = (CurrenActiveWeapon as IWeapon).GetWeaponInfo().sound;
 
     }
     public void WeaponNull() {
@@ -87,6 +89,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
             (CurrenActiveWeapon as IWeapon).Attack();
             //playerAnimator.runtimeAnimatorController = overrideControllers;
             playerAnimator.SetTrigger("Attack");
+            audioSource.PlayOneShot(weaponSound);
         }
     }
     private void SetAnimation() {
@@ -108,6 +111,16 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         isAttacking = true;
         StopAllCoroutines();
         StartCoroutine(TimeBetweenAttackRoutine()); //isAttacking = false;
+    }
+
+    public string GetCurrentWeapon()
+    {
+        return weaponName;
+    }
+
+    public void ResetAttack()
+    {
+        StopAttacking();
     }
     
 }

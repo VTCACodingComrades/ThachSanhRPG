@@ -7,6 +7,8 @@ TagManager:
   - Smashable
   - Pushable
   - CombatTarget
+  - FireBall
+  - Enemy
   layers:
   - Default
   - TransparentFX

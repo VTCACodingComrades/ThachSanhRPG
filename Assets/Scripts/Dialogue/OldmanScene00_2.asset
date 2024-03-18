@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e59fef1b16a8c4a9314566fe1ad42d, type: 3}
+  m_Name: OldmanScene00_2
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1805422540370748833}
+  - {fileID: 3337333415726059370}
+--- !u!114 &1805422540370748833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 18973eae-78d7-43ed-b92a-276f71ec0e82
+  m_EditorClassIdentifier: 
+  speakerName: "\xD4ng B\u1EE5t"
+  isPlayerSpeaking: 0
+  text: "T\u1ED1t l\u1EAFm ch\xE0ng trai tr\u1EBB"
+  children:
+  - 6aabe751-8dcb-4970-9508-e093a74bab9b
+  rect:
+    serializedVersion: 2
+    x: 23
+    y: 18
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: 
+--- !u!114 &3337333415726059370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 6aabe751-8dcb-4970-9508-e093a74bab9b
+  m_EditorClassIdentifier: 
+  speakerName: "\xD4ng B\u1EE5t"
+  isPlayerSpeaking: 0
+  text: "Ch\xFA \xFD c\u1EA7n d\xF9ng b\xFAa \u0111\u1EC3 ph\xE1 \u0111\xE1"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 317
+    y: 60
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: 

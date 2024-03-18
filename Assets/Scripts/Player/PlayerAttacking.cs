@@ -13,6 +13,7 @@ public class PlayerAttacking : MonoBehaviour
     public Transform Edge;
     public int thurstForce;
     private int damage;
+    private string currentWeapon;
     //private int hitCount = 0;
     //[SerializeField] GameObject slashEffect;
     //[SerializeField] GameObject axeWeapon;
@@ -33,6 +34,7 @@ public class PlayerAttacking : MonoBehaviour
 
     private void OnAnimationEvent(string eventName)
     {
+        currentWeapon = ActiveWeapon.Instance.GetCurrentWeapon();
         switch (eventName)
         {
             case "Hit":
@@ -44,27 +46,33 @@ public class PlayerAttacking : MonoBehaviour
                     if (combatTarget != null)
                         combatTarget.GetComponent<Pot>().Smash();
 
-                    if (hitCollider.gameObject.CompareTag("CombatTarget"))
+                    EnemyHealth enemyHealth = hitCollider.gameObject.GetComponent<EnemyHealth>();
+
+                    if (enemyHealth != null)
                     {
                         damage = ActiveWeapon.Instance.GetWeaponDamage();
-                        Debug.Log(damage);
+                        //Debug.Log("player hit enemyHealth");
+                        enemyHealth.TakeDamage(damage);
+                    }
+                    else if (hitCollider.gameObject.CompareTag("CombatTarget"))
+                    {
+                        damage = ActiveWeapon.Instance.GetWeaponDamage();
+                        //Debug.Log(damage);
                         Rigidbody2D enemyRb = hitCollider.gameObject.GetComponent<Rigidbody2D>();
                         Vector2 direction = (hitCollider.transform.position - transform.position).normalized * thurstForce;
                         enemyRb.AddForce(direction, ForceMode2D.Impulse);
                         hitCollider.GetComponent<EnemyHealth>().TakeDamage(damage);
                     }
-
-                    if(hitCollider.gameObject.GetComponent<EnemyAI>() != null) {
+                    else if(hitCollider.gameObject.GetComponent<EnemyAI>() != null) {
                         damage = ActiveWeapon.Instance.GetWeaponDamage();
-                        Debug.Log("player hit enemyHealth");
+                        //Debug.Log("player hit enemyHealth");
                         hitCollider.GetComponent<EnemyHealth>().TakeDamage(damage);
                     }
-
-                    if(hitCollider.gameObject.GetComponent<InDestructible>()) {
+                    else if(hitCollider.gameObject.GetComponent<InDestructible>()) {
                         var trans = hitCollider.gameObject.GetComponent<InDestructible>().transform;
                         Instantiate(destroyVFX, trans.position, Quaternion.identity);
                     }
-                    if(hitCollider.gameObject.GetComponent<Destructible>()) {
+                    else if(hitCollider.gameObject.GetComponent<Destructible>() && currentWeapon != "Hand"){
                         var trans = hitCollider.gameObject.GetComponent<Destructible>().transform;
                         Instantiate(destroyVFX, trans.position, Quaternion.identity);
                         Destroy(hitCollider.gameObject.GetComponent<Destructible>().gameObject);

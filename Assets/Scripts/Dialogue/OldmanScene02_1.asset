@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e59fef1b16a8c4a9314566fe1ad42d, type: 3}
+  m_Name: OldmanScene02_1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1805422540370748833}
+  - {fileID: 3337333415726059370}
+  - {fileID: 1089259287191725724}
+--- !u!114 &1089259287191725724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: c81e1486-3ec0-401a-84e7-c26ff7610928
+  m_EditorClassIdentifier: 
+  speakerName: "\xD4ng B\u1EE5t"
+  isPlayerSpeaking: 0
+  text: "\u0111\u1EC3 ti\xEAu di\u1EC7t t\u1EA5t c\u1EA3 ch\xFAng nh\xE9"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 560
+    y: 126
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: Give quest
+--- !u!114 &1805422540370748833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 18973eae-78d7-43ed-b92a-276f71ec0e82
+  m_EditorClassIdentifier: 
+  speakerName: "\xD4ng B\u1EE5t"
+  isPlayerSpeaking: 0
+  text: "V\xF9ng \u0111\u1EA5t n\xE0y \u0111\xE3 b\u1ECB c\xE1c chi\u1EBFn binh kh\xF4
+    l\xE2u"
+  children:
+  - 6aabe751-8dcb-4970-9508-e093a74bab9b
+  rect:
+    serializedVersion: 2
+    x: 28
+    y: 25
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: 
+--- !u!114 &3337333415726059370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da2b086f0898af409640da6029e2345, type: 3}
+  m_Name: 6aabe751-8dcb-4970-9508-e093a74bab9b
+  m_EditorClassIdentifier: 
+  speakerName: "\xD4ng B\u1EE5t"
+  isPlayerSpeaking: 0
+  text: "Ng\u01B0\u01A1i h\xE3y s\u1EED d\u1EE5ng t\u1EA5t c\u1EA3 k\u1EF9 n\u0103ng
+    c\u1EE7a m\xECnh..."
+  children:
+  - c81e1486-3ec0-401a-84e7-c26ff7610928
+  rect:
+    serializedVersion: 2
+    x: 290
+    y: 46
+    width: 200
+    height: 100
+  enterNodeAction: 
+  exitNodeAction: 

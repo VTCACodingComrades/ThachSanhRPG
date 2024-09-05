@@ -20,20 +20,27 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     [SerializeField] private float timeBetweenAttacks = .5f;
     private AudioSource audioSource;
     private AudioClip weaponSound;
-    protected override void Awake() {
+    protected override void Awake() 
+    {
         base.Awake();
-
         thachSanh = new ThachSanh();
-
     }
-    private void OnEnable() {
+    private void OnEnable() 
+    {
 		thachSanh.Enable();
-	}
+    }
 
-    private void Start() {
+    private void OnDisable()
+    {
+        thachSanh.Player.Attack.started -= _ => StartAttacking();
+        thachSanh.Disable();
+    }
+
+    private void Start() 
+    {
         thachSanh.Player.Attack.started += _ => StartAttacking();
         thachSanh.Player.Attack.canceled += _ => StopAttacking();
-
+        attackButton = false;
 
         playerAnimator = GetComponentInParent<Animator>();
         CurrenActiveWeapon = DefaultWeapon.pfSword.GetComponent<MonoBehaviour>();
@@ -44,17 +51,20 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     private void StopAttacking()
     {
         attackButton = false;
+        isAttacking = false;
     }
 
     private void StartAttacking()
     {
+        Debug.Log("Attack button kich hoat ne");
         attackButton = true;
+        AttackCurrentWeapon();
     }
 
-    private void Update() {
-        AttackCurrentWeapon(); //?Phuc comment || su dung tai day de khi acctack se goi ham Attack() SlingShot.cs coll 16
-        //Debug.Log(weaponName);
-    }
+    //private void Update() {
+    //    AttackCurrentWeapon(); //?Phuc comment || su dung tai day de khi acctack se goi ham Attack() SlingShot.cs coll 16
+    //    //Debug.Log(weaponName);
+    //}
     public void NewWeapon(MonoBehaviour newWeapon) // ham nay duoc goi ben ActiveInventory khi Instite vu khi va bo class weapon vao day
     {
         //Debug.Log("Co chay");

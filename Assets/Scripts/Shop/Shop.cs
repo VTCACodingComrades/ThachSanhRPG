@@ -89,6 +89,10 @@ public class Shop : MonoBehaviour
         {
             transaction[item] = availbility;
         }
+        else if (transaction[item] + quantity < 0)
+        {
+            transaction[item] = 0;
+        }
         else
         {
             transaction[item] += quantity;

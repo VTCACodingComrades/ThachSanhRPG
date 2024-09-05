@@ -77,17 +77,18 @@ public class GameController : Singleton<GameController>
         int currentSceneIndex = currentScene.buildIndex;
 
         // Subscribe to the sceneLoaded event
-        SceneManager.sceneLoaded += OnSceneLoaded;
-
+        //SceneManager.sceneLoaded += OnSceneLoaded;
+        OnSceneLoaded();
         // Load the scene asynchronously
         SceneManager.LoadSceneAsync(currentSceneIndex);
     }
 
     // Method to handle the sceneLoaded event
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    //void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    void OnSceneLoaded()
     {
         // Unsubscribe from the event to prevent multiple calls
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+        //SceneManager.sceneLoaded -= OnSceneLoaded;
 
         // Resume time
         Time.timeScale = 1;

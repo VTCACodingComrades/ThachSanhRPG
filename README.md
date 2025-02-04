@@ -10,6 +10,24 @@ A 2D pixel-art RPG that brings the classic Vietnamese folk story to life, blendi
 ### Online Platforms
 * 🎮 Itch.io: https://vtcacodingcomrades.itch.io/thach-sanh
 
+### Game Screenshots
+
+![Title Scene](/Images/TitleScene.PNG)
+
+Title screen
+
+![Play Scene 1](/Images/PlaySceneMap1.PNG)
+
+Play screen map 1
+
+![Play Scene 3](/Images/PlaySceneMap3.PNG)
+
+Play screen map 3
+
+![Play Scene Final](/Images/PlaySceneFinal.PNG)
+
+Play screen final
+
 ## Key Features
 
 ### Player Mechanics
